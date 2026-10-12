@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타임폴리오 ETF 인사이트</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Pretendard', sans-serif; background-color: #f3f4f6; }
+        .card { background: white; border-radius: 0.75rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 1.5rem; margin-bottom: 1.5rem; }
+        .badge-up { background-color: #fef2f2; color: #ef4444; border: 1px solid #fecaca; }
+        .badge-down { background-color: #eff6ff; color: #3b82f6; border: 1px solid #bfdbfe; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased p-4 sm:p-8">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex justify-between items-end mb-8">
+            <div>
+                <h1 class="text-3xl font-bold">타임폴리오 ETF 트래커</h1>
+                <p class="text-gray-500 mt-1">핵심 5종목 동향 및 AI 매수 추론 (코스피, 배당, 코스닥, 나스닥, 글로벌AI)</p>
+            </div>
+            <div id="update-time" class="text-sm font-medium text-green-700 bg-green-100 px-3 py-1 rounded-full">업데이트 중...</div>
+        </div>
+
+        <!-- 교집합 영역 -->
+        <div class="card border-l-4 border-indigo-500">
+            <h2 class="text-xl font-bold mb-4">🔥 핵심 교집합 (복수 ETF 동시 편입/증가)</h2>
+            <div id="common-stocks" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+        </div>
+
+        <!-- 개별 ETF 영역 -->
+        <div id="etf-container" class="space-y-6"></div>
+    </div>
+
+    <script>
+        async function loadData() {
+            try {
+                // 매일 업데이트될 data.json 파일을 불러옵니다 (캐시 방지용 쿼리 추가)
+                const response = await fetch(`data.json?t=${new Date().getTime()}`);
+                const data = await response.json();
+                
+                document.getElementById('update-time').innerText = `마지막 업데이트: ${data.updateTime}`;
+                renderCommonStocks(data.etfs);
+                renderEtfs(data.etfs);
+            } catch (error) {
+                document.getElementById('update-time').innerText = "데이터 불러오기 실패";
+                console.error("데이터 로드 에러:", error);
+            }
+        }
+
+        function renderCommonStocks(etfData) {
+            const stockMap = {};
+            etfData.forEach(etf => {
+                etf.changes.forEach(change => {
+                    if (change.type === '증가' || change.type === '신규') {
+                        if (!stockMap[change.stock]) stockMap[change.stock] = { count: 0, etfs: [], reason: change.aiReason };
+                        stockMap[change.stock].count += 1;
+                        stockMap[change.stock].etfs.push(etf.name);
+                    }
+                });
+            });
+
+            const commonContainer = document.getElementById('common-stocks');
+            let hasCommon = false;
+            
+            Object.entries(stockMap).forEach(([stock, info]) => {
+                if (info.count > 1) {
+                    hasCommon = true;
+                    commonContainer.innerHTML += `
+                        <div class="bg-indigo-50 border border-indigo-100 rounded-lg p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="text-lg font-bold text-indigo-900">${stock}</span>
+                                <span class="text-xs font-semibold bg-indigo-200 text-indigo-800 px-2 py-1 rounded">${info.count}개 ETF 동시편입</span>
+                            </div>
+                            <p class="text-xs text-indigo-600 mb-2">편입 ETF: ${info.etfs.join(', ')}</p>
+                            <p class="text-sm bg-white p-2 rounded text-gray-700">🤖 AI 분석: ${info.reason}</p>
+                        </div>
+                    `;
+                }
+            });
+            if (!hasCommon) commonContainer.innerHTML = `<p class="text-gray-500">오늘 복수 ETF에서 공통으로 편입된 종목이 없습니다.</p>`;
+        }
+
+        function renderEtfs(etfData) {
+            const container = document.getElementById('etf-container');
+            etfData.forEach(etf => {
+                let changesHtml = etf.changes.map(change => {
+                    let badge = change.type === '감소' ? 'badge-down' : (change.type !== '유지' ? 'badge-up' : 'bg-gray-100');
+                    return `
+                    <div class="flex flex-col sm:flex-row justify-between py-3 border-b border-gray-100 last:border-0">
+                        <div class="w-full sm:w-1/4 flex items-center gap-2 mb-2 sm:mb-0">
+                            <span class="text-xs font-bold px-2 py-1 rounded ${badge}">${change.type}</span>
+                            <span class="font-semibold">${change.stock}</span>
+                        </div>
+                        <div class="w-full sm:w-1/4 text-sm text-gray-500">비중 변동: <b class="text-gray-800">${change.weightChange}</b></div>
+                        <div class="w-full sm:w-2/4 bg-gray-50 p-2 rounded text-sm text-gray-600">🤖 ${change.aiReason}</div>
+                    </div>`;
+                }).join('');
+                
+                container.innerHTML += `
+                    <div class="card">
+                        <h3 class="text-lg font-bold mb-3 border-b pb-2">${etf.name}</h3>
+                        ${changesHtml || '<p class="text-sm text-gray-500">특이 변동 내역 없음</p>'}
+                    </div>`;
+            });
+        }
+        
+        loadData();
+    </script>
+</body>
+</html>
