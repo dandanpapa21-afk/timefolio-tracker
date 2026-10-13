@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timefolio ETF Insights</title>
-    <!-- 폰트 적용 (Pretendard) -->
+    <!-- 폰트 적용 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -60,12 +60,16 @@
             padding: 0 20px;
         }
 
-        /* 상단 대시보드 (주력 아이디어 & 섹터) */
+        /* 상단 대시보드 */
         .top-dashboard {
             display: grid;
             grid-template-columns: 2fr 1fr;
             gap: 20px;
             margin-bottom: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .top-dashboard { grid-template-columns: 1fr; }
         }
 
         .card {
@@ -81,9 +85,12 @@
             font-weight: 700;
             margin-top: 0;
             margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            color: var(--header-bg);
+        }
+
+        .house-view-text {
+            font-size: 0.95rem;
+            color: #4b5563;
         }
 
         .hashtag {
@@ -93,7 +100,7 @@
             margin-right: 8px;
         }
 
-        /* 1. 공통 편입 종목 (ETF 뱃지 추가) */
+        /* 공통 편입 종목 */
         .common-stocks-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -138,12 +145,11 @@
         .trend-text {
             font-size: 0.85rem;
             font-weight: 700;
-            color: var(--accent-red);
             border-top: 1px dashed var(--border-color);
             padding-top: 10px;
         }
 
-        /* 2. 일일 포트폴리오 변경 내역 (4단 분할 및 탭) */
+        /* 일일 포트폴리오 변경 내역 */
         .portfolio-section { margin-top: 40px; }
         
         .section-header {
@@ -153,6 +159,11 @@
             margin-bottom: 20px;
             border-bottom: 2px solid var(--header-bg);
             padding-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .section-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+            .etf-tabs { flex-wrap: wrap; }
         }
 
         .section-title {
@@ -177,16 +188,17 @@
             color: #475569;
             cursor: pointer;
         }
-        .etf-tab.active {
-            background-color: var(--header-bg);
-            color: white;
-        }
+        .etf-tab.active { background-color: var(--header-bg); color: white; }
 
-        /* 4단 컬럼 구조 (신규편입 / 비중확대 / 비중축소&전량매도) */
+        /* 3단 컬럼 구조 */
         .change-columns {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .change-columns { grid-template-columns: 1fr; }
         }
 
         .column-header {
@@ -206,7 +218,6 @@
 
         .sub-text { font-size: 0.7rem; color: var(--text-muted); font-weight: normal; }
 
-        /* 3. 개별 종목 아이템 (수량 종가 기준 디테일 추가) */
         .item-row {
             background-color: #f8fafc;
             border-radius: 8px;
@@ -218,7 +229,6 @@
         .item-row.new { border-left-color: var(--accent-green); }
         .item-row.up { border-left-color: var(--accent-red); }
         .item-row.down { border-left-color: var(--text-muted); }
-        .item-row.sellall { border-left-color: var(--accent-gray); opacity: 0.7; }
 
         .item-main {
             display: flex;
@@ -229,21 +239,19 @@
         .item-name { font-weight: 800; font-size: 1.05rem; }
         .item-code { font-size: 0.7rem; color: var(--text-muted); margin-left: 5px; }
         
-        .item-details {
-            text-align: right;
-        }
+        .item-details { text-align: right; }
 
         .item-weight { font-weight: 800; font-size: 0.95rem; }
         .new .item-weight { color: var(--accent-green); }
         .up .item-weight { color: var(--accent-red); }
-        .down .item-weight, .sellall .item-weight { color: var(--accent-blue); }
+        .down .item-weight { color: var(--accent-blue); }
 
         .item-subdetail {
             font-size: 0.75rem;
-            color: var(--accent-red);
             font-weight: 700;
             margin-top: 4px;
         }
+        .up .item-subdetail { color: var(--accent-red); }
         .down .item-subdetail { color: var(--text-muted); }
 
         .ai-comment {
@@ -263,6 +271,17 @@
             display: block;
             margin-bottom: 4px;
         }
+        
+        #errorMessage {
+            display: none;
+            background-color: #fef2f2;
+            color: #dc2626;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #f87171;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -272,13 +291,14 @@
     </header>
 
     <div class="container">
-        <!-- 상단 대시보드 -->
+        <!-- 에러 발생 시 원인을 화면에 띄우는 박스 -->
+        <div id="errorMessage"></div>
+
         <div class="top-dashboard">
             <div class="card">
                 <h2 class="card-title">💡 타임폴리오 주력 투자 아이디어</h2>
                 <div class="house-view-text">
                     <p>최근 타임폴리오의 운용 기조를 보면, <strong>AI 인프라 확충에 따른 수혜주(HBM, 전력기기)</strong>를 여전히 핵심 코어로 가져가면서도, 금리 인하 사이클 진입에 대비한 <strong>바이오/헬스케어</strong> 섹터의 비중을 유의미하게 늘리고 있습니다.</p>
-                    <p>특히, 단순 주가 상승으로 인한 비중 증가가 아닌, <strong>'실제 보유 주식 수량(Shares)'</strong>을 크게 늘린 종목들을 살펴보면 실적 턴어라운드가 명확하게 가시화되고 있는 화장품 및 K-푸드 관련 중소형주 발굴에 집중하고 있는 것으로 분석됩니다.</p>
                 </div>
                 <div style="margin-top: 20px;">
                     <span class="hashtag">#AI반도체</span> <span class="hashtag">#바이오시밀러</span> <span class="hashtag">#전력인프라</span>
@@ -293,10 +313,7 @@
             </div>
         </div>
 
-        <!-- 1. 주목해야 할 공통 편입 종목 (ETF 뱃지 포함) -->
         <h2 class="section-title" style="margin-bottom: 5px; border-left: none; padding-left: 0;">주목해야 할 공통 편입 종목</h2>
-        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0; margin-bottom: 15px;">여러 타임폴리오 ETF에서 동시에 비중을 늘리고 있거나 핵심 포지션으로 가져가는 종목입니다.</p>
-        
         <div class="common-stocks-grid">
             <div class="stock-minicard">
                 <div class="stock-minicard-header">
@@ -308,7 +325,6 @@
                 </div>
                 <div class="trend-text" style="color: #4b5563;">📈 비중 유지</div>
             </div>
-            
             <div class="stock-minicard">
                 <div class="stock-minicard-header">
                     <div><span class="stock-name">알테오젠</span><span class="stock-code">196170</span></div>
@@ -317,42 +333,16 @@
                 <div class="etf-badges">
                     <span class="etf-badge">이노베이션</span><span class="etf-badge">K스탁</span>
                 </div>
-                <div class="trend-text">📈 수량 강력 매수</div>
-            </div>
-
-            <div class="stock-minicard">
-                <div class="stock-minicard-header">
-                    <div><span class="stock-name">HD현대일렉트릭</span><span class="stock-code">267260</span></div>
-                </div>
-                <div style="font-size:0.75rem; color:#6b7280; margin-bottom:2px;">편입 ETF:</div>
-                <div class="etf-badges">
-                    <span class="etf-badge">이노베이션</span><span class="etf-badge">글로벌AI</span>
-                </div>
-                <div class="trend-text">📈 비중 확대</div>
-            </div>
-            
-            <div class="stock-minicard">
-                <div class="stock-minicard-header">
-                    <div><span class="stock-name">삼양식품</span><span class="stock-code">003230</span></div>
-                </div>
-                <div style="font-size:0.75rem; color:#6b7280; margin-bottom:2px;">편입 ETF:</div>
-                <div class="etf-badges">
-                    <span class="etf-badge">K스탁</span><span class="etf-badge">K컬처</span>
-                </div>
-                <div class="trend-text">📈 수량 점진 매수</div>
+                <div class="trend-text" style="color: #ef4444;">📈 수량 강력 매수</div>
             </div>
         </div>
 
-        <!-- 2. 일일 포트폴리오 변경 내역 (4단 구조 및 탭) -->
         <div class="portfolio-section">
             <div class="section-header">
                 <h2 class="section-title">일일 포트폴리오 변경 내역</h2>
-                <div class="etf-tabs" id="etfTabs">
-                    <!-- 탭이 동적으로 생성됩니다 -->
-                </div>
+                <div class="etf-tabs" id="etfTabs"></div>
             </div>
             
-            <!-- 3단 컬럼 영역 (신규/증가/축소) -->
             <div class="change-columns" id="changeColumns">
                 <div style="text-align: center; grid-column: span 3; padding: 40px; color: #6b7280;">데이터를 분석 중입니다...</div>
             </div>
@@ -360,7 +350,7 @@
     </div>
 
     <script>
-        // 레이더 차트 (기존과 동일)
+        // 1. 차트 그리기
         const ctx = document.getElementById('sectorChart').getContext('2d');
         const sectorChart = new Chart(ctx, {
             type: 'radar',
@@ -374,39 +364,59 @@
             options: { maintainAspectRatio: false, scales: { r: { ticks: { display: false } } } }
         });
 
-        // 데이터 통신
+        // 2. 데이터 가져오기 로직 (에러 추적 강화)
         const GITHUB_USERNAME = "dandanpapa21-afk";
         const GITHUB_REPO = "timefolio-tracker";
         const JSON_URL = `https://${GITHUB_USERNAME}.github.io/${GITHUB_REPO}/data.json`;
         
-        let allData = []; // 가져온 전체 데이터를 저장할 변수
+        let allData = []; 
 
         async function fetchData() {
             try {
+                // 캐시 방지용 쿼리스트링
                 const response = await fetch(JSON_URL + '?t=' + new Date().getTime());
-                if (!response.ok) throw new Error('통신 오류');
+                
+                if (!response.ok) {
+                    throw new Error(`깃허브 서버 통신 오류 (상태코드: ${response.status}) - 서버가 아직 파일을 배포 중입니다.`);
+                }
+                
                 const data = await response.json();
                 
+                if (!data || !data.etfs) {
+                    throw new Error(`데이터 구조가 잘못되었습니다. (json 포맷 오류)`);
+                }
+                
                 document.getElementById('updateTime').innerText = `🕒 최근 업데이트: ${data.updateTime}`;
-                allData = data.etfs.filter(etf => etf.changes.length > 0); // 변동 있는 ETF만 남김
+                
+                // 에러 나지 않도록 배열 확인
+                allData = data.etfs.filter(etf => etf && etf.changes && etf.changes.length > 0); 
                 
                 renderTabs();
-                if(allData.length > 0) renderColumns(allData[0].name); // 첫 번째 ETF 데이터 기본 렌더링
-                else document.getElementById('changeColumns').innerHTML = '<div style="grid-column: span 3; text-align:center;">포착된 변동이 없습니다.</div>';
+                
+                if(allData.length > 0) {
+                    renderColumns(allData[0].name); 
+                } else {
+                    document.getElementById('changeColumns').innerHTML = '<div style="grid-column: span 3; text-align:center; padding:30px;">포착된 유의미한 변동 내역이 없습니다.</div>';
+                }
                 
             } catch (error) {
-                document.getElementById('updateTime').innerText = "🕒 업데이트 실패 (새로고침 필요)";
+                // 🚨 에러가 발생하면 무조건 화면 맨 위에 빨간색으로 원인을 출력함!
+                const errorBox = document.getElementById('errorMessage');
+                errorBox.style.display = 'block';
+                errorBox.innerHTML = `⚠️ 시스템 오류 발생: ${error.message}<br><br><span style="font-size:0.9rem; font-weight:normal;">* 방금 코드를 저장하셨다면 깃허브 서버 반영에 1~2분 정도 소요됩니다. 잠시 후 새로고침 해주세요.</span>`;
+                
+                document.getElementById('updateTime').innerText = "🕒 업데이트 실패";
+                document.getElementById('changeColumns').innerHTML = '';
             }
         }
 
-        // 탭(Tab) 그리기 함수
+        // 3. 화면 그리기 (탭)
         function renderTabs() {
             const tabsContainer = document.getElementById('etfTabs');
             tabsContainer.innerHTML = '';
             
             allData.forEach((etf, index) => {
-                // 이름 너무 길면 뒤에 '액티브' 등 자르기용 (선택사항)
-                let shortName = etf.name.replace('TIME ', '').replace('액티브', ''); 
+                let shortName = (etf.name || "알수없는 ETF").replace('TIME ', '').replace('액티브', ''); 
                 
                 const tab = document.createElement('div');
                 tab.className = `etf-tab ${index === 0 ? 'active' : ''}`;
@@ -420,59 +430,57 @@
             });
         }
 
-        // 컬럼(신규/증가/축소) 그리기 함수
+        // 4. 화면 그리기 (컬럼)
         function renderColumns(targetEtfName) {
             const container = document.getElementById('changeColumns');
             const etfData = allData.find(e => e.name === targetEtfName);
             if (!etfData) return;
 
-            // 데이터를 종류별로 분류 (신규, 증가, 축소/매도)
             const newItems = etfData.changes.filter(item => item.type === '신규');
             const upItems = etfData.changes.filter(item => item.type === '증가');
             
-            // 더미 축소/매도 데이터 (앱스 스크립트에서 축소 데이터도 추출하도록 추후 고도화 시 연동)
+            // 더미 데이터 (비중 축소)
             const downItems = [
-                { stock: "삼성전자", weightChange: "-1.5%p", subdetail: "부분 차익실현", type: "축소" }
+                { stock: "삼성전자", weightChange: "-1.5%p", subdetail: "부분 차익실현" }
             ];
 
-            // 1. 신규 편입 HTML
+            // 신규 편입 HTML
             let newHtml = `<div class="col-new"><div class="column-header">신규 편입 <span class="sub-text">New</span></div>`;
             newItems.forEach(item => {
                 newHtml += `
                     <div class="item-row new">
                         <div class="item-main">
-                            <div><span class="item-name">${item.stock}</span></div>
-                            <div class="item-details"><div class="item-weight">비중: ${item.weightChange}</div></div>
+                            <div><span class="item-name">${item.stock || '-'}</span></div>
+                            <div class="item-details"><div class="item-weight">비중: ${item.weightChange || '-'}</div></div>
                         </div>
-                        <div class="ai-comment">${item.aiReason}</div>
+                        <div class="ai-comment">${item.aiReason || 'AI 분석 코멘트가 없습니다.'}</div>
                     </div>`;
             });
             newHtml += `</div>`;
 
-            // 2. 비중 확대 HTML (수량 종가 기준 디테일 반영)
+            // 비중 확대 HTML
             let upHtml = `<div class="col-up"><div class="column-header">비중 확대 <span class="sub-text">수량 종가 기준</span></div>`;
             upItems.forEach(item => {
-                // 비중에 + 기호 자동 추가
-                const wStr = String(item.weightChange);
+                const wStr = String(item.weightChange || '');
                 const wSign = (wStr.includes('+') || wStr.includes('-')) ? wStr : '+' + wStr;
                 
                 upHtml += `
                     <div class="item-row up">
                         <div class="item-main">
                             <div>
-                                <div class="item-name">${item.stock}</div>
+                                <div class="item-name">${item.stock || '-'}</div>
                                 <div class="item-subdetail">💯 실제 수량 매수</div>
                             </div>
                             <div class="item-details">
                                 <div class="item-weight">${wSign}</div>
-                                <div style="font-size:0.75rem; color:#6b7280; margin-top:2px;">현재 4.5%</div>
                             </div>
                         </div>
+                        <div class="ai-comment">${item.aiReason || ''}</div>
                     </div>`;
             });
             upHtml += `</div>`;
 
-            // 3. 비중 축소 & 전량 매도 HTML
+            // 비중 축소 HTML
             let downHtml = `<div class="col-down"><div class="column-header">비중 축소 & 전량 매도 <span class="sub-text"></span></div>`;
             downItems.forEach(item => {
                 downHtml += `
@@ -480,22 +488,23 @@
                         <div class="item-main">
                             <div>
                                 <div class="item-name">${item.stock}</div>
-                                <div class="item-subdetail" style="color:#6b7280;">${item.subdetail}</div>
+                                <div class="item-subdetail">${item.subdetail}</div>
                             </div>
                             <div class="item-details">
-                                <div class="item-weight" style="color:#3b82f6;">${item.weightChange}</div>
-                                <div style="font-size:0.75rem; color:#6b7280; margin-top:2px;">현재 12.1%</div>
+                                <div class="item-weight">${item.weightChange}</div>
                             </div>
                         </div>
                     </div>`;
             });
             downHtml += `</div>`;
 
-            // 3단 합체
             container.innerHTML = newHtml + upHtml + downHtml;
         }
 
+        // 실행
         fetchData();
     </script>
 </body>
 </html>
+
+
