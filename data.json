@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-10-13 18:30:00",
+  "updateTime": "2026-10-13 16:35:13",
   "etfs": [
     {
       "name": "TIME 코스피액티브",
@@ -7,14 +7,14 @@
         {
           "stock": "SK하이닉스",
           "type": "증가",
-          "weightChange": "+1.2%",
-          "aiReason": "[HBM 모멘텀] 엔비디아 실적 호조에 따른 HBM3E 공급 확대 기대감 지속."
+          "weightChange": "+0.5%",
+          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
         },
         {
-          "stock": "삼성바이오로직스",
+          "stock": "HD현대일렉트릭",
           "type": "신규",
           "weightChange": "0.8%",
-          "aiReason": "[실적 턴어라운드] 4공장 가동률 상승 및 신규 수주 모멘텀 부각."
+          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
         }
       ]
     },
@@ -22,10 +22,10 @@
       "name": "TIME Korea플러스배당액티브",
       "changes": [
         {
-          "stock": "KB금융",
+          "stock": "메리츠금융지주",
           "type": "증가",
-          "weightChange": "+0.9%",
-          "aiReason": "[주주환원] 정부 밸류업 정책 호응 및 자사주 소각 등 강력한 주주환원 의지."
+          "weightChange": "+1.2%",
+          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
         }
       ]
     },
@@ -33,16 +33,10 @@
       "name": "TIME 코스닥액티브",
       "changes": [
         {
-          "stock": "알테오젠",
+          "stock": "리가켐바이오",
           "type": "증가",
           "weightChange": "+1.5%",
-          "aiReason": "[기술수출] 피하주사(SC) 제형 변환 플랫폼 가치 지속 부각."
-        },
-        {
-          "stock": "실리콘투",
-          "type": "신규",
-          "weightChange": "1.0%",
-          "aiReason": "[K-뷰티] 글로벌 인디 브랜드 화장품 유통 실적 고성장세 지속."
+          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
         }
       ]
     },
@@ -50,10 +44,10 @@
       "name": "TIME 미국나스닥100액티브",
       "changes": [
         {
-          "stock": "Microsoft",
+          "stock": "Apple",
           "type": "증가",
-          "weightChange": "+0.5%",
-          "aiReason": "[AI 수익화] B2B AI 서비스 매출 성장 및 클라우드 점유율 확대 지속."
+          "weightChange": "+0.3%",
+          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
         }
       ]
     },
@@ -61,16 +55,16 @@
       "name": "TIME 글로벌AI인공지능액티브",
       "changes": [
         {
-          "stock": "Microsoft",
-          "type": "증가",
-          "weightChange": "+1.1%",
-          "aiReason": "[AI 생태계 장악] AI 소프트웨어 및 인프라 독점력 강화."
-        },
-        {
           "stock": "SK하이닉스",
           "type": "증가",
           "weightChange": "+0.7%",
-          "aiReason": "[HBM 탑픽] 글로벌 AI 펀드 내 HBM 밸류체인 핵심 종목 비중 지속 확대 중."
+          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
+        },
+        {
+          "stock": "TSMC",
+          "type": "신규",
+          "weightChange": "1.1%",
+          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
         }
       ]
     }
