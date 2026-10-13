@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timefolio ETF Insights</title>
-    <!-- 폰트 적용 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -291,7 +290,6 @@
     </header>
 
     <div class="container">
-        <!-- 에러 발생 시 원인을 화면에 띄우는 박스 -->
         <div id="errorMessage"></div>
 
         <div class="top-dashboard">
@@ -350,7 +348,19 @@
     </div>
 
     <script>
-        // 1. 차트 그리기
+        // 1. 소수점 데이터를 %로 예쁘게 바꿔주는 마법의 함수
+        function formatPercent(value) {
+            let num = parseFloat(value);
+            if (isNaN(num)) return value; // 숫자가 아니면 그대로 반환
+            
+            // 구글 시트의 소수점(0.0162)을 퍼센트(1.62)로 변환 후 소수점 2자리까지만 자름
+            let percent = (num * 100).toFixed(2);
+            let cleanNum = parseFloat(percent); // 뒤에 붙은 쓸데없는 0 제거 (예: 1.50 -> 1.5)
+            
+            return (cleanNum > 0 ? '+' : '') + cleanNum + '%p';
+        }
+
+        // 2. 차트 그리기
         const ctx = document.getElementById('sectorChart').getContext('2d');
         const sectorChart = new Chart(ctx, {
             type: 'radar',
@@ -364,7 +374,7 @@
             options: { maintainAspectRatio: false, scales: { r: { ticks: { display: false } } } }
         });
 
-        // 2. 데이터 가져오기 로직 (에러 추적 강화)
+        // 3. 데이터 가져오기 로직
         const GITHUB_USERNAME = "dandanpapa21-afk";
         const GITHUB_REPO = "timefolio-tracker";
         const JSON_URL = `https://${GITHUB_USERNAME}.github.io/${GITHUB_REPO}/data.json`;
@@ -373,51 +383,32 @@
 
         async function fetchData() {
             try {
-                // 캐시 방지용 쿼리스트링
                 const response = await fetch(JSON_URL + '?t=' + new Date().getTime());
-                
-                if (!response.ok) {
-                    throw new Error(`깃허브 서버 통신 오류 (상태코드: ${response.status}) - 서버가 아직 파일을 배포 중입니다.`);
-                }
-                
+                if (!response.ok) throw new Error(`서버 통신 오류 (상태코드: ${response.status})`);
                 const data = await response.json();
                 
-                if (!data || !data.etfs) {
-                    throw new Error(`데이터 구조가 잘못되었습니다. (json 포맷 오류)`);
-                }
-                
                 document.getElementById('updateTime').innerText = `🕒 최근 업데이트: ${data.updateTime}`;
-                
-                // 에러 나지 않도록 배열 확인
                 allData = data.etfs.filter(etf => etf && etf.changes && etf.changes.length > 0); 
                 
                 renderTabs();
-                
-                if(allData.length > 0) {
-                    renderColumns(allData[0].name); 
-                } else {
-                    document.getElementById('changeColumns').innerHTML = '<div style="grid-column: span 3; text-align:center; padding:30px;">포착된 유의미한 변동 내역이 없습니다.</div>';
-                }
+                if(allData.length > 0) renderColumns(allData[0].name); 
+                else document.getElementById('changeColumns').innerHTML = '<div style="grid-column: span 3; text-align:center; padding:30px;">포착된 유의미한 변동 내역이 없습니다.</div>';
                 
             } catch (error) {
-                // 🚨 에러가 발생하면 무조건 화면 맨 위에 빨간색으로 원인을 출력함!
                 const errorBox = document.getElementById('errorMessage');
                 errorBox.style.display = 'block';
-                errorBox.innerHTML = `⚠️ 시스템 오류 발생: ${error.message}<br><br><span style="font-size:0.9rem; font-weight:normal;">* 방금 코드를 저장하셨다면 깃허브 서버 반영에 1~2분 정도 소요됩니다. 잠시 후 새로고침 해주세요.</span>`;
-                
+                errorBox.innerHTML = `⚠️ 오류 발생: ${error.message}`;
                 document.getElementById('updateTime').innerText = "🕒 업데이트 실패";
-                document.getElementById('changeColumns').innerHTML = '';
             }
         }
 
-        // 3. 화면 그리기 (탭)
+        // 4. 화면 그리기 (탭)
         function renderTabs() {
             const tabsContainer = document.getElementById('etfTabs');
             tabsContainer.innerHTML = '';
             
             allData.forEach((etf, index) => {
-                let shortName = (etf.name || "알수없는 ETF").replace('TIME ', '').replace('액티브', ''); 
-                
+                let shortName = (etf.name || "ETF").replace('TIME ', '').replace('액티브', ''); 
                 const tab = document.createElement('div');
                 tab.className = `etf-tab ${index === 0 ? 'active' : ''}`;
                 tab.innerText = shortName;
@@ -430,7 +421,7 @@
             });
         }
 
-        // 4. 화면 그리기 (컬럼)
+        // 5. 화면 그리기 (컬럼)
         function renderColumns(targetEtfName) {
             const container = document.getElementById('changeColumns');
             const etfData = allData.find(e => e.name === targetEtfName);
@@ -439,31 +430,27 @@
             const newItems = etfData.changes.filter(item => item.type === '신규');
             const upItems = etfData.changes.filter(item => item.type === '증가');
             
-            // 더미 데이터 (비중 축소)
             const downItems = [
                 { stock: "삼성전자", weightChange: "-1.5%p", subdetail: "부분 차익실현" }
             ];
 
-            // 신규 편입 HTML
             let newHtml = `<div class="col-new"><div class="column-header">신규 편입 <span class="sub-text">New</span></div>`;
             newItems.forEach(item => {
+                const formattedWeight = formatPercent(item.weightChange);
                 newHtml += `
                     <div class="item-row new">
                         <div class="item-main">
                             <div><span class="item-name">${item.stock || '-'}</span></div>
-                            <div class="item-details"><div class="item-weight">비중: ${item.weightChange || '-'}</div></div>
+                            <div class="item-details"><div class="item-weight">비중: ${formattedWeight}</div></div>
                         </div>
-                        <div class="ai-comment">${item.aiReason || 'AI 분석 코멘트가 없습니다.'}</div>
+                        <div class="ai-comment">${item.aiReason || ''}</div>
                     </div>`;
             });
             newHtml += `</div>`;
 
-            // 비중 확대 HTML
             let upHtml = `<div class="col-up"><div class="column-header">비중 확대 <span class="sub-text">수량 종가 기준</span></div>`;
             upItems.forEach(item => {
-                const wStr = String(item.weightChange || '');
-                const wSign = (wStr.includes('+') || wStr.includes('-')) ? wStr : '+' + wStr;
-                
+                const formattedWeight = formatPercent(item.weightChange);
                 upHtml += `
                     <div class="item-row up">
                         <div class="item-main">
@@ -472,7 +459,7 @@
                                 <div class="item-subdetail">💯 실제 수량 매수</div>
                             </div>
                             <div class="item-details">
-                                <div class="item-weight">${wSign}</div>
+                                <div class="item-weight">${formattedWeight}</div>
                             </div>
                         </div>
                         <div class="ai-comment">${item.aiReason || ''}</div>
@@ -480,7 +467,6 @@
             });
             upHtml += `</div>`;
 
-            // 비중 축소 HTML
             let downHtml = `<div class="col-down"><div class="column-header">비중 축소 & 전량 매도 <span class="sub-text"></span></div>`;
             downItems.forEach(item => {
                 downHtml += `
@@ -501,7 +487,6 @@
             container.innerHTML = newHtml + upHtml + downHtml;
         }
 
-        // 실행
         fetchData();
     </script>
 </body>
