@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-10-13 18:34:08",
+  "updateTime": "2026-10-13 19:16:54",
   "etfs": [
     {
       "name": "TIME 코스피액티브",
@@ -8,13 +8,13 @@
           "stock": "SK하이닉스",
           "type": "증가",
           "weightChange": "+0.5%",
-          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
+          "aiReason": "API 에러: models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods."
         },
         {
           "stock": "HD현대일렉트릭",
           "type": "신규",
           "weightChange": "0.8%",
-          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
+          "aiReason": "API 에러: models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods."
         }
       ]
     },
@@ -25,7 +25,7 @@
           "stock": "메리츠금융지주",
           "type": "증가",
           "weightChange": "+1.2%",
-          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
+          "aiReason": "API 에러: models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods."
         }
       ]
     },
@@ -36,35 +36,7 @@
           "stock": "리가켐바이오",
           "type": "증가",
           "weightChange": "+1.5%",
-          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
-        }
-      ]
-    },
-    {
-      "name": "TIME 미국나스닥100액티브",
-      "changes": [
-        {
-          "stock": "Apple",
-          "type": "증가",
-          "weightChange": "+0.3%",
-          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
-        }
-      ]
-    },
-    {
-      "name": "TIME 글로벌AI인공지능액티브",
-      "changes": [
-        {
-          "stock": "SK하이닉스",
-          "type": "증가",
-          "weightChange": "+0.7%",
-          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
-        },
-        {
-          "stock": "TSMC",
-          "type": "신규",
-          "weightChange": "1.1%",
-          "aiReason": "분석 데이터를 불러오는 중 오류가 발생했습니다."
+          "aiReason": "API 에러: models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods."
         }
       ]
     }
