@@ -7,38 +7,32 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
     <style>
         :root {
-            --bg-color: #f3f4f6;
-            --header-bg: #111827;
-            --card-bg: #ffffff;
-            --text-main: #1f2937;
-            --text-muted: #6b7280;
-            --accent-gold: #fbbf24;
-            --accent-blue: #3b82f6;
-            --accent-red: #ef4444;
-            --accent-green: #10b981;
-            --border-color: #e5e7eb;
-            --font-family: 'Pretendard', sans-serif;
+            --bg-color: #f3f4f6; --header-bg: #0f172a; --card-bg: #ffffff;
+            --text-main: #1f2937; --text-muted: #6b7280; --accent-gold: #fbbf24;
+            --accent-blue: #3b82f6; --accent-red: #ef4444; --accent-green: #10b981;
+            --border-color: #e5e7eb; --font-family: 'Pretendard', sans-serif;
         }
 
         body { font-family: var(--font-family); background-color: var(--bg-color); color: var(--text-main); margin: 0; padding: 0; line-height: 1.6; }
         header { background-color: var(--header-bg); color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
-        header h1 { margin: 0; font-size: 1.4rem; font-weight: 700; }
+        header h1 { margin: 0; font-size: 1.4rem; font-weight: 800; }
         .update-time { font-size: 0.9rem; color: var(--accent-gold); font-family: monospace; font-weight: 600; }
         .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
-        
-        .card { background-color: var(--card-bg); border-radius: 12px; padding: 24px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); border: 1px solid var(--border-color); margin-bottom: 30px; }
-        .card-title { font-size: 1.2rem; font-weight: 800; margin-top: 0; margin-bottom: 15px; color: var(--header-bg); border-bottom: 2px solid var(--header-bg); padding-bottom: 10px; }
-        .house-view-text { font-size: 1rem; color: #4b5563; font-weight: 500; }
-        .house-view-text::before { content: '🤖 AI 총괄 분석: '; font-weight: 800; color: var(--accent-blue); }
+        .disclaimer { font-size: 0.85rem; color: #475569; text-align: right; margin-top: -15px; margin-bottom: 20px; font-weight: 600; }
+        .disclaimer span { background-color: #e2e8f0; padding: 4px 8px; border-radius: 4px; }
 
-        .common-stocks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 15px; }
-        .stock-minicard { background-color: #f8fafc; border: 1px solid var(--border-color); border-radius: 8px; padding: 15px; }
-        .stock-name { font-weight: 800; font-size: 1.15rem; color: var(--header-bg); }
-        .etf-badges { margin-top: 8px; display: flex; gap: 5px; flex-wrap: wrap; }
-        .etf-badge { background-color: #e2e8f0; color: #475569; font-size: 0.75rem; padding: 3px 8px; border-radius: 4px; font-weight: 700; }
-        .trend-text { font-size: 0.85rem; font-weight: 700; margin-top: 12px; }
+        /* 🔥 새롭게 추가된 데일리 리포트 카드 디자인 */
+        .report-card { background-color: var(--card-bg); border-radius: 12px; padding: 30px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); border: 2px solid var(--header-bg); margin-bottom: 40px; }
+        .report-main-title { font-size: 1.4rem; font-weight: 800; color: var(--header-bg); border-bottom: 2px solid var(--border-color); padding-bottom: 15px; margin-top: 0; margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
+        .report-section-title { font-size: 1.15rem; font-weight: 800; color: var(--accent-blue); margin-top: 20px; margin-bottom: 10px; }
+        .report-sub-title { font-size: 1rem; font-weight: 700; color: var(--text-main); margin-top: 15px; margin-bottom: 8px; }
+        .report-list { margin: 0; padding-left: 20px; list-style-type: disc; }
+        .report-list li { margin-bottom: 6px; font-size: 0.95rem; color: #4b5563; }
+        .report-list li strong { color: var(--header-bg); }
+        .report-house-view { font-size: 0.95rem; color: #4b5563; line-height: 1.7; background-color: #f8fafc; padding: 15px; border-radius: 8px; border-left: 4px solid var(--accent-blue); margin-top: 10px; }
 
-        .section-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; border-bottom: 2px solid var(--header-bg); padding-bottom: 10px; margin-top: 40px; }
+        /* 기존 레이아웃들 */
+        .section-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; border-bottom: 2px solid var(--header-bg); padding-bottom: 10px; margin-top: 20px; }
         .section-title { font-size: 1.3rem; font-weight: 800; margin: 0; border-left: 4px solid var(--header-bg); padding-left: 10px; }
         
         .etf-tabs { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -49,59 +43,52 @@
         .column-header { font-weight: 800; font-size: 1.1rem; padding-bottom: 10px; margin-bottom: 15px; border-bottom: 2px solid; display: flex; justify-content: space-between; }
         .col-new .column-header { border-bottom-color: var(--accent-green); color: var(--accent-green); }
         .col-up .column-header { border-bottom-color: var(--accent-red); color: var(--accent-red); }
-        .col-down .column-header { border-bottom-color: var(--accent-blue); color: var(--accent-blue); }
+        .col-down .column-header { border-bottom-color: #64748b; color: #475569; }
 
-        .item-row { background-color: #f8fafc; border-radius: 8px; padding: 15px; margin-bottom: 15px; border-left: 4px solid; }
+        .item-row { background-color: #f8fafc; border-radius: 8px; padding: 15px; margin-bottom: 15px; border-left: 4px solid; position: relative;}
         .item-row.new { border-left-color: var(--accent-green); }
         .item-row.up { border-left-color: var(--accent-red); }
         .item-row.down { border-left-color: var(--accent-blue); }
+        .item-row.exit { border-left-color: #475569; background-color: #f1f5f9; opacity: 0.85; }
+        .item-row.exit .item-name { text-decoration: line-through; color: #64748b; }
 
-        .item-main { display: flex; justify-content: space-between; align-items: center; }
-        .item-name { font-weight: 800; font-size: 1.1rem; }
-        .item-weight { font-weight: 800; font-size: 1rem; }
+        .item-main { display: flex; justify-content: space-between; align-items: flex-start; }
+        .item-name { font-weight: 800; font-size: 1.1rem; margin-bottom: 5px; }
+        .item-weight { font-weight: 800; font-size: 1rem; text-align: right; }
         .item-subdetail { font-size: 0.8rem; font-weight: 700; margin-top: 4px; color: #6b7280; }
         
+        .badges-container { margin-bottom: 8px; }
+        .badge-core { background-color: #fef08a; color: #854d0e; padding: 3px 6px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; margin-right: 4px; }
+        .badge-fire { background-color: #fee2e2; color: #b91c1c; padding: 3px 6px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; margin-right: 4px; }
         .ai-comment { font-size: 0.9rem; color: #4b5563; background-color: white; padding: 12px; border-radius: 6px; border: 1px solid var(--border-color); margin-top: 12px; line-height: 1.5; }
-        .ai-comment::before { content: '🪄 AI 매매 추론: '; font-weight: 800; color: var(--accent-blue); }
+        .ai-comment::before { content: '🪄 AI 추론: '; font-weight: 800; color: var(--accent-blue); }
     </style>
 </head>
 <body>
     <header>
-        <h1>Timefolio ETF Insights</h1>
-        <div class="update-time" id="updateTime">🕒 데이터 불러오는 중...</div>
+        <h1>Timefolio ETF Tracker</h1>
+        <div class="update-time" id="updateTime">🕒 데이터 로딩 중...</div>
     </header>
 
     <div class="container">
-        <!-- AI 하우스 뷰 (가짜 데이터 완전 삭제, 리얼 자동생성) -->
-        <div class="card">
-            <h2 class="card-title">💡 타임폴리오 주력 투자 아이디어</h2>
-            <div class="house-view-text" id="houseViewText">오늘 시장의 전체 수급을 분석 중입니다...</div>
+        <div class="disclaimer">
+            <span>🚨 본 데이터는 자산운용사 공시(PDF) 기준 <b>T-1~2일 지연 데이터</b>입니다.</span>
         </div>
 
-        <!-- 리얼 특징주 (공통 편입 + 대량 매매 자동 추출) -->
-        <h2 class="section-title" style="margin-bottom: 5px; border-left: none; padding-left: 0;">🔥 오늘의 핵심 특징주 (공통편입 & 대량매매)</h2>
-        <div class="common-stocks-grid" id="topStocksGrid">
-            <!-- 자바스크립트로 리얼 데이터가 들어갑니다 -->
+        <!-- 🔥 여기에 방금 원하시던 시황 리포트가 통째로 출력됩니다 -->
+        <div class="report-card">
+            <h2 class="report-main-title">⚡ 타임폴리오 ETF Insights - 일일 포트폴리오 시황 리포트</h2>
+            <div id="dailyReportContent">리포트를 작성 중입니다...</div>
         </div>
 
-        <!-- 일일 포트폴리오 탭 -->
         <div class="section-header">
-            <h2 class="section-title">일일 포트폴리오 변경 내역</h2>
+            <h2 class="section-title">ETF별 상세 포트폴리오 변경 내역</h2>
             <div class="etf-tabs" id="etfTabs"></div>
         </div>
-        
-        <!-- 3단 컬럼 (신규/증가/축소) -->
         <div class="change-columns" id="changeColumns"></div>
     </div>
 
     <script>
-        function formatPercent(value) {
-            let num = parseFloat(value);
-            if (isNaN(num)) return value; 
-            let cleanNum = parseFloat((num * 100).toFixed(2));
-            return (cleanNum > 0 ? '+' : '') + cleanNum + '%p';
-        }
-
         const JSON_URL = `https://dandanpapa21-afk.github.io/timefolio-tracker/data.json`;
         let allData = []; 
 
@@ -111,9 +98,11 @@
                 const data = await response.json();
                 
                 document.getElementById('updateTime').innerText = `🕒 최근 업데이트: ${data.updateTime}`;
-                document.getElementById('houseViewText').innerText = data.houseView || "데이터를 분석 중입니다.";
                 
-                renderTopStocks(data.topStocks);
+                // 🚀 백엔드에서 만든 완벽한 리포트 HTML을 그대로 화면에 꽂아 넣습니다!
+                if(data.dailyReportHtml) {
+                    document.getElementById('dailyReportContent').innerHTML = data.dailyReportHtml;
+                }
 
                 allData = data.etfs || [];
                 renderTabs();
@@ -121,25 +110,6 @@
             } catch (error) {
                 document.getElementById('updateTime').innerText = "🕒 업데이트 실패";
             }
-        }
-
-        function renderTopStocks(topStocks) {
-            const grid = document.getElementById('topStocksGrid');
-            grid.innerHTML = '';
-            if(!topStocks || topStocks.length === 0) return;
-
-            topStocks.forEach(item => {
-                let badgeHtml = item.etfs.map(e => `<span class="etf-badge">${e}</span>`).join('');
-                let trendColor = item.type === '축소' ? '#3b82f6' : '#ef4444';
-                let trendIcon = item.type === '신규' ? '⭐' : (item.type === '증가' ? '📈' : '📉');
-
-                grid.innerHTML += `
-                    <div class="stock-minicard">
-                        <div class="stock-name">${item.stock}</div>
-                        <div class="etf-badges">${badgeHtml}</div>
-                        <div class="trend-text" style="color:${trendColor}">${trendIcon} ${item.type} 포착</div>
-                    </div>`;
-            });
         }
 
         function renderTabs() {
@@ -165,21 +135,32 @@
 
             const newItems = etfData.changes.filter(item => item.type === '신규');
             const upItems = etfData.changes.filter(item => item.type === '증가');
-            const downItems = etfData.changes.filter(item => item.type === '축소'); // 가짜 데이터 삭제!
+            const downItems = etfData.changes.filter(item => item.type === '축소'); 
+            const exitItems = etfData.changes.filter(item => item.type === '전량매도'); 
+            const combinedDownItems = [...downItems, ...exitItems]; 
 
-            function buildColumn(title, sub, items, colClass, rowClass) {
+            function buildColumn(title, sub, items, colClass, baseRowClass) {
                 let html = `<div class="${colClass}"><div class="column-header">${title} <span style="font-size:0.8rem; color:#6b7280; font-weight:normal;">${sub}</span></div>`;
                 if(items.length === 0) html += `<div style="text-align:center; padding:20px; color:#9ca3af; font-size:0.9rem;">내역 없음</div>`;
                 
                 items.forEach(item => {
+                    let badges = '';
+                    if (item.isCore) badges += `<span class="badge-core">👑 핵심 코어</span>`;
+                    if (item.consecutiveDays >= 3) badges += `<span class="badge-fire">🔥 ${item.consecutiveDays}일 연속 매수</span>`;
+                    let badgeHtml = badges ? `<div class="badges-container">${badges}</div>` : '';
+
+                    let rowClass = item.type === '전량매도' ? 'exit' : baseRowClass;
+                    let weightColor = item.type === '전량매도' ? 'color:#64748b;' : '';
+
                     html += `
                         <div class="item-row ${rowClass}">
+                            ${badgeHtml}
                             <div class="item-main">
                                 <div>
                                     <div class="item-name">${item.stock}</div>
                                     <div class="item-subdetail">${item.subdetail}</div>
                                 </div>
-                                <div class="item-weight">${formatPercent(item.weightChange)}</div>
+                                <div class="item-weight" style="${weightColor}">${item.weightChange}</div> 
                             </div>
                             <div class="ai-comment">${item.aiReason}</div>
                         </div>`;
@@ -190,7 +171,7 @@
             container.innerHTML = 
                 buildColumn("신규 편입", "New", newItems, "col-new", "new") +
                 buildColumn("비중 확대", "수량 매수", upItems, "col-up", "up") +
-                buildColumn("비중 축소", "수량 매도", downItems, "col-down", "down");
+                buildColumn("이익실현 및 전량매도", "Exit & Take Profit", combinedDownItems, "col-down", "down");
         }
 
         fetchData();
