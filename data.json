@@ -1,139 +1,192 @@
 {
-  "updateTime": "2026-10-14 08:43:58",
-  "houseView": "금일 포트폴리오는 마이크로소프트와 알파벳 등 빅테크 중심의 AI 플랫폼 리더십을 바탕으로, 델 테크놀로지스와 블룸 에너지로 연결되는 **‘AI 데이터센터 컴퓨팅 및 전력 인프라 밸류체인’** 전반에 걸쳐 선제적인 비중 조절을 단행했습니다. \n\n이는 생성형 AI의 확산이 소프트웨어 고도화를 넘어 물리적 서버 하드웨어와 전력 공급이라는 핵심 병목 영역으로 전이됨에 따라, 구조적 성장이 지속될 Capex(설비투자) 사이클의 실질적 수혜 섹터에 알파를 집중하는 전략입니다.",
+  "updateTime": "2026-10-15 01:34:16",
+  "houseView": "**[TIMEFOLIO Core Insight] 포트폴리오 리밸런싱 및 섹터 시프트 전략**\n\n최근 당사는 단기 밸류에이션 상단에 도달한 빅테크 중심의 AI 모멘텀 섹터와 단기 급등한 반도체 소부장 일부 종목에서 과감한 차익 실현을 단행하여 캐시를 확보했습니다. 이 유동성은 차세대 AI 데이터센터의 액체 냉각(Liquid Cooling) 수요 급증 및 첨단 하이테크 제조 공정의 필수 요소로 부각되고 있는 '고도 수처리 및 특수 필터링 인프라' 섹터로 이동 중이며, 그 중심에서 **[Everpure Inc]**를 집중 편입했습니다. 동사는 필수 소모품 기반의 안정적인 리커링(Recurring) 매출 구조와 강력한 락인(Lock-in) 효과를 통해 글로벌 수자원 규제 강화 국면에서 독보적인 가격 결정력을 증명하고 있습니다. 결과적으로 이번 수급 시프트는 변동성이 확대된 테크 베타(Beta)를 낮추는 동시에, 실적 가시성이 뚜렷한 친환경·산업용 필수 인프라 밸류체인에서 비대칭적 위험-보상(Asymmetric Risk-Reward)을 선점하기 위한 전략적 포지셔닝입니다.",
   "topStocks": [
     {
-      "stock": "Microsoft Corp",
-      "count": 2,
+      "stock": "Everpure Inc",
+      "count": 1,
       "etfs": [
         "TIME 미국나스닥"
       ],
-      "maxQty": 20,
-      "type": "증가"
-    },
-    {
-      "stock": "Alphabet Inc",
-      "count": 2,
-      "etfs": [
-        "TIME 미국나스닥"
-      ],
-      "maxQty": 20,
-      "type": "증가"
-    },
-    {
-      "stock": "Bloom Energy Corp",
-      "count": 2,
-      "etfs": [
-        "TIME 미국나스닥"
-      ],
-      "maxQty": 13,
-      "type": "축소"
-    },
-    {
-      "stock": "Dell Technologies Inc",
-      "count": 2,
-      "etfs": [
-        "TIME 미국나스닥"
-      ],
-      "maxQty": 6,
-      "type": "축소"
+      "maxQty": 0,
+      "type": "신규"
     }
   ],
   "etfs": [
     {
+      "name": "TIME 코리아배당",
+      "changes": [
+        {
+          "stock": "삼성전자",
+          "type": "전량매도",
+          "weightChange": "-6500.00%p",
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 0,
+          "etfName": "TIME 코리아배당",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "차익 실현 및 비중 조절"
+        },
+        {
+          "stock": "SK하이닉스",
+          "type": "전량매도",
+          "weightChange": "-1500.00%p",
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 0,
+          "etfName": "TIME 코리아배당",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "차익 실현 및 비중 조절"
+        }
+      ]
+    },
+    {
+      "name": "TIME 코스닥",
+      "changes": [
+        {
+          "stock": "인텍플러스",
+          "type": "전량매도",
+          "weightChange": "-100.00%p",
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 0,
+          "etfName": "TIME 코스닥",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "차익 실현 및 비중 조절"
+        },
+        {
+          "stock": "에코프로",
+          "type": "전량매도",
+          "weightChange": "-100.00%p",
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 0,
+          "etfName": "TIME 코스닥",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "차익 실현 및 비중 조절"
+        },
+        {
+          "stock": "실리콘투",
+          "type": "전량매도",
+          "weightChange": "-2500.00%p",
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 0,
+          "etfName": "TIME 코스닥",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "차익 실현 및 비중 조절"
+        },
+        {
+          "stock": "알지노믹스",
+          "type": "전량매도",
+          "weightChange": "-3000.00%p",
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 0,
+          "etfName": "TIME 코스닥",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "차익 실현 및 비중 조절"
+        },
+        {
+          "stock": "쎄트렉아이",
+          "type": "전량매도",
+          "weightChange": "-2000.00%p",
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 0,
+          "etfName": "TIME 코스닥",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "차익 실현 및 비중 조절"
+        }
+      ]
+    },
+    {
       "name": "TIME 미국나스닥",
       "changes": [
         {
-          "stock": "CoreWeave Inc",
-          "type": "축소",
-          "weightChange": 111,
-          "subdetail": "-43주 매도",
-          "qtyChange": 43,
-          "etfName": "TIME 미국나스닥",
-          "aiReason": "\"AI 인프라의 단기 과열에 따른 밸류에이션 부담을 선제적으로 덜어내고, 고점 차익 실현을 통해 포트폴리오의 하방 리스크를 타이트하게 통제하기 위함입니다.\""
-        },
-        {
-          "stock": "Palantir Technologies Inc",
-          "type": "증가",
-          "weightChange": 106,
-          "subdetail": "+33주 매수",
-          "qtyChange": 33,
-          "etfName": "TIME 미국나스닥",
-          "aiReason": "\"AI 주도권이 하드웨어에서 엔터프라이즈 소프트웨어로 확산되는 국면에서, 독보적인 AIP 수요에 기반한 미국 민간 매출의 폭발적 성장과 압도적인 수익성이 추가적인 밸류에이션 리레이팅을 정당화한다고 판단했기 때문입니다.\""
-        },
-        {
-          "stock": "Robinhood Markets Inc",
-          "type": "축소",
-          "weightChange": 96,
-          "subdetail": "-32주 매도",
-          "qtyChange": 32,
-          "etfName": "TIME 미국나스닥",
-          "aiReason": "\"가상자산 랠리에 편승해 단기 오버슈팅된 로빈후드의 차익을 선제적으로 확정 짓고, 과열 국면에 따른 고(高)베타 변동성 리스크를 덜어내기 위한 기민한 리밸런싱입니다.\""
-        },
-        {
-          "stock": "Okta Inc",
+          "stock": "Everpure Inc",
           "type": "신규",
-          "weightChange": 30,
-          "subdetail": "초기 수량: 0.009899999999999999주",
-          "qtyChange": 30,
+          "weightChange": "+2200.00%p",
+          "subdetail": "초기 물량 편입",
+          "qtyChange": 0,
           "etfName": "TIME 미국나스닥",
-          "aiReason": "\"AI 엔터프라이즈 확산의 필수 관문인 '아이덴티티(ID) 보안'의 구조적 수요와 노이즈 해소에 따른 이익 턴어라운드가 맞물려, 나스닥 테크 섹터 내 가장 매력적인 밸류에이션 리레이팅(Re-rating) 초입에 진입했다고 판단했습니다.\""
+          "isCore": false,
+          "consecutiveDays": 0,
+          "aiReason": "\"AI 데이터센터 냉각 및 첨단 공정 필수재로서의 구조적 수요 폭증과 실적 턴어라운드 모멘텀을 선점해, 나스닥 지수 대비 확실한 액티브 알파(초과수익)를 창출하기 위한 핀셋 편입입니다.\""
+        }
+      ]
+    },
+    {
+      "name": "TIME K컬처",
+      "changes": [
+        {
+          "stock": "서부T&D",
+          "type": "전량매도",
+          "weightChange": "-100.00%p",
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 0,
+          "etfName": "TIME K컬처",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "차익 실현 및 비중 조절"
         },
         {
-          "stock": "Vertiv Holdings Co",
-          "type": "축소",
-          "weightChange": 0,
-          "subdetail": "-28주 매도",
-          "qtyChange": 28,
-          "etfName": "TIME 미국나스닥",
-          "aiReason": "\"AI 액체냉각 모멘텀으로 단기 급등한 밸류에이션 과열 구간에서 차익을 선제적으로 확정하고, 시장 변동성 관리를 통해 차기 주도주로 교체 매매하기 위한 전략적 리밸런싱입니다.\""
+          "stock": "NC",
+          "type": "전량매도",
+          "weightChange": "-4100.00%p",
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 0,
+          "etfName": "TIME K컬처",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "차익 실현 및 비중 조절"
         },
         {
-          "stock": "Amazon.com Inc",
-          "type": "증가",
-          "weightChange": 77,
-          "subdetail": "+27주 매수",
-          "qtyChange": 27,
-          "etfName": "TIME 미국나스닥",
-          "aiReason": "\"AI 인프라 수요로 재점화된 AWS의 가파른 성장세와 커머스 마진 개선이 맞물린 실적 변곡점을 포착해, 지수 대비 초과 수익(Alpha)을 선점하기 위한 전략적 베팅입니다.\""
+          "stock": "실리콘투",
+          "type": "전량매도",
+          "weightChange": "-50300.00%p",
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 0,
+          "etfName": "TIME K컬처",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "차익 실현 및 비중 조절"
         },
         {
-          "stock": "Crowdstrike Holdings Inc",
-          "type": "신규",
-          "weightChange": 25,
-          "subdetail": "초기 수량: 0.0098주",
-          "qtyChange": 25,
-          "etfName": "TIME 미국나스닥",
-          "aiReason": "\"시스템 장애 발(發) 악재를 딛고 압도적인 고객 락인(Lock-in) 효과가 재확인된 만큼, AI 시대의 필수재인 사이버보안 헤게모니 회복에 따른 강력한 밸류에이션 턴어라운드 모멘텀에 선제적으로 베팅한 것입니다.\""
+          "stock": "코스메카코리아",
+          "type": "전량매도",
+          "weightChange": "-15100.00%p",
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 0,
+          "etfName": "TIME K컬처",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "차익 실현 및 비중 조절"
         },
         {
-          "stock": "ARM Holdings PLC",
-          "type": "축소",
-          "weightChange": 0,
-          "subdetail": "-25주 매도",
-          "qtyChange": 25,
-          "etfName": "TIME 미국나스닥",
-          "aiReason": "\"실적 성장성 대비 극단적으로 높아진 멀티플(밸류에이션) 부담을 덜어내고 단기 차익을 확정하여, 기대수익률이 더 높은 대체 주도주로 자금을 재배분하기 위한 전술적 판단입니다.\""
+          "stock": "한국콜마",
+          "type": "전량매도",
+          "weightChange": "-18000.00%p",
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 0,
+          "etfName": "TIME K컬처",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "차익 실현 및 비중 조절"
         },
         {
-          "stock": "Strategy Inc",
-          "type": "축소",
-          "weightChange": 59,
-          "subdetail": "-23주 매도",
-          "qtyChange": 23,
-          "etfName": "TIME 미국나스닥",
-          "aiReason": "\"비트코인 단기 과열에 따른 변동성 리스크를 방어하고, 본질 가치 대비 과도하게 형성된 ‘레버리지 프리미엄’을 기민하게 차익 실현하여 펀드의 하방 위험을 선제적으로 통제한 조치입니다.\""
-        },
-        {
-          "stock": "Datadog Inc",
-          "type": "신규",
-          "weightChange": 23,
-          "subdetail": "초기 수량: 0.0096주",
-          "qtyChange": 23,
-          "etfName": "TIME 미국나스닥",
-          "aiReason": "\"기업들의 클라우드 비용 절감 사이클 종료와 AI 워크로드 급증이 맞물린 지금, 'AI 인프라의 필수 관제탑'인 데이터독의 강력한 실적 턴어라운드와 멀티플 리레이팅에 선제적으로 베팅했습니다.\""
+          "stock": "달바글로벌",
+          "type": "전량매도",
+          "weightChange": "-10700.00%p",
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 0,
+          "etfName": "TIME K컬처",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "차익 실현 및 비중 조절"
         }
       ]
     }
-  ]
+  ],
+  "dailyReportHtml": "<div class=\"report-section-title\">📊 1. 일일 포트폴리오 변경 내역 (주요 픽업)</div><div class=\"report-sub-title\">⭐ 신규 편입 (New)</div><ul class=\"report-list\"><li><strong>Everpure Inc</strong>: 초기 물량 편입 (비중 +2200.00%p)</li></ul><div class=\"report-sub-title\">🚨 이익실현 및 전량 편출 (Exit)</div><ul class=\"report-list\"><li><strong>삼성전자</strong>: 🚨 포트폴리오 제외</li><li><strong>SK하이닉스</strong>: 🚨 포트폴리오 제외</li><li><strong>인텍플러스</strong>: 🚨 포트폴리오 제외</li><li><strong>에코프로</strong>: 🚨 포트폴리오 제외</li><li><strong>실리콘투</strong>: 🚨 포트폴리오 제외</li></ul><div class=\"report-section-title\" style=\"margin-top:25px;\">🪄 2. 신규 및 핵심 편입 종목 AI 매수 근거 추론</div><ul class=\"report-list\"><li><strong>Everpure Inc</strong>: \"\"AI 데이터센터 냉각 및 첨단 공정 필수재로서의 구조적 수요 폭증과 실적 턴어라운드 모멘텀을 선점해, 나스닥 지수 대비 확실한 액티브 알파(초과수익)를 창출하기 위한 핀셋 편입입니다.\"\"</li></ul><div class=\"report-section-title\" style=\"margin-top:25px;\">💡 3. 타임폴리오 주력 투자 아이디어 & 섹터 분석 (하우스 뷰)</div><div class=\"report-house-view\">**[TIMEFOLIO Core Insight] 포트폴리오 리밸런싱 및 섹터 시프트 전략**\n\n최근 당사는 단기 밸류에이션 상단에 도달한 빅테크 중심의 AI 모멘텀 섹터와 단기 급등한 반도체 소부장 일부 종목에서 과감한 차익 실현을 단행하여 캐시를 확보했습니다. 이 유동성은 차세대 AI 데이터센터의 액체 냉각(Liquid Cooling) 수요 급증 및 첨단 하이테크 제조 공정의 필수 요소로 부각되고 있는 '고도 수처리 및 특수 필터링 인프라' 섹터로 이동 중이며, 그 중심에서 **[Everpure Inc]**를 집중 편입했습니다. 동사는 필수 소모품 기반의 안정적인 리커링(Recurring) 매출 구조와 강력한 락인(Lock-in) 효과를 통해 글로벌 수자원 규제 강화 국면에서 독보적인 가격 결정력을 증명하고 있습니다. 결과적으로 이번 수급 시프트는 변동성이 확대된 테크 베타(Beta)를 낮추는 동시에, 실적 가시성이 뚜렷한 친환경·산업용 필수 인프라 밸류체인에서 비대칭적 위험-보상(Asymmetric Risk-Reward)을 선점하기 위한 전략적 포지셔닝입니다.</div>"
 }
