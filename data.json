@@ -1,10 +1,10 @@
 {
-  "updateTime": "2026-10-15 01:44:35",
-  "houseView": "당사는 최근 포트폴리오 리밸런싱을 통해 거시경제 노이즈가 심화된 기존 주도 섹터에서 탈피하여, 글로벌 IP 확장력과 중국 라이선싱 모멘텀을 바탕으로 실적 턴어라운드가 가시화된 **K-콘텐츠(SAMG엔터, 스튜디오드래곤)** 및 고마진 수출 드라이브를 건 **재생의학 메디컬(엘앤씨바이오)**로 성장주 알파(Alpha)의 축을 급격히 이동시키고 있습니다. \n\n동시에 강력한 자본 효율성과 주주환원율 제고로 '기업 밸류업 프로그램'의 실질적 수혜가 집중되는 **저PBR 고배당 금융주(JB금융지주)**를 포섭하여 포트폴리오 전반의 하방 경직성과 방어적 현금흐름을 확보하는 정교한 바벨(Barbell) 전략을 가동했습니다. \n\n궁극적으로 이번 수급 재편은 하방이 지지되는 밸류업 금융주를 앵커(Anchor) 자산으로 삼고, 해외 침투율 가속화에 따른 강력한 영업 레버리지가 기대되는 '비욘드 코리아(Beyond Korea)' 수출·소비 모멘텀 섹터를 공격적으로 편입함으로써 변동성 장세를 압도할 **비대칭적 위험-보상(Asymmetric Risk-Reward)** 포지션을 구축한 결과입니다.",
+  "updateTime": "2026-10-15 01:54:51",
+  "houseView": "현재 당사는 밸류에이션 바닥을 확인한 **'글로벌 확장형 멀티플랫폼 IP(지식재산권)·콘텐츠'**와 실질적 주주환원율이 돋보이는 **'저PBR 금융'**을 축으로 수급을 재배치하는 정교한 바벨(Barbell) 전략을 단행하고 있습니다. \n\n시프트업, 스튜디오드래곤, SAMG엔터의 집중 매수는 업황 둔화 우려를 딛고 강력한 자체 IP를 기반으로 글로벌 머천다이징(MD) 및 라이선스 매출의 구조적 레버리지가 발생하는 '실적 턴어라운드 및 멀티플 리레이팅 국면'을 선점하기 위한 공격적 포석입니다. \n\n여기에 타 은행주 대비 압도적인 자기자본이익률(ROE)과 가시성 높은 밸류업 정책을 지속 중인 JB금융지주를 편입함으로써, 매크로 불확실성에 대응할 포트폴리오의 하방 경직성을 확고히 다지고 절대수익(Alpha)을 극대화하고자 합니다.",
   "topStocks": [
     {
       "stock": "SAMG엔터",
-      "count": 2,
+      "count": 1,
       "etfs": [
         "TIME K컬처"
       ],
@@ -13,7 +13,7 @@
     },
     {
       "stock": "스튜디오드래곤",
-      "count": 2,
+      "count": 1,
       "etfs": [
         "TIME K컬처"
       ],
@@ -21,21 +21,21 @@
       "type": "증가"
     },
     {
+      "stock": "시프트업",
+      "count": 1,
+      "etfs": [
+        "TIME K컬처"
+      ],
+      "maxQty": 568,
+      "type": "증가"
+    },
+    {
       "stock": "JB금융지주",
-      "count": 2,
+      "count": 1,
       "etfs": [
         "TIME 코리아배당"
       ],
       "maxQty": 270,
-      "type": "증가"
-    },
-    {
-      "stock": "엘앤씨바이오",
-      "count": 2,
-      "etfs": [
-        "TIME K컬처"
-      ],
-      "maxQty": 146,
       "type": "증가"
     }
   ],
@@ -52,29 +52,18 @@
           "etfName": "TIME 코리아배당",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "업종 내 최고 수준의 ROE와 적극적인 주주환원 정책에 따른 밸류업 모멘텀 지속으로 비중 확대."
-        },
-        {
-          "stock": "JB금융지주",
-          "type": "증가",
-          "weightChange": "+50100.00%p",
-          "subdetail": "+270주 매수",
-          "qtyChange": 270,
-          "etfName": "TIME 코리아배당",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "견조한 대출 성장과 자본비율 개선을 바탕으로 한 추가 자사주 매입 및 소각 기대감 반영."
+          "aiReason": "주주환원율 제고 정책과 높은 자본비율을 바탕으로 업종 내 차별화된 밸류업 모멘텀이 지속될 것으로 판단합니다."
         },
         {
           "stock": "BNK금융지주",
           "type": "증가",
-          "weightChange": "+83600.00%p",
+          "weightChange": "-",
           "subdetail": "+193주 매수",
           "qtyChange": 193,
           "etfName": "TIME 코리아배당",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "저평가 매력 부각과 지방은행 중심의 보통주자본비율 개선을 통한 주주가치 제고 기대."
+          "aiReason": "지역 경기 회복 기대감과 저평가 매력, 그리고 배당 성향 확대에 따른 리레이팅 가능성에 주목했습니다."
         },
         {
           "stock": "DB손해보험",
@@ -85,18 +74,7 @@
           "etfName": "TIME 코리아배당",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "안정적인 보험손익과 CSM(계약서비스마진) 잔액 증가로 업종 내 최선호 배당 매력 부각."
-        },
-        {
-          "stock": "DB손해보험",
-          "type": "증가",
-          "weightChange": "+20700.00%p",
-          "subdetail": "+77주 매수",
-          "qtyChange": 77,
-          "etfName": "TIME 코리아배당",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "예실차 개선 및 견조한 투자손익 흐름에 힘입어 실적 방어력이 입증됨에 따라 비중 추가."
+          "aiReason": "안정적인 보험계약마진(CSM) 성장세와 손해율 방어를 통한 견고한 이익 체력이 돋보입니다."
         },
         {
           "stock": "메리츠금융지주",
@@ -107,34 +85,12 @@
           "etfName": "TIME 코리아배당",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "우수한 자본배치 효율성과 선진화된 총주주환원율 50% 정책 이행에 대한 확신으로 매수."
-        },
-        {
-          "stock": "메리츠금융지주",
-          "type": "증가",
-          "weightChange": "+27400.00%p",
-          "subdetail": "+74주 매수",
-          "qtyChange": 74,
-          "etfName": "TIME 코리아배당",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "그룹 통합 시너지와 부동산 PF 우려 완화에 따른 이익 체력 정상화 관점에서의 추가 편입."
+          "aiReason": "독보적인 자사주 매입·소각 등 주주친화 정책과 비은행 부문의 뛰어난 자본 효율성을 높게 평가합니다."
         },
         {
           "stock": "삼성전자",
           "type": "축소",
           "weightChange": "-3.55%p",
-          "subdetail": "-65주 매도",
-          "qtyChange": 65,
-          "etfName": "TIME 코리아배당",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절"
-        },
-        {
-          "stock": "삼성전자",
-          "type": "축소",
-          "weightChange": "+29900.00%p",
           "subdetail": "-65주 매도",
           "qtyChange": 65,
           "etfName": "TIME 코리아배당",
@@ -151,18 +107,7 @@
           "etfName": "TIME 코리아배당",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "정제마진 반등 기대감 및 비상장 자회사의 안정적 현금흐름 대비 과도한 PBR 저평가 해소 기대."
-        },
-        {
-          "stock": "GS",
-          "type": "증가",
-          "weightChange": "+17900.00%p",
-          "subdetail": "+54주 매수",
-          "qtyChange": 54,
-          "etfName": "TIME 코리아배당",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "배당 매력도와 친환경/신사업 포트폴리오 다변화에 따른 지주사 디스카운트 축소 전망."
+          "aiReason": "에너지 부문의 견조한 실적과 주주가치 제고 기대감 대비 PBR 밸류에이션 매력이 극대화된 구간입니다."
         },
         {
           "stock": "SK하이닉스",
@@ -176,20 +121,9 @@
           "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절"
         },
         {
-          "stock": "SK하이닉스",
-          "type": "축소",
-          "weightChange": "+3900.00%p",
-          "subdetail": "-15주 매도",
-          "qtyChange": 15,
-          "etfName": "TIME 코리아배당",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절"
-        },
-        {
           "stock": "SK",
           "type": "축소",
-          "weightChange": "+2000.00%p",
+          "weightChange": "-",
           "subdetail": "-13주 매도",
           "qtyChange": 13,
           "etfName": "TIME 코리아배당",
@@ -206,7 +140,40 @@
           "etfName": "TIME 코리아배당",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "금리 변동성 국면에서 높은 자본 건전성(K-ICS)과 삼성전자 지분 가치 재평가 수혜로 편입 확대."
+          "aiReason": "금리 변동성 국면에서의 방어적 매력과 자사주 소각 등 추가적인 밸류업 수혜가 기대됩니다."
+        },
+        {
+          "stock": "삼성화재",
+          "type": "증가",
+          "weightChange": "-",
+          "subdetail": "+3주 매수",
+          "qtyChange": 3,
+          "etfName": "TIME 코리아배당",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "장기보험 중심의 압도적인 CSM 잔액과 안정적인 배당 매력을 바탕으로 방어주 역할을 기대합니다."
+        },
+        {
+          "stock": "KB금융",
+          "type": "증가",
+          "weightChange": "-",
+          "subdetail": "+1주 매수",
+          "qtyChange": 1,
+          "etfName": "TIME 코리아배당",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "금융 대장주로서 탁월한 자본력을 기반으로 한 추가 자사주 매입 및 업종 내 가장 강력한 이익 창출력을 확보하고 있습니다."
+        },
+        {
+          "stock": "대한항공",
+          "type": "증가",
+          "weightChange": "-",
+          "subdetail": "+1주 매수",
+          "qtyChange": 1,
+          "etfName": "TIME 코리아배당",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "아시아나항공 합병 가시화에 따른 노선 독점력 강화와 견조한 여객·화물 수요에 따른 실적 개선세가 기대됩니다."
         }
       ]
     },
@@ -216,7 +183,7 @@
         {
           "stock": "지엔씨에너지",
           "type": "축소",
-          "weightChange": "+25000.00%p",
+          "weightChange": "-",
           "subdetail": "-150주 매도",
           "qtyChange": 150,
           "etfName": "TIME 코스닥",
@@ -227,7 +194,7 @@
         {
           "stock": "올릭스",
           "type": "축소",
-          "weightChange": "+4000.00%p",
+          "weightChange": "-",
           "subdetail": "-39주 매도",
           "qtyChange": 39,
           "etfName": "TIME 코스닥",
@@ -238,13 +205,13 @@
         {
           "stock": "리노공업",
           "type": "증가",
-          "weightChange": "+6500.00%p",
+          "weightChange": "-",
           "subdetail": "+36주 매수",
           "qtyChange": 36,
           "etfName": "TIME 코스닥",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "온디바이스 AI 확산에 따른 글로벌 팹리스들의 차세대 R&D 소켓 수요 급증 수혜."
+          "aiReason": "온디바이스 AI 확산에 따른 글로벌 빅테크향 신규 소켓 테스트 수요 급증의 수혜가 가시화되고 있습니다."
         },
         {
           "stock": "알지노믹스",
@@ -266,18 +233,7 @@
           "etfName": "TIME 코스닥",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "HBM 캐파 증설에 필수적인 어드밴스드 패키징용 디스컴(Descum) 및 리플로우 장비 독점적 수혜."
-        },
-        {
-          "stock": "피에스케이홀딩스",
-          "type": "증가",
-          "weightChange": "+10500.00%p",
-          "subdetail": "+25주 매수",
-          "qtyChange": 25,
-          "etfName": "TIME 코스닥",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "후공정 글로벌 고객사 다변화 및 턴키 공급 역량 강화에 따른 구조적 실적 성장세 반영."
+          "aiReason": "HBM 생산 확대에 필수적인 디스컴 및 리플로우 장비의 독점적 납품 지위가 실적으로 직결되고 있습니다."
         },
         {
           "stock": "실리콘투",
@@ -299,18 +255,7 @@
           "etfName": "TIME 코스닥",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "선단 공정용 ALD 장비의 글로벌 고객사 확대 및 하반기 본격적인 수주 랠리 기대."
-        },
-        {
-          "stock": "주성엔지니어링",
-          "type": "증가",
-          "weightChange": "+11000.00%p",
-          "subdetail": "+21주 매수",
-          "qtyChange": 21,
-          "etfName": "TIME 코스닥",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "DRAM 미세화 전환 투자 본격화에 따른 고마진 증착 장비 납품 증가 모멘텀 확보."
+          "aiReason": "차세대 ALD 장비의 글로벌 고객사 다변화와 비메모리 영역으로의 확장 모멘텀을 긍정적으로 평가합니다."
         },
         {
           "stock": "쎄트렉아이",
@@ -326,7 +271,7 @@
         {
           "stock": "파마리서치",
           "type": "축소",
-          "weightChange": "+700.00%p",
+          "weightChange": "-",
           "subdetail": "-6주 매도",
           "qtyChange": 6,
           "etfName": "TIME 코스닥",
@@ -357,9 +302,9 @@
           "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절"
         },
         {
-          "stock": "인텍플러스",
+          "stock": "두산테스나",
           "type": "축소",
-          "weightChange": "+24900.00%p",
+          "weightChange": "-",
           "subdetail": "-1주 매도",
           "qtyChange": 1,
           "etfName": "TIME 코스닥",
@@ -368,9 +313,9 @@
           "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절"
         },
         {
-          "stock": "에코프로",
+          "stock": "알테오젠",
           "type": "축소",
-          "weightChange": "+14300.00%p",
+          "weightChange": "-",
           "subdetail": "-1주 매도",
           "qtyChange": 1,
           "etfName": "TIME 코스닥",
@@ -386,7 +331,7 @@
         {
           "stock": "Applied Optoelectronics Inc",
           "type": "축소",
-          "weightChange": "+7100.00%p",
+          "weightChange": "-",
           "subdetail": "-33주 매도",
           "qtyChange": 33,
           "etfName": "TIME 미국나스닥",
@@ -397,18 +342,18 @@
         {
           "stock": "Everpure Inc",
           "type": "신규",
-          "weightChange": "+2200.00%p",
+          "weightChange": "-",
           "subdetail": "초기 물량 편입",
           "qtyChange": 22,
           "etfName": "TIME 미국나스닥",
           "isCore": false,
           "consecutiveDays": 0,
-          "aiReason": "수처리 및 친환경 필터 솔루션의 글로벌 B2B 수요 확대에 따른 구조적 성장성 선점."
+          "aiReason": "글로벌 프리미엄 정수 및 수처리 인프라 시장 성장에 따른 안정적인 B2B 렌탈·소모품 매출 확대를 겨냥해 신규 편입했습니다."
         },
         {
           "stock": "Marvell Technology Inc",
           "type": "축소",
-          "weightChange": "+7200.00%p",
+          "weightChange": "-",
           "subdetail": "-13주 매도",
           "qtyChange": 13,
           "etfName": "TIME 미국나스닥",
@@ -419,7 +364,7 @@
         {
           "stock": "Lumentum Holdings Inc",
           "type": "축소",
-          "weightChange": "+2200.00%p",
+          "weightChange": "-",
           "subdetail": "-3주 매도",
           "qtyChange": 3,
           "etfName": "TIME 미국나스닥",
@@ -436,7 +381,7 @@
           "etfName": "TIME 미국나스닥",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "차세대 블랙웰(Blackwell) 아키텍처 수요 폭증과 빅테크 AI 인프라 투자 지속에 따른 독점력 반영."
+          "aiReason": "차세대 블랙웰(Blackwell) 아키텍처 출시와 함께 글로벌 데이터센터향 AI 가속기 독점 체제가 공고히 유지되고 있습니다."
         },
         {
           "stock": "Advanced Micro Devices Inc",
@@ -447,7 +392,7 @@
           "etfName": "TIME 미국나스닥",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "MI300 시리즈의 고객사 다변화 및 엔터프라이즈 AI 가속기 시장 내 점유율 점진적 확대 기대."
+          "aiReason": "MI300 시리즈의 엔터프라이즈향 침투율 확대와 AI PC 시장 성장에 따른 중장기 점유율 반등을 기대합니다."
         },
         {
           "stock": "Intel Corp",
@@ -458,95 +403,62 @@
           "etfName": "TIME 미국나스닥",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "미국 반도체법 보조금 기반 파운드리 로드맵 구체화 및 저점 통과에 따른 밸류에이션 반등 노림."
-        },
-        {
-          "stock": "NVIDIA Corp",
-          "type": "증가",
-          "weightChange": "+23900.00%p",
-          "subdetail": "+1주 매수",
-          "qtyChange": 1,
-          "etfName": "TIME 미국나스닥",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "빅테크 CAPEX 상향 사이클 지속과 AI 데이터센터 생태계 락인 효과 강화로 포트폴리오 비중 확대."
-        },
-        {
-          "stock": "Advanced Micro Devices Inc",
-          "type": "증가",
-          "weightChange": "+4100.00%p",
-          "subdetail": "+1주 매수",
-          "qtyChange": 1,
-          "etfName": "TIME 미국나스닥",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "서버용 EPYC CPU 점유율 확대와 AI GPU 후발 주자로서의 밸류에이션 리레이팅 기대."
-        },
-        {
-          "stock": "Intel Corp",
-          "type": "증가",
-          "weightChange": "+23800.00%p",
-          "subdetail": "+1주 매수",
-          "qtyChange": 1,
-          "etfName": "TIME 미국나스닥",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "차세대 AI PC용 칩 출시와 구조조정을 통한 수익성 방어 및 센티먼트 개선 기대감 반영."
+          "aiReason": "파운드리 부문의 구조조정과 차세대 프로세서 출시를 통한 밸류에이션 바닥 확인 및 턴어라운드 가능성에 베팅합니다."
         },
         {
           "stock": "Tesla Inc",
           "type": "증가",
-          "weightChange": "+3800.00%p",
+          "weightChange": "-",
           "subdetail": "+1주 매수",
           "qtyChange": 1,
           "etfName": "TIME 미국나스닥",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "FSD v12의 상용화 진척 및 하반기 로보택시 공개 모멘텀을 통한 밸류에이션 리레이팅 기대."
+          "aiReason": "FSD(완전자율주행) 고도화 및 로보택시 공개 모멘텀을 통한 순수 자동차 기업 이상의 AI 밸류에이션 리레이팅을 노립니다."
         },
         {
           "stock": "Broadcom Inc",
           "type": "증가",
-          "weightChange": "+2800.00%p",
+          "weightChange": "-",
           "subdetail": "+1주 매수",
           "qtyChange": 1,
           "etfName": "TIME 미국나스닥",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "맞춤형 AI ASIC(주문형 반도체) 수주 급증과 VMware 인수 시너지 가시화로 비중 확대."
+          "aiReason": "커스텀 ASIC 수요 폭증과 VM웨어 인수를 통한 소프트웨어 시너지로 가파른 이익 성장이 담보되어 있습니다."
         },
         {
           "stock": "Coinbase Global Inc",
           "type": "증가",
-          "weightChange": "+4900.00%p",
+          "weightChange": "-",
           "subdetail": "+1주 매수",
           "qtyChange": 1,
           "etfName": "TIME 미국나스닥",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "가상자산 제도권 편입 가속화 및 거래대금 증가, Base 생태계 성장에 따른 수수료 이익 개선."
+          "aiReason": "비트코인 현물 ETF 활성화 및 가상자산 제도권 편입에 따른 거래대금 급증의 직접적 수혜주입니다."
         },
         {
           "stock": "Credo Technology Group Holding Ltd",
           "type": "증가",
-          "weightChange": "+3500.00%p",
+          "weightChange": "-",
           "subdetail": "+1주 매수",
           "qtyChange": 1,
           "etfName": "TIME 미국나스닥",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "AI 데이터센터용 초고속 광통신 AEC(Active Electrical Cable) 수요 폭발 수혜."
+          "aiReason": "초고속 AI 데이터센터 증설에 필수적인 광학/AEC 인터커넥트 부문에서의 독보적 고성장세를 높게 봅니다."
         },
         {
           "stock": "Datadog Inc",
           "type": "증가",
-          "weightChange": "+2400.00%p",
+          "weightChange": "-",
           "subdetail": "+1주 매수",
           "qtyChange": 1,
           "etfName": "TIME 미국나스닥",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "클라우드 지출 최적화 사이클 종료 및 AI 워크로드 모니터링 수요 급증에 따른 성장률 재가속화."
+          "aiReason": "기업들의 클라우드 마이그레이션과 LLM 도입 확대에 따른 인프라 모니터링 및 보안 수요 급증을 반영했습니다."
         }
       ]
     },
@@ -562,18 +474,7 @@
           "etfName": "TIME K컬처",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "'캐치! 티니핑' 극장판 흥행 및 중국 라이선스 완구 매출 본격화에 따른 흑자 턴어라운드 기대."
-        },
-        {
-          "stock": "SAMG엔터",
-          "type": "증가",
-          "weightChange": "+366100.00%p",
-          "subdetail": "+1635주 매수",
-          "qtyChange": 1635,
-          "etfName": "TIME K컬처",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "글로벌 메가 IP로서의 해외 머천다이징(MD) 확장과 고마진 라이선스 수수료 수익 가시화."
+          "aiReason": "'티니핑' IP의 극장판 흥행 및 중국 시장을 필두로 한 글로벌 라이선싱 매출의 본격적인 턴어라운드에 주목했습니다."
         },
         {
           "stock": "스튜디오드래곤",
@@ -584,29 +485,18 @@
           "etfName": "TIME K컬처",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "글로벌 OTT 플랫폼향 제작 단가 인상 및 하반기 텐트폴 라인업 집중에 따른 실적 반등 노림."
-        },
-        {
-          "stock": "스튜디오드래곤",
-          "type": "증가",
-          "weightChange": "+218700.00%p",
-          "subdetail": "+1243주 매수",
-          "qtyChange": 1243,
-          "etfName": "TIME K컬처",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "제작비 통제 및 캡티브 채널 외 해외 직접 판매 비중 확대로 인한 수익성 정상화 기대."
+          "aiReason": "드라마 제작 편수 정상화와 넷플릭스 등 글로벌 OTT향 대작 편성 재개에 따른 바닥 탈출 국면으로 판단합니다."
         },
         {
           "stock": "시프트업",
           "type": "증가",
-          "weightChange": "+111000.00%p",
+          "weightChange": "-",
           "subdetail": "+568주 매수",
           "qtyChange": 568,
           "etfName": "TIME K컬처",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "'스텔라 블레이드'의 글로벌 흥행 롱런 및 '승리의 여신: 니케'의 안정적 캐시카우 기반 밸류에이션 매력."
+          "aiReason": "'스텔라 블레이드'의 글로벌 흥행과 '니케'의 장기 흥행을 바탕으로 한 안정적인 현금 흐름 및 후속작 모멘텀을 보유하고 있습니다."
         },
         {
           "stock": "실리콘투",
@@ -633,7 +523,7 @@
         {
           "stock": "올릭스",
           "type": "축소",
-          "weightChange": "+45100.00%p",
+          "weightChange": "-",
           "subdetail": "-158주 매도",
           "qtyChange": 158,
           "etfName": "TIME K컬처",
@@ -661,18 +551,7 @@
           "etfName": "TIME K컬처",
           "isCore": true,
           "consecutiveDays": 0,
-          "aiReason": "인체조직 기반 메디컬 치료재 '메가카티'의 임상 데이터 호조와 국내 시장 침투율 가속화."
-        },
-        {
-          "stock": "엘앤씨바이오",
-          "type": "증가",
-          "weightChange": "+77900.00%p",
-          "subdetail": "+146주 매수",
-          "qtyChange": 146,
-          "etfName": "TIME K컬처",
-          "isCore": true,
-          "consecutiveDays": 0,
-          "aiReason": "중국 CGB 합작법인의 현지 인허가 순항 및 거대 중국 재생의학 시장 진출 모멘텀 반영."
+          "aiReason": "주력 피부이식재의 견고한 성장과 함께 중국 합작법인의 품목 허가 모멘텀이 임박했다는 점을 긍정적으로 평가합니다."
         },
         {
           "stock": "달바글로벌",
@@ -697,22 +576,44 @@
           "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절"
         },
         {
-          "stock": "NC",
+          "stock": "코스맥스",
           "type": "축소",
-          "weightChange": "+26200.00%p",
-          "subdetail": "-41주 매도",
-          "qtyChange": 41,
+          "weightChange": "-",
+          "subdetail": "-30주 매도",
+          "qtyChange": 30,
           "etfName": "TIME K컬처",
           "isCore": true,
           "consecutiveDays": 0,
           "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절"
         },
         {
-          "stock": "코스맥스",
+          "stock": "에이피알",
           "type": "축소",
-          "weightChange": "+3500.00%p",
-          "subdetail": "-30주 매도",
-          "qtyChange": 30,
+          "weightChange": "-",
+          "subdetail": "-25주 매도",
+          "qtyChange": 25,
+          "etfName": "TIME K컬처",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절"
+        },
+        {
+          "stock": "삼양식품",
+          "type": "증가",
+          "weightChange": "-",
+          "subdetail": "+15주 매수",
+          "qtyChange": 15,
+          "etfName": "TIME K컬처",
+          "isCore": true,
+          "consecutiveDays": 0,
+          "aiReason": "'불닭볶음면'의 글로벌 현지 유통망 침투 가속화와 신공장 증설에 따른 구조적 수출 호조세가 이어지고 있습니다."
+        },
+        {
+          "stock": "서부T&D",
+          "type": "축소",
+          "weightChange": "+0.16%p",
+          "subdetail": "-1주 매도",
+          "qtyChange": 1,
           "etfName": "TIME K컬처",
           "isCore": true,
           "consecutiveDays": 0,
@@ -721,5 +622,5 @@
       ]
     }
   ],
-  "dailyReportHtml": "<div class=\"report-section-title\">📊 1. 일일 포트폴리오 변경 내역 (주요 픽업)</div><div class=\"report-sub-title\">⭐ 신규 편입 (New)</div><ul class=\"report-list\"><li><strong>Everpure Inc</strong>: 초기 물량 편입 (비중 +2200.00%p)</li></ul><div class=\"report-sub-title\">📈 비중 확대 (수량 증가 상위)</div><ul class=\"report-list\"><li><strong>JB금융지주</strong>: +270주 매수 (비중 +1.55%p 증가)</li><li><strong>JB금융지주</strong>: +270주 매수 (비중 +50100.00%p 증가)</li><li><strong>BNK금융지주</strong>: +193주 매수 (비중 +83600.00%p 증가)</li><li><strong>DB손해보험</strong>: +77주 매수 (비중 +3.16%p 증가)</li><li><strong>DB손해보험</strong>: +77주 매수 (비중 +20700.00%p 증가)</li></ul><div class=\"report-sub-title\">🚨 이익실현 및 전량 편출 (Exit)</div><ul class=\"report-list\"><li><strong>삼성전자</strong>: -65주 매도</li><li><strong>삼성전자</strong>: -65주 매도</li><li><strong>SK하이닉스</strong>: -15주 매도</li><li><strong>SK하이닉스</strong>: -15주 매도</li><li><strong>SK</strong>: -13주 매도</li></ul><div class=\"report-section-title\" style=\"margin-top:25px;\">🪄 2. 신규 및 핵심 편입 종목 AI 매수 근거 추론</div><ul class=\"report-list\"><li><strong>Everpure Inc</strong>: \"수처리 및 친환경 필터 솔루션의 글로벌 B2B 수요 확대에 따른 구조적 성장성 선점.\"</li></ul><div class=\"report-section-title\" style=\"margin-top:25px;\">💡 3. 타임폴리오 주력 투자 아이디어 & 섹터 분석 (하우스 뷰)</div><div class=\"report-house-view\">당사는 최근 포트폴리오 리밸런싱을 통해 거시경제 노이즈가 심화된 기존 주도 섹터에서 탈피하여, 글로벌 IP 확장력과 중국 라이선싱 모멘텀을 바탕으로 실적 턴어라운드가 가시화된 **K-콘텐츠(SAMG엔터, 스튜디오드래곤)** 및 고마진 수출 드라이브를 건 **재생의학 메디컬(엘앤씨바이오)**로 성장주 알파(Alpha)의 축을 급격히 이동시키고 있습니다. \n\n동시에 강력한 자본 효율성과 주주환원율 제고로 '기업 밸류업 프로그램'의 실질적 수혜가 집중되는 **저PBR 고배당 금융주(JB금융지주)**를 포섭하여 포트폴리오 전반의 하방 경직성과 방어적 현금흐름을 확보하는 정교한 바벨(Barbell) 전략을 가동했습니다. \n\n궁극적으로 이번 수급 재편은 하방이 지지되는 밸류업 금융주를 앵커(Anchor) 자산으로 삼고, 해외 침투율 가속화에 따른 강력한 영업 레버리지가 기대되는 '비욘드 코리아(Beyond Korea)' 수출·소비 모멘텀 섹터를 공격적으로 편입함으로써 변동성 장세를 압도할 **비대칭적 위험-보상(Asymmetric Risk-Reward)** 포지션을 구축한 결과입니다.</div>"
+  "dailyReportHtml": "<div class=\"report-section-title\">📊 1. 일일 포트폴리오 변경 내역 (주요 픽업)</div><div class=\"report-sub-title\">⭐ 신규 편입 (New)</div><ul class=\"report-list\"><li><strong>Everpure Inc</strong>: 초기 물량 편입 (비중 -)</li></ul><div class=\"report-sub-title\">📈 비중 확대 (수량 증가 상위)</div><ul class=\"report-list\"><li><strong>JB금융지주</strong>: +270주 매수</li><li><strong>BNK금융지주</strong>: +193주 매수</li><li><strong>DB손해보험</strong>: +77주 매수</li><li><strong>메리츠금융지주</strong>: +74주 매수</li><li><strong>GS</strong>: +54주 매수</li></ul><div class=\"report-sub-title\">🚨 이익실현 및 전량 편출 (Exit)</div><ul class=\"report-list\"><li><strong>삼성전자</strong>: -65주 매도</li><li><strong>SK하이닉스</strong>: -15주 매도</li><li><strong>SK</strong>: -13주 매도</li><li><strong>지엔씨에너지</strong>: -150주 매도</li><li><strong>올릭스</strong>: -39주 매도</li></ul><div class=\"report-section-title\" style=\"margin-top:25px;\">🪄 2. 신규 및 핵심 편입 종목 AI 매수 근거 추론</div><ul class=\"report-list\"><li><strong>Everpure Inc</strong>: \"글로벌 프리미엄 정수 및 수처리 인프라 시장 성장에 따른 안정적인 B2B 렌탈·소모품 매출 확대를 겨냥해 신규 편입했습니다.\"</li></ul><div class=\"report-section-title\" style=\"margin-top:25px;\">💡 3. 타임폴리오 주력 투자 아이디어 & 섹터 분석 (하우스 뷰)</div><div class=\"report-house-view\">현재 당사는 밸류에이션 바닥을 확인한 **'글로벌 확장형 멀티플랫폼 IP(지식재산권)·콘텐츠'**와 실질적 주주환원율이 돋보이는 **'저PBR 금융'**을 축으로 수급을 재배치하는 정교한 바벨(Barbell) 전략을 단행하고 있습니다. \n\n시프트업, 스튜디오드래곤, SAMG엔터의 집중 매수는 업황 둔화 우려를 딛고 강력한 자체 IP를 기반으로 글로벌 머천다이징(MD) 및 라이선스 매출의 구조적 레버리지가 발생하는 '실적 턴어라운드 및 멀티플 리레이팅 국면'을 선점하기 위한 공격적 포석입니다. \n\n여기에 타 은행주 대비 압도적인 자기자본이익률(ROE)과 가시성 높은 밸류업 정책을 지속 중인 JB금융지주를 편입함으로써, 매크로 불확실성에 대응할 포트폴리오의 하방 경직성을 확고히 다지고 절대수익(Alpha)을 극대화하고자 합니다.</div>"
 }
