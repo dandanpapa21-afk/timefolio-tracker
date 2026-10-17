@@ -87,4 +87,180 @@
         /* 뱃지 (Pill style) */
         .badges-container { margin-bottom: 12px; display: flex; gap: 6px; flex-wrap: wrap; }
         .badge { padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: -0.2px; }
-        .badge-house { background-color: #f2
+        .badge-house { background-color: #f2f2f7; color: #5e5ce6; }
+        .badge-fire { background-color: #fef0f0; color: var(--accent-red); }
+        
+        /* AI 코멘트 (회색 박스) */
+        .ai-comment { font-size: 0.85rem; color: #4b4b4d; background-color: #f5f5f7; padding: 12px 16px; border-radius: 12px; margin-top: 16px; line-height: 1.5; }
+        .ai-comment span { font-weight: 700; color: var(--text-primary); margin-right: 4px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TIME Insights</h1>
+        <div class="update-time" id="updateTime">업데이트 확인 중...</div>
+    </header>
+
+    <div class="container">
+        <div class="report-card">
+            <h2 class="report-main-title">타임폴리오 하우스 뷰</h2>
+            <div class="report-subtitle-date" id="reportDate">최신 운용 전략 요약</div>
+            <div id="dailyReportContent"></div>
+            
+            <div class="heatmap-container">
+                <div class="heatmap-title">섹터 자금 이동 (Money Flow)</div>
+                <div id="sectorHeatmap">데이터 분석 중...</div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-secondary); margin-top: 8px; font-weight: 500;">
+                    <span>← 매도 (Outflow)</span>
+                    <span>매수 (Inflow) →</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title" style="margin-bottom: 20px;">핵심 매수 포착</h2>
+        <div class="common-stocks-grid" id="topStocksGrid"></div>
+
+        <div class="section-header">
+            <h2 class="section-title">포트폴리오 상세</h2>
+            <div class="etf-tabs" id="etfTabs"></div>
+        </div>
+        <div class="change-columns" id="changeColumns"></div>
+    </div>
+
+    <script>
+        const JSON_URL = `https://dandanpapa21-afk.github.io/timefolio-tracker/data.json`;
+        let allData = []; 
+
+        async function fetchData() {
+            try {
+                const response = await fetch(JSON_URL + '?t=' + new Date().getTime());
+                const data = await response.json();
+                
+                document.getElementById('updateTime').innerText = `${data.updateTime} 기준`;
+                document.getElementById('reportDate').innerText = `${data.updateTime.split(' ')[0]}자 공시 데이터 반영`;
+                
+                if(data.dailyReportHtml) {
+                    // 백엔드에서 넘어오는 불필요한 기존 타이틀 태그 제거 및 텍스트만 삽입
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = data.dailyReportHtml;
+                    const houseViewText = tempDiv.querySelector('.report-house-view') ? tempDiv.querySelector('.report-house-view').innerHTML : data.houseView;
+                    document.getElementById('dailyReportContent').innerHTML = `<div class="report-house-view">${houseViewText}</div>`;
+                }
+                
+                renderHeatmap(data.sectorFlow);
+                renderTopStocks(data.topStocks);
+                
+                allData = data.etfs || [];
+                renderTabs();
+                if(allData.length > 0) renderColumns(allData[0].name); 
+            } catch (error) { document.getElementById('updateTime').innerText = "데이터 로딩 실패"; }
+        }
+
+        function renderHeatmap(flows) {
+            const container = document.getElementById('sectorHeatmap');
+            if(!flows || Object.keys(flows).length === 0) {
+                container.innerHTML = `<div style="color:var(--text-secondary); font-size:0.9rem;">유의미한 섹터 자금 이동이 없습니다.</div>`; return;
+            }
+            container.innerHTML = '';
+            
+            let maxScore = 1;
+            Object.values(flows).forEach(f => {
+                if(f.in + f.out > maxScore) maxScore = f.in + f.out;
+            });
+
+            Object.keys(flows).forEach(sector => {
+                if(sector === "기타" || (flows[sector].in === 0 && flows[sector].out === 0)) return;
+                let inWidth = (flows[sector].in / maxScore) * 100;
+                let outWidth = (flows[sector].out / maxScore) * 100;
+                
+                container.innerHTML += `
+                    <div class="sector-row">
+                        <div class="sector-name">${sector}</div>
+                        <div class="sector-bar-wrapper">
+                            <div class="sector-out" style="width: ${outWidth}%"></div>
+                            <div class="sector-in" style="width: ${inWidth}%"></div>
+                        </div>
+                    </div>`;
+            });
+        }
+
+        function renderTopStocks(topStocks) {
+            const grid = document.getElementById('topStocksGrid');
+            grid.innerHTML = '';
+            topStocks.forEach(item => {
+                let badge = item.isHousePick ? `<span class="badge badge-house">하우스 픽</span>` : '';
+                grid.innerHTML += `
+                    <div class="stock-minicard">
+                        <div class="badges-container">${badge}</div>
+                        <div class="stock-name">${item.stock}</div>
+                        <div style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">${item.etfs.join(', ')} 동시 포착</div>
+                    </div>`;
+            });
+        }
+
+        function renderTabs() {
+            const tabsContainer = document.getElementById('etfTabs');
+            tabsContainer.innerHTML = '';
+            allData.forEach((etf, index) => {
+                const tab = document.createElement('div');
+                tab.className = `etf-tab ${index === 0 ? 'active' : ''}`;
+                tab.innerText = etf.name.replace('TIME ', '').replace('액티브', ''); 
+                tab.onclick = () => {
+                    document.querySelectorAll('.etf-tab').forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    renderColumns(etf.name);
+                };
+                tabsContainer.appendChild(tab);
+            });
+        }
+
+        function renderColumns(targetEtfName) {
+            const container = document.getElementById('changeColumns');
+            const etfData = allData.find(e => e.name === targetEtfName);
+            if (!etfData) return;
+
+            const newItems = etfData.changes.filter(item => item.type === '신규');
+            const upItems = etfData.changes.filter(item => item.type === '증가');
+            const downItems = etfData.changes.filter(item => item.type === '축소' || item.type === '전량매도'); 
+
+            function buildColumn(title, items, colClass, baseRowClass) {
+                let html = `<div class="${colClass}"><div class="column-header">${title}</div>`;
+                if(items.length === 0) html += `<div style="text-align:center; padding:24px; color:var(--text-secondary); font-size:0.9rem; background:#fbfbfd; border-radius:16px;">내역 없음</div>`;
+                
+                items.forEach(item => {
+                    let badges = '';
+                    if (item.isHousePick) badges += `<span class="badge badge-house">하우스 픽</span>`;
+                    if (item.consecutiveDays >= 2) badges += `<span class="badge badge-fire">${item.consecutiveDays}일 연속 매수</span>`;
+                    let badgeHtml = badges ? `<div class="badges-container">${badges}</div>` : '';
+
+                    let rowClass = item.type === '전량매도' ? 'exit' : baseRowClass;
+                    let impactScore = Math.min(100, item.impactScore || 0);
+
+                    html += `
+                        <div class="item-row ${rowClass}">
+                            ${badgeHtml}
+                            <div class="item-main">
+                                <div>
+                                    <div class="item-name">${item.stock}</div>
+                                    <div class="item-subdetail">${item.subdetail}</div>
+                                </div>
+                                <div class="weight-container">
+                                    <div class="item-weight">${item.weightChange}</div> 
+                                    <div class="impact-bar-bg"><div class="impact-bar-fill" style="width:${impactScore}%"></div></div>
+                                </div>
+                            </div>
+                            ${item.aiReason ? `<div class="ai-comment"><span>${item.sector}</span>${item.aiReason}</div>` : ''}
+                        </div>`;
+                });
+                return html + `</div>`;
+            }
+
+            container.innerHTML = 
+                buildColumn("신규 편입", newItems, "col-new", "new") +
+                buildColumn("비중 확대", upItems, "col-up", "up") +
+                buildColumn("이익 실현", downItems, "col-down", "down");
+        }
+        fetchData();
+    </script>
+</body>
+</html>
