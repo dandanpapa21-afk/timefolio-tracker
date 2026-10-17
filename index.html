@@ -3,240 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIME Insights Pro</title>
+    <title>TIME Insights</title>
+    <!-- 애플 샌프란시스코 폰트 느낌을 가장 잘 살리는 프리텐다드 설정 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
     <style>
         :root {
-            --bg-color: #0b0f19; --header-bg: #131a2a; --card-bg: #151f32; --item-bg: #1e293b;
-            --text-main: #f8fafc; --text-muted: #94a3b8; --accent-gold: #fbbf24;
-            --accent-blue: #38bdf8; --accent-red: #fb7185; --accent-green: #34d399;
-            --border-color: #2e3c51; --font-family: 'Pretendard', sans-serif;
+            /* Apple Light Theme Palette */
+            --bg-color: #f5f5f7;        /* 아이패드 기본 배경색 */
+            --card-bg: #ffffff;         /* 순백색 카드 */
+            --text-primary: #1d1d1f;    /* 애플 특유의 진한 먹색 */
+            --text-secondary: #86868b;  /* 부드러운 회색 */
+            --accent-blue: #0071e3;     /* 애플 시스템 블루 */
+            --accent-red: #ff3b30;      /* 애플 시스템 레드 */
+            --accent-green: #34c759;    /* 애플 시스템 그린 */
+            --border-color: rgba(0, 0, 0, 0.05);
+            --shadow-subtle: 0 4px 24px rgba(0, 0, 0, 0.04);
+            --shadow-hover: 0 10px 32px rgba(0, 0, 0, 0.08);
+            --font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
-        body { font-family: var(--font-family); background-color: var(--bg-color); color: var(--text-main); margin: 0; padding: 0; line-height: 1.6; }
-        header { background-color: var(--header-bg); border-bottom: 1px solid var(--border-color); padding: 18px 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-        header h1 { margin: 0; font-size: 1.5rem; font-weight: 800; background: linear-gradient(90deg, #38bdf8, #fbbf24); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .update-time { font-size: 0.9rem; color: var(--accent-gold); font-family: monospace; font-weight: 600; padding: 5px 12px; background: rgba(251, 191, 36, 0.1); border-radius: 6px; border: 1px solid rgba(251, 191, 36, 0.3); }
-        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        body { font-family: var(--font-family); background-color: var(--bg-color); color: var(--text-primary); margin: 0; padding: 0; line-height: 1.5; letter-spacing: -0.3px; -webkit-font-smoothing: antialiased; }
         
-        .report-card { background-color: var(--card-bg); border-radius: 12px; padding: 30px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); border: 1px solid #334155; margin-bottom: 40px; position: relative; overflow: hidden; }
-        .report-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--accent-blue), var(--accent-red)); }
-        .report-house-view { font-size: 0.95rem; color: #cbd5e1; line-height: 1.8; }
-
-        /* 🔥 [아이디어 7] 섹터 히트맵 UI */
-        .heatmap-container { margin-top: 25px; padding-top: 25px; border-top: 1px solid var(--border-color); }
-        .heatmap-title { font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
-        .sector-row { display: flex; align-items: center; margin-bottom: 10px; }
-        .sector-name { width: 80px; font-size: 0.85rem; font-weight: 700; color: var(--text-muted); }
-        .sector-bar-wrapper { flex: 1; display: flex; height: 12px; border-radius: 6px; overflow: hidden; background-color: #0f172a; }
-        .sector-in { background-color: var(--accent-red); transition: width 0.5s; }
-        .sector-out { background-color: var(--accent-blue); transition: width 0.5s; }
-
-        .common-stocks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 15px; margin-bottom: 40px; }
-        .stock-minicard { background-color: var(--item-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 18px; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
-        .stock-name { font-weight: 800; font-size: 1.2rem; color: #fff; }
+        /* 반투명 유리 블러 헤더 (Glassmorphism) */
+        header { position: sticky; top: 0; z-index: 100; background: rgba(255, 255, 255, 0.7); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid rgba(0, 0, 0, 0.05); padding: 16px 32px; display: flex; justify-content: space-between; align-items: center; }
+        header h1 { margin: 0; font-size: 1.3rem; font-weight: 700; letter-spacing: -0.5px; }
+        .update-time { font-size: 0.85rem; color: var(--text-secondary); font-weight: 500; }
         
-        /* 탭 및 컬럼 */
-        .section-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 25px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; }
-        .section-title { font-size: 1.3rem; font-weight: 800; margin: 0; color: #fff; }
-        .etf-tabs { display: flex; gap: 10px; flex-wrap: wrap; }
-        .etf-tab { padding: 8px 16px; background-color: var(--item-bg); border-radius: 8px; font-size: 0.9rem; font-weight: 700; color: var(--text-muted); cursor: pointer; border: 1px solid var(--border-color); }
-        .etf-tab.active { background-color: rgba(56, 189, 248, 0.1); color: var(--accent-blue); border-color: var(--accent-blue); }
-        .change-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .column-header { font-weight: 800; font-size: 1.1rem; padding-bottom: 12px; margin-bottom: 15px; border-bottom: 2px solid; display: flex; justify-content: space-between; color: #fff; }
-        .col-new .column-header { border-bottom-color: var(--accent-green); }
-        .col-up .column-header { border-bottom-color: var(--accent-red); }
-        .col-down .column-header { border-bottom-color: var(--text-muted); }
-
-        .item-row { background-color: var(--item-bg); border-radius: 8px; padding: 18px; margin-bottom: 15px; border-left: 4px solid; position: relative; }
-        .item-row.new { border-left-color: var(--accent-green); }
-        .item-row.up { border-left-color: var(--accent-red); }
-        .item-row.down { border-left-color: var(--accent-blue); }
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 24px; }
         
+        /* 미니멀 리포트 카드 */
+        .report-card { background-color: var(--card-bg); border-radius: 24px; padding: 40px; box-shadow: var(--shadow-subtle); margin-bottom: 48px; border: 1px solid var(--border-color); }
+        .report-main-title { font-size: 1.8rem; font-weight: 700; margin-top: 0; margin-bottom: 8px; letter-spacing: -0.8px; }
+        .report-subtitle-date { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 32px; font-weight: 500; }
+        .report-house-view { font-size: 1.05rem; color: #333336; line-height: 1.7; background-color: #fbfbfd; padding: 24px; border-radius: 16px; margin-top: 10px; font-weight: 400; }
+
+        /* 섹터 히트맵 (Clean Bar 형태) */
+        .heatmap-container { margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--border-color); }
+        .heatmap-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 24px; display: flex; align-items: center; gap: 8px; }
+        .sector-row { display: flex; align-items: center; margin-bottom: 12px; }
+        .sector-name { width: 90px; font-size: 0.9rem; font-weight: 600; color: var(--text-secondary); }
+        .sector-bar-wrapper { flex: 1; display: flex; height: 8px; border-radius: 4px; overflow: hidden; background-color: #f0f0f2; }
+        .sector-in { background-color: var(--accent-red); transition: width 0.8s ease-in-out; }
+        .sector-out { background-color: var(--accent-blue); transition: width 0.8s ease-in-out; }
+
+        /* 특징주 그리드 */
+        .common-stocks-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-bottom: 48px; }
+        .stock-minicard { background-color: var(--card-bg); border-radius: 20px; padding: 24px; box-shadow: var(--shadow-subtle); border: 1px solid var(--border-color); transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+        .stock-minicard:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+        .stock-name { font-weight: 700; font-size: 1.3rem; margin-top: 12px; margin-bottom: 4px; letter-spacing: -0.5px; }
+        
+        /* iOS 스타일 세그먼트 컨트롤 (탭) */
+        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+        .section-title { font-size: 1.5rem; font-weight: 700; margin: 0; letter-spacing: -0.6px; }
+        .etf-tabs { display: inline-flex; background: #e3e3e8; padding: 4px; border-radius: 12px; gap: 2px; }
+        .etf-tab { padding: 6px 16px; border-radius: 8px; font-size: 0.9rem; font-weight: 600; color: #4b4b4d; cursor: pointer; transition: all 0.2s ease; }
+        .etf-tab.active { background: #ffffff; color: var(--text-primary); box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+
+        /* 컬럼 및 리스트 아이템 */
+        .change-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+        .column-header { font-weight: 700; font-size: 1.1rem; margin-bottom: 16px; color: var(--text-secondary); }
+        
+        .item-row { background-color: var(--card-bg); border-radius: 16px; padding: 20px; margin-bottom: 16px; box-shadow: var(--shadow-subtle); border: 1px solid var(--border-color); }
+        .item-row.exit { opacity: 0.6; }
+        .item-row.exit .item-name { text-decoration: line-through; }
+
         .item-main { display: flex; justify-content: space-between; align-items: flex-start; }
-        .item-name { font-weight: 800; font-size: 1.15rem; margin-bottom: 5px; color: #fff; }
+        .item-name { font-weight: 700; font-size: 1.1rem; margin-bottom: 2px; }
+        .item-subdetail { font-size: 0.85rem; font-weight: 500; color: var(--text-secondary); }
         
-        /* 🔥 [아이디어 10] 임팩트 스코어 바 */
-        .impact-bar-bg { width: 60px; height: 6px; background-color: #0f172a; border-radius: 3px; margin-top: 5px; overflow: hidden; margin-left: auto; }
-        .impact-bar-fill { height: 100%; border-radius: 3px; }
+        .weight-container { text-align: right; }
+        .item-weight { font-weight: 700; font-size: 1rem; }
+        .new .item-weight { color: var(--accent-green); }
+        .up .item-weight { color: var(--accent-red); }
+        .down .item-weight { color: var(--accent-blue); }
+        
+        /* 얇고 세련된 임팩트 스코어 바 */
+        .impact-bar-bg { width: 48px; height: 4px; background-color: #f0f0f2; border-radius: 2px; margin-top: 8px; overflow: hidden; margin-left: auto; }
+        .impact-bar-fill { height: 100%; border-radius: 2px; }
         .new .impact-bar-fill { background-color: var(--accent-green); }
         .up .impact-bar-fill { background-color: var(--accent-red); }
         .down .impact-bar-fill { background-color: var(--accent-blue); }
         
-        .item-weight { font-weight: 800; font-size: 0.95rem; text-align: right; }
-        .new .item-weight { color: var(--accent-green); }
-        .up .item-weight { color: var(--accent-red); }
-        .down .item-weight { color: var(--accent-blue); }
-        .item-subdetail { font-size: 0.8rem; font-weight: 600; margin-top: 4px; color: var(--text-muted); }
-        
-        .badges-container { margin-bottom: 10px; display: flex; gap: 5px; flex-wrap: wrap; }
-        
-        /* 🔥 [아이디어 1] 하우스 코어 픽 뱃지 */
-        .badge-house { background-color: rgba(168, 85, 247, 0.2); color: #c084fc; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; border: 1px solid rgba(168, 85, 247, 0.4); }
-        /* 🔥 [아이디어 2] 연속 매수 뱃지 */
-        .badge-fire { background-color: rgba(251, 113, 133, 0.15); color: #fda4af; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; border: 1px solid rgba(251, 113, 133, 0.3); }
-        
-        .ai-comment { font-size: 0.85rem; color: #cbd5e1; background-color: rgba(0, 0, 0, 0.2); padding: 12px 15px; border-radius: 6px; border: 1px solid var(--border-color); margin-top: 15px; line-height: 1.5; }
-        .ai-comment span { font-weight: 800; color: var(--accent-blue); }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>TIME Insights Pro</h1>
-        <div class="update-time" id="updateTime">🕒 로딩 중...</div>
-    </header>
-
-    <div class="container">
-        <div class="report-card">
-            <h2 class="report-main-title" style="color: #fff; margin-top:0; border-bottom: 1px solid #2e3c51; padding-bottom: 15px;">💡 타임폴리오 하우스 뷰</h2>
-            <div id="dailyReportContent"></div>
-            
-            <div class="heatmap-container">
-                <div class="heatmap-title">🗺️ 당일 섹터 자금 이동 (Money Flow)</div>
-                <div id="sectorHeatmap">데이터 분석 중...</div>
-                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: #64748b; margin-top: 5px;">
-                    <span>← 매도 (Outflow)</span>
-                    <span>매수 (Inflow) →</span>
-                </div>
-            </div>
-        </div>
-
-        <h2 class="section-title" style="margin-bottom: 15px;">🔥 오늘의 핵심 매수 (Trend Radar)</h2>
-        <div class="common-stocks-grid" id="topStocksGrid"></div>
-
-        <div class="section-header">
-            <h2 class="section-title">ETF별 상승/하락 임팩트</h2>
-            <div class="etf-tabs" id="etfTabs"></div>
-        </div>
-        <div class="change-columns" id="changeColumns"></div>
-    </div>
-
-    <script>
-        const JSON_URL = `https://dandanpapa21-afk.github.io/timefolio-tracker/data.json`;
-        let allData = []; 
-
-        async function fetchData() {
-            try {
-                const response = await fetch(JSON_URL + '?t=' + new Date().getTime());
-                const data = await response.json();
-                
-                document.getElementById('updateTime').innerText = `🕒 업데이트: ${data.updateTime}`;
-                if(data.dailyReportHtml) document.getElementById('dailyReportContent').innerHTML = data.dailyReportHtml;
-                
-                renderHeatmap(data.sectorFlow);
-                renderTopStocks(data.topStocks);
-                
-                allData = data.etfs || [];
-                renderTabs();
-                if(allData.length > 0) renderColumns(allData[0].name); 
-            } catch (error) { document.getElementById('updateTime').innerText = "🕒 업데이트 실패"; }
-        }
-
-        function renderHeatmap(flows) {
-            const container = document.getElementById('sectorHeatmap');
-            if(!flows || Object.keys(flows).length === 0) {
-                container.innerHTML = `<div style="color:#64748b; font-size:0.9rem;">유의미한 섹터 자금 이동이 없습니다.</div>`; return;
-            }
-            container.innerHTML = '';
-            
-            let maxScore = 1;
-            Object.values(flows).forEach(f => {
-                if(f.in + f.out > maxScore) maxScore = f.in + f.out;
-            });
-
-            Object.keys(flows).forEach(sector => {
-                if(sector === "기타" || (flows[sector].in === 0 && flows[sector].out === 0)) return;
-                let inWidth = (flows[sector].in / maxScore) * 100;
-                let outWidth = (flows[sector].out / maxScore) * 100;
-                
-                container.innerHTML += `
-                    <div class="sector-row">
-                        <div class="sector-name">${sector}</div>
-                        <div class="sector-bar-wrapper">
-                            <div class="sector-out" style="width: ${outWidth}%"></div>
-                            <div class="sector-in" style="width: ${inWidth}%"></div>
-                        </div>
-                    </div>`;
-            });
-        }
-
-        function renderTopStocks(topStocks) {
-            const grid = document.getElementById('topStocksGrid');
-            grid.innerHTML = '';
-            topStocks.forEach(item => {
-                let badge = item.isHousePick ? `<span class="badge-house">👑 하우스 강력 매수</span>` : '';
-                grid.innerHTML += `
-                    <div class="stock-minicard">
-                        <div class="badges-container">${badge}</div>
-                        <div class="stock-name">${item.stock}</div>
-                        <div style="font-size:0.85rem; color:#34d399; margin-top:8px;">${item.etfs.join(', ')} 동시 포착</div>
-                    </div>`;
-            });
-        }
-
-        function renderTabs() {
-            const tabsContainer = document.getElementById('etfTabs');
-            tabsContainer.innerHTML = '';
-            allData.forEach((etf, index) => {
-                const tab = document.createElement('div');
-                tab.className = `etf-tab ${index === 0 ? 'active' : ''}`;
-                tab.innerText = etf.name.replace('TIME ', '').replace('액티브', ''); 
-                tab.onclick = () => {
-                    document.querySelectorAll('.etf-tab').forEach(t => t.classList.remove('active'));
-                    tab.classList.add('active');
-                    renderColumns(etf.name);
-                };
-                tabsContainer.appendChild(tab);
-            });
-        }
-
-        function renderColumns(targetEtfName) {
-            const container = document.getElementById('changeColumns');
-            const etfData = allData.find(e => e.name === targetEtfName);
-            if (!etfData) return;
-
-            const newItems = etfData.changes.filter(item => item.type === '신규');
-            const upItems = etfData.changes.filter(item => item.type === '증가');
-            const downItems = etfData.changes.filter(item => item.type === '축소' || item.type === '전량매도'); 
-
-            function buildColumn(title, items, colClass, baseRowClass) {
-                let html = `<div class="${colClass}"><div class="column-header">${title}</div>`;
-                if(items.length === 0) html += `<div style="text-align:center; padding:20px; color:#475569; font-size:0.9rem;">내역 없음</div>`;
-                
-                items.forEach(item => {
-                    let badges = '';
-                    if (item.isHousePick) badges += `<span class="badge-house">👑 하우스 픽</span>`;
-                    if (item.consecutiveDays >= 2) badges += `<span class="badge-fire">🔥 ${item.consecutiveDays}일 연속 매수</span>`;
-                    let badgeHtml = badges ? `<div class="badges-container">${badges}</div>` : '';
-
-                    let rowClass = item.type === '전량매도' ? 'exit' : baseRowClass;
-                    let impactScore = Math.min(100, item.impactScore || 0);
-
-                    html += `
-                        <div class="item-row ${rowClass}">
-                            ${badgeHtml}
-                            <div class="item-main">
-                                <div>
-                                    <div class="item-name">${item.stock}</div>
-                                    <div class="item-subdetail">${item.subdetail}</div>
-                                </div>
-                                <div style="text-align: right;">
-                                    <div class="item-weight">${item.weightChange}</div> 
-                                    <div class="impact-bar-bg"><div class="impact-bar-fill" style="width:${impactScore}%"></div></div>
-                                </div>
-                            </div>
-                            ${item.aiReason ? `<div class="ai-comment"><span>[${item.sector}]</span>${item.aiReason}</div>` : ''}
-                        </div>`;
-                });
-                return html + `</div>`;
-            }
-
-            container.innerHTML = 
-                buildColumn("신규 편입", newItems, "col-new", "new") +
-                buildColumn("비중 확대", upItems, "col-up", "up") +
-                buildColumn("이익실현 & 전량편출", downItems, "col-down", "down");
-        }
-        fetchData();
-    </script>
-</body>
-</html>
+        /* 뱃지 (Pill style) */
+        .badges-container { margin-bottom: 12px; display: flex; gap: 6px; flex-wrap: wrap; }
+        .badge { padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: -0.2px; }
+        .badge-house { background-color: #f2
