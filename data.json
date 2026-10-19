@@ -1,7 +1,58 @@
 {
-  "updateTime": "2026-10-18 19:57:38",
-  "houseView": "이번 주 포트폴리오 내 유의미한 수급 이동이 관찰되지 않았습니다. 기존 핵심 포지션을 유지하며 다음 주 변동성을 대비합니다.",
-  "topStocks": [],
+  "updateTime": "2026-10-19 19:58:02",
+  "houseView": "최근 매크로 불확실성 확대에 대응하여, 정부의 '기업 밸류업 프로그램' 정책 수혜가 뚜렷하고 강력한 주주환원 여력을 입증한 **저PBR 금융주 및 고배당 방어 섹터**로 포트폴리오의 무게중심을 이동하고 있습니다. \n\n은행·증권주(JB·우리·하나·한국금융지주)와 안정적인 현금창출력을 보유한 KT&G를 집중 편입함으로써, 시장 변동성에 대한 하방 경직성을 단단히 확보하는 동시에 안정적인 배당 수익률과 밸류에이션 리레이팅(재평가)을 동시에 추구하는 전략입니다. \n\n당사 하우스는 금리 인하기 진입 국면에서 단기 성장 모멘텀보다는 구조적인 자본 배분 효율성과 가시적인 자사주 매입·소각이 뒷받침되는 **‘주주환원 대표 금융 및 가치주’** 섹터가 향후 시장의 질적 상승을 이끌 핵심 수급처가 될 것으로 확신합니다.",
+  "topStocks": [
+    {
+      "stock": "JB금융지주",
+      "count": 1,
+      "etfs": [
+        "TIME 코리아배당"
+      ],
+      "maxImpact": 35.639999999999986,
+      "type": "증가",
+      "isHousePick": false
+    },
+    {
+      "stock": "한국금융지주",
+      "count": 1,
+      "etfs": [
+        "TIME 코리아배당"
+      ],
+      "maxImpact": 34.98,
+      "type": "증가",
+      "isHousePick": false
+    },
+    {
+      "stock": "KT&G",
+      "count": 1,
+      "etfs": [
+        "TIME 코리아배당"
+      ],
+      "maxImpact": 33.33,
+      "type": "증가",
+      "isHousePick": false
+    },
+    {
+      "stock": "우리금융지주",
+      "count": 1,
+      "etfs": [
+        "TIME 코리아배당"
+      ],
+      "maxImpact": 23.099999999999998,
+      "type": "증가",
+      "isHousePick": false
+    },
+    {
+      "stock": "하나금융지주",
+      "count": 1,
+      "etfs": [
+        "TIME 코리아배당"
+      ],
+      "maxImpact": 15.18,
+      "type": "증가",
+      "isHousePick": false
+    }
+  ],
   "etfs": [
     {
       "name": "TIME 코스피",
@@ -12,29 +63,170 @@
         "삼성SDI",
         "KB금융"
       ],
-      "strategy": "AI 반도체 랠리를 주도하는 삼성전자·SK하이닉스를 코어에 두고, 밸류업 수혜가 기대되는 KB금융과 낙폭과대 2차전지(삼성SDI)를 바벨로 압축하여 대형주 중심의 수급 쏠림에서 초과 알파를 창출했습니다."
+      "strategy": "반도체 양대 산맥을 중심으로 AI 메모리 슈퍼사이클을 선점하고, 밸류업 프로그램의 실질적 수혜를 받는 리딩 금융주와 턴어라운드 국면의 대형주를 선제적으로 편입해 지수 반등기 탄력적인 초과 상승을 추구합니다."
     },
     {
       "name": "TIME 코리아배당",
-      "changes": [],
+      "changes": [
+        {
+          "stock": "삼성전자",
+          "type": "축소",
+          "weightChange": "-4.24%p",
+          "impactScore": 100,
+          "subdetail": "99주 매도",
+          "qtyChange": 99,
+          "etfName": "TIME 코리아배당",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "반도체",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "SK하이닉스",
+          "type": "축소",
+          "weightChange": "-1.64%p",
+          "impactScore": 54.11999999999999,
+          "subdetail": "6주 매도",
+          "qtyChange": 6,
+          "etfName": "TIME 코리아배당",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "반도체",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "JB금융지주",
+          "type": "증가",
+          "weightChange": "+1.08%p",
+          "impactScore": 35.639999999999986,
+          "subdetail": "+199주 매수",
+          "qtyChange": 199,
+          "etfName": "TIME 코리아배당",
+          "consecutiveDays": 1,
+          "aiReason": "지속적인 고배당 정책과 높은 주주환원율을 바탕으로 기업 밸류업 프로그램의 직접적 수혜가 기대되어 비중을 확대했습니다.",
+          "sector": "금융",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "한국금융지주",
+          "type": "증가",
+          "weightChange": "+1.06%p",
+          "impactScore": 34.98,
+          "subdetail": "+31주 매수",
+          "qtyChange": 31,
+          "etfName": "TIME 코리아배당",
+          "consecutiveDays": 1,
+          "aiReason": "증시 거래대금 반등에 따른 브로커리지 수익 개선과 부동산 PF 리스크 완화로 저평가 매력이 부각되어 비중을 확대했습니다.",
+          "sector": "금융",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "KT&G",
+          "type": "증가",
+          "weightChange": "+1.01%p",
+          "impactScore": 33.33,
+          "subdetail": "+26주 매수",
+          "qtyChange": 26,
+          "etfName": "TIME 코리아배당",
+          "consecutiveDays": 1,
+          "aiReason": "해외 궐련 및 전자담배(NGP) 부문의 견고한 성장세와 대규모 자사주 소각 등 강력한 주주환원 정책을 높게 평가하여 비중을 확대했습니다.",
+          "sector": "소비재",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "우리금융지주",
+          "type": "증가",
+          "weightChange": "+0.70%p",
+          "impactScore": 23.099999999999998,
+          "subdetail": "+114주 매수",
+          "qtyChange": 114,
+          "etfName": "TIME 코리아배당",
+          "consecutiveDays": 1,
+          "aiReason": "상대적으로 낮은 PBR에 따른 밸류에이션 매력과 비은행 부문 강화 및 적극적인 주주환원 확대 기대감으로 비중을 확대했습니다.",
+          "sector": "금융",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "하나금융지주",
+          "type": "증가",
+          "weightChange": "+0.46%p",
+          "impactScore": 15.18,
+          "subdetail": "+20주 매수",
+          "qtyChange": 20,
+          "etfName": "TIME 코리아배당",
+          "consecutiveDays": 1,
+          "aiReason": "안정적인 자본비율을 기반으로 한 자사주 매입·소각 등 주주환원율 제고 모멘텀이 유효하여 비중을 확대했습니다.",
+          "sector": "금융",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "기업은행",
+          "type": "증가",
+          "weightChange": "+0.39%p",
+          "impactScore": 12.870000000000003,
+          "subdetail": "+97주 매수",
+          "qtyChange": 97,
+          "etfName": "TIME 코리아배당",
+          "consecutiveDays": 1,
+          "aiReason": "중소기업 대출 기반의 견고한 이익 체력과 높은 배당수익률에 따른 배당락 전후의 방어주 매력으로 비중을 확대했습니다.",
+          "sector": "금융",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "삼성생명",
+          "type": "축소",
+          "weightChange": "+0.04%p",
+          "impactScore": 1.3200000000000034,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 코리아배당",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "금융",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "KB금융",
+          "type": "축소",
+          "weightChange": "-0.01%p",
+          "impactScore": 0.33000000000000945,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 코리아배당",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "금융",
+          "etfCount": 1,
+          "isHousePick": false
+        }
+      ],
       "topHoldings": [
         "삼성전자",
         "SK하이닉스",
         "DB손해보험",
         "메리츠금융지주"
       ],
-      "strategy": "반도체 실적 턴어라운드에 따른 배당 확대 기대감과 함께 주주환원율이 압도적인 메리츠금융지주·DB손해보험 등 밸류업 최선호주로 수급을 집중시키는 하이브리드 고배당 전략을 전개했습니다."
+      "strategy": "전통적 고배당주의 한계를 넘어 배당 성장성과 자본 이득을 모두 갖춘 반도체 탑픽과 압도적 주주환원율을 증명한 메리츠·DB손보 등 금융 대장주에 압축 투자하여 배당 수익률과 토털 리턴(Total Return)의 극대화를 동시에 노립니다."
     },
     {
       "name": "TIME 코스닥",
       "changes": [],
       "topHoldings": [
         "주성엔지니어링",
-        "이오테크닉스",
         "피에스케이홀딩스",
+        "이오테크닉스",
         "HPSP"
       ],
-      "strategy": "전방 빅테크의 HBM 및 선단공정 투자 가속화에 따른 직접적 수혜가 예상되는 HPSP, 이오테크닉스 등 핵심 반도체 소부장 대장주로 포트폴리오를 압축해 코스닥 지수 대비 탄력적인 아웃퍼폼을 달성했습니다."
+      "strategy": "지수 내 변동성이 높은 바이오·2차전지 노출을 줄이고, HBM 및 첨단 패키징 공정에서 독점적 해자(Moat)를 지닌 차세대 반도체 장비주에 집중 베팅하여 글로벌 AI 공급망 확장의 과실을 가장 날카롭게 수취하는 전략입니다."
     },
     {
       "name": "TIME 미국나스닥",
@@ -45,22 +237,176 @@
         "Apple Inc",
         "Alphabet Inc"
       ],
-      "strategy": "빅테크 실적 발표 전후 견조한 AI 인프라 CapEx 수요(NVIDIA, MSFT)와 온디바이스 AI 기대감(Apple, Alphabet)에 집중하며 메가캡 테크의 구조적 수요 팽창에 공격적으로 편승했습니다."
+      "strategy": "나스닥100 내 성장 둔화 종목들을 과감히 배제하고, AI 밸류체인의 독점적 하드웨어(엔비디아)와 이를 즉각적인 현금흐름으로 전환하는 메가캡 소프트웨어·플랫폼 생태계에 초집중해 빅테크 주도 장세의 알파를 극대화합니다."
     },
     {
       "name": "TIME K컬처",
       "changes": [],
       "topHoldings": [
-        "SAMG엔터",
         "CJ ENM",
+        "SAMG엔터",
         "스튜디오드래곤",
         "파마리서치"
       ],
-      "strategy": "제작비 효율화 및 글로벌 판권 확대로 실적 턴어라운드가 가시화된 미디어·콘텐츠주와 더불어, 글로벌 인바운드 및 수출 고성장을 구가하는 에스테틱(파마리서치)을 선별 담아 차별화된 리레이팅을 포획했습니다."
+      "strategy": "단순 엔터 기획사 의존도를 낮추고, 글로벌 침투율과 마진율이 폭발하는 K-에스테틱(파마리서치)과 자체 IP 기반 글로벌 확장 및 실적 턴어라운드가 가시화된 콘텐츠 리더들을 편입해 '글로벌 소비재로서의 K-컬처' 확산에 따른 고성장세를 포획합니다."
     }
   ],
-  "allChanges": [],
-  "reportType": "주간",
-  "sectorFlow": {},
-  "dailyReportHtml": "<div class=\"report-section-title\" style=\"color:var(--accent-blue); font-weight:800;\">📅 주간 종합 시황 리포트</div><div class=\"report-house-view\" style=\"margin-top:10px;\">이번 주 포트폴리오 내 유의미한 수급 이동이 관찰되지 않았습니다. 기존 핵심 포지션을 유지하며 다음 주 변동성을 대비합니다.</div>"
+  "allChanges": [
+    {
+      "stock": "삼성전자",
+      "type": "축소",
+      "weightChange": "-4.24%p",
+      "impactScore": 100,
+      "subdetail": "99주 매도",
+      "qtyChange": 99,
+      "etfName": "TIME 코리아배당",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "반도체",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "SK하이닉스",
+      "type": "축소",
+      "weightChange": "-1.64%p",
+      "impactScore": 54.11999999999999,
+      "subdetail": "6주 매도",
+      "qtyChange": 6,
+      "etfName": "TIME 코리아배당",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "반도체",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "우리금융지주",
+      "type": "증가",
+      "weightChange": "+0.70%p",
+      "impactScore": 23.099999999999998,
+      "subdetail": "+114주 매수",
+      "qtyChange": 114,
+      "etfName": "TIME 코리아배당",
+      "consecutiveDays": 1,
+      "aiReason": "상대적으로 낮은 PBR에 따른 밸류에이션 매력과 비은행 부문 강화 및 적극적인 주주환원 확대 기대감으로 비중을 확대했습니다.",
+      "sector": "금융",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "JB금융지주",
+      "type": "증가",
+      "weightChange": "+1.08%p",
+      "impactScore": 35.639999999999986,
+      "subdetail": "+199주 매수",
+      "qtyChange": 199,
+      "etfName": "TIME 코리아배당",
+      "consecutiveDays": 1,
+      "aiReason": "지속적인 고배당 정책과 높은 주주환원율을 바탕으로 기업 밸류업 프로그램의 직접적 수혜가 기대되어 비중을 확대했습니다.",
+      "sector": "금융",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "하나금융지주",
+      "type": "증가",
+      "weightChange": "+0.46%p",
+      "impactScore": 15.18,
+      "subdetail": "+20주 매수",
+      "qtyChange": 20,
+      "etfName": "TIME 코리아배당",
+      "consecutiveDays": 1,
+      "aiReason": "안정적인 자본비율을 기반으로 한 자사주 매입·소각 등 주주환원율 제고 모멘텀이 유효하여 비중을 확대했습니다.",
+      "sector": "금융",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "한국금융지주",
+      "type": "증가",
+      "weightChange": "+1.06%p",
+      "impactScore": 34.98,
+      "subdetail": "+31주 매수",
+      "qtyChange": 31,
+      "etfName": "TIME 코리아배당",
+      "consecutiveDays": 1,
+      "aiReason": "증시 거래대금 반등에 따른 브로커리지 수익 개선과 부동산 PF 리스크 완화로 저평가 매력이 부각되어 비중을 확대했습니다.",
+      "sector": "금융",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "삼성생명",
+      "type": "축소",
+      "weightChange": "+0.04%p",
+      "impactScore": 1.3200000000000034,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 코리아배당",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "금융",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "기업은행",
+      "type": "증가",
+      "weightChange": "+0.39%p",
+      "impactScore": 12.870000000000003,
+      "subdetail": "+97주 매수",
+      "qtyChange": 97,
+      "etfName": "TIME 코리아배당",
+      "consecutiveDays": 1,
+      "aiReason": "중소기업 대출 기반의 견고한 이익 체력과 높은 배당수익률에 따른 배당락 전후의 방어주 매력으로 비중을 확대했습니다.",
+      "sector": "금융",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "KB금융",
+      "type": "축소",
+      "weightChange": "-0.01%p",
+      "impactScore": 0.33000000000000945,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 코리아배당",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "금융",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "KT&G",
+      "type": "증가",
+      "weightChange": "+1.01%p",
+      "impactScore": 33.33,
+      "subdetail": "+26주 매수",
+      "qtyChange": 26,
+      "etfName": "TIME 코리아배당",
+      "consecutiveDays": 1,
+      "aiReason": "해외 궐련 및 전자담배(NGP) 부문의 견고한 성장세와 대규모 자사주 소각 등 강력한 주주환원 정책을 높게 평가하여 비중을 확대했습니다.",
+      "sector": "소비재",
+      "etfCount": 1,
+      "isHousePick": false
+    }
+  ],
+  "reportType": "일일",
+  "sectorFlow": {
+    "반도체": {
+      "in": 0,
+      "out": 154.12
+    },
+    "금융": {
+      "in": 121.76999999999998,
+      "out": 1.6500000000000128
+    },
+    "소비재": {
+      "in": 33.33,
+      "out": 0
+    }
+  },
+  "dailyReportHtml": "<div class=\"report-section-title\" style=\"color:var(--accent-blue); font-weight:800;\">📊 일일 핵심 시황 리포트</div><div class=\"report-house-view\" style=\"margin-top:10px;\">최근 매크로 불확실성 확대에 대응하여, 정부의 '기업 밸류업 프로그램' 정책 수혜가 뚜렷하고 강력한 주주환원 여력을 입증한 **저PBR 금융주 및 고배당 방어 섹터**로 포트폴리오의 무게중심을 이동하고 있습니다. \n\n은행·증권주(JB·우리·하나·한국금융지주)와 안정적인 현금창출력을 보유한 KT&G를 집중 편입함으로써, 시장 변동성에 대한 하방 경직성을 단단히 확보하는 동시에 안정적인 배당 수익률과 밸류에이션 리레이팅(재평가)을 동시에 추구하는 전략입니다. \n\n당사 하우스는 금리 인하기 진입 국면에서 단기 성장 모멘텀보다는 구조적인 자본 배분 효율성과 가시적인 자사주 매입·소각이 뒷받침되는 **‘주주환원 대표 금융 및 가치주’** 섹터가 향후 시장의 질적 상승을 이끌 핵심 수급처가 될 것으로 확신합니다.</div>"
 }
