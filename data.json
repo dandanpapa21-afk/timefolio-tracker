@@ -1,18 +1,148 @@
 {
-  "updateTime": "2026-11-02 19:57:46",
-  "houseView": "오늘 포트폴리오 내 유의미한 수급 이동이나 편입/편출 내역이 관찰되지 않았습니다.",
-  "topStocks": [],
+  "updateTime": "2026-11-03 19:58:12",
+  "houseView": "타임폴리오자산운용 수석 매니저입니다.\n\n당사는 최근 단기 변동성 장세 속에서 이익 가시성이 확실한 **글로벌 AI 반도체 밸류체인(AMD, SK스퀘어)**으로 테크 섹터 내 주도주 압축을 진행하고 있습니다. \n\n동시에 정부의 밸류업 프로그램 수혜와 주주환원 확대 가능성이 높으면서도, 미래 전장·자율주행으로의 리레이팅 매력이 부각되는 **저평가 모빌리티 및 지주사 섹터(현대모비스, SK스퀘어)**로 유동성을 적극 재배치하고 있습니다. \n\n결과적으로 당사의 하우스 뷰는 단순 모멘텀 추종을 지양하고, 강력한 펀더멘털을 바탕으로 한 **'차세대 AI 테크 하드웨어'**와 **'퀄리티 밸류업'**이라는 투트랙의 바벨(Barbell) 섹터로 비중을 확대하는 전략입니다.",
+  "topStocks": [
+    {
+      "stock": "현대모비스",
+      "count": 1,
+      "etfs": [
+        "TIME 코스피"
+      ],
+      "maxImpact": 34.65,
+      "type": "신규",
+      "isHousePick": false
+    },
+    {
+      "stock": "SK스퀘어",
+      "count": 1,
+      "etfs": [
+        "TIME 코스피"
+      ],
+      "maxImpact": 14.850000000000001,
+      "type": "증가",
+      "isHousePick": false
+    },
+    {
+      "stock": "Advanced Micro Devices Inc",
+      "count": 1,
+      "etfs": [
+        "TIME 미국나스닥"
+      ],
+      "maxImpact": 11.219999999999978,
+      "type": "증가",
+      "isHousePick": false
+    }
+  ],
   "etfs": [
     {
       "name": "TIME 코스피",
-      "changes": [],
+      "changes": [
+        {
+          "stock": "현대모비스",
+          "type": "신규",
+          "weightChange": "+1.05%p",
+          "impactScore": 34.65,
+          "subdetail": "초기 물량 편입",
+          "qtyChange": 65,
+          "etfName": "TIME 코스피",
+          "consecutiveDays": 1,
+          "aiReason": "주주환원 정책 강화와 전동화 부품 수익성 개선에 따른 밸류에이션 매력으로 신규 매수했습니다.",
+          "sector": "자동차",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "기아",
+          "type": "전량매도",
+          "weightChange": "-0.67%p",
+          "impactScore": 22.110000000000003,
+          "subdetail": "🚨 포트폴리오 제외",
+          "qtyChange": 150,
+          "etfName": "TIME 코스피",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "자동차",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "KB금융",
+          "type": "축소",
+          "weightChange": "-0.66%p",
+          "impactScore": 21.779999999999994,
+          "subdetail": "80주 매도",
+          "qtyChange": 80,
+          "etfName": "TIME 코스피",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "금융",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "SK스퀘어",
+          "type": "증가",
+          "weightChange": "+0.45%p",
+          "impactScore": 14.850000000000001,
+          "subdetail": "+8주 매수",
+          "qtyChange": 8,
+          "etfName": "TIME 코스피",
+          "consecutiveDays": 1,
+          "aiReason": "주요 자회사인 SK하이닉스의 호실적과 적극적인 자사주 매입·소각에 따른 순자산가치 재평가를 기대하며 추가 매수했습니다.",
+          "sector": "지주",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "삼성전기",
+          "type": "축소",
+          "weightChange": "-0.26%p",
+          "impactScore": 8.580000000000005,
+          "subdetail": "4주 매도",
+          "qtyChange": 4,
+          "etfName": "TIME 코스피",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "전자부품",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "SK텔레콤",
+          "type": "축소",
+          "weightChange": "-0.02%p",
+          "impactScore": 0.6600000000000017,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 코스피",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "통신",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "삼성E&A",
+          "type": "축소",
+          "weightChange": "-",
+          "impactScore": 0,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 코스피",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "건설",
+          "etfCount": 1,
+          "isHousePick": false
+        }
+      ],
       "topHoldings": [
         "삼성전자",
         "SK하이닉스",
         "삼성SDI",
         "삼성전자우"
       ],
-      "strategy": "AI 반도체 밸류체인의 절대적 주도주(삼성전자, SK하이닉스)에 압도적 비중을 싣고 바닥을 다지는 2차전지 대표주를 결합해, 지수 단순 추종을 넘어 대형 Tech 사이클의 상승 탄력을 극대화하는 압축 전략입니다."
+      "strategy": "지수 전반을 추종하기보다 AI 반도체 슈퍼사이클의 직접 수혜주인 반도체 투톱과 턴어라운드가 기대되는 2차전지 대표주에 초압축 투자하여, 대형주 주도 장세에서 지수 대비 확실한 아웃퍼폼을 노리는 전략입니다."
     },
     {
       "name": "TIME 코리아배당",
@@ -23,29 +153,212 @@
         "메리츠금융지주",
         "삼양식품"
       ],
-      "strategy": "전통적인 저성장 고배당주에 안주하지 않고, 밸류업 프로그램의 직접 수혜를 받는 고배당 금융주와 실적 폭발로 주주환원 여력이 급증하는 글로벌 성장주(HBM, K-푸드)를 혼합해 자본이득과 배당 성장을 동시에 취하는 ‘토털 리턴(Total Return)’ 전략입니다."
+      "strategy": "단순 고배당주에 머무는 기존 배당 ETF와 달리, 밸류업 기조에 맞춘 강력한 주주환원 금융주에 실적 모멘텀이 폭발하는 반도체·K-푸드 성장주를 결합한 '배당성장+자본차익' 하이브리드 전략에 집중하고 있습니다."
     },
     {
       "name": "TIME 코스닥",
       "changes": [],
       "topHoldings": [
         "에스피지",
-        "로보티즈",
         "원익홀딩스",
+        "로보티즈",
         "알테오젠"
       ],
-      "strategy": "지수 내 비중이 큰 2차전지 대신 차세대 산업 개화 국면에 진입한 로봇(부품/완제품) 핵심주와 글로벌 기술수출 레퍼런스를 갖춘 플랫폼 바이오 주도주에 베팅하여, 코스닥 지수의 변동성을 뚫어내는 성장 테마 선점 전략입니다."
+      "strategy": "지수 내 비중이 높은 기존 주도주에 얽매이지 않고, 글로벌 빅파마향 마일스톤 가시성이 높은 바이오 플랫폼과 차세대 성장 축인 지능형 로봇 핵심 밸류체인을 선별 베팅하여 코스닥 지수 대비 초과 수익을 추구합니다."
     },
     {
       "name": "TIME 미국나스닥",
-      "changes": [],
+      "changes": [
+        {
+          "stock": "Intel Corp",
+          "type": "축소",
+          "weightChange": "-1.35%p",
+          "impactScore": 44.55,
+          "subdetail": "46주 매도",
+          "qtyChange": 46,
+          "etfName": "TIME 미국나스닥",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "반도체",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "Advanced Micro Devices Inc",
+          "type": "증가",
+          "weightChange": "+0.34%p",
+          "impactScore": 11.219999999999978,
+          "subdetail": "+6주 매수",
+          "qtyChange": 6,
+          "etfName": "TIME 미국나스닥",
+          "consecutiveDays": 1,
+          "aiReason": "차세대 AI 가속기 시장 내 점유율 확대와 데이터센터 부문 고성장 기대감으로 추가 매수했습니다.",
+          "sector": "반도체",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "Alphabet Inc",
+          "type": "축소",
+          "weightChange": "+0.18%p",
+          "impactScore": 5.939999999999987,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 미국나스닥",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "인터넷",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "Amazon.com Inc",
+          "type": "축소",
+          "weightChange": "+0.17%p",
+          "impactScore": 5.61,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 미국나스닥",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "소비재",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "Bloom Energy Corp",
+          "type": "축소",
+          "weightChange": "-0.13%p",
+          "impactScore": 4.289999999999986,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 미국나스닥",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "에너지",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "NVIDIA Corp",
+          "type": "축소",
+          "weightChange": "+0.13%p",
+          "impactScore": 4.28999999999994,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 미국나스닥",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "반도체",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "Micron Technology Inc",
+          "type": "축소",
+          "weightChange": "-0.11%p",
+          "impactScore": 3.6300000000000123,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 미국나스닥",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "반도체",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "Nebius Group NV",
+          "type": "축소",
+          "weightChange": "-0.08%p",
+          "impactScore": 2.6400000000000015,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 미국나스닥",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "인터넷",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "SK hynix Inc",
+          "type": "축소",
+          "weightChange": "-0.07%p",
+          "impactScore": 2.310000000000009,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 미국나스닥",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "반도체",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "CoreWeave Inc",
+          "type": "축소",
+          "weightChange": "-0.05%p",
+          "impactScore": 1.6500000000000015,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 미국나스닥",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "인터넷",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "KLA Corp",
+          "type": "축소",
+          "weightChange": "-0.02%p",
+          "impactScore": 0.6600000000000017,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 미국나스닥",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "반도체",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "Robinhood Markets Inc",
+          "type": "축소",
+          "weightChange": "-0.02%p",
+          "impactScore": 0.659999999999996,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 미국나스닥",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "금융",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "Texas Instruments Inc",
+          "type": "축소",
+          "weightChange": "-",
+          "impactScore": 0,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 미국나스닥",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "반도체",
+          "etfCount": 1,
+          "isHousePick": false
+        }
+      ],
       "topHoldings": [
         "NVIDIA Corp",
         "Microsoft Corp",
         "Apple Inc",
         "Alphabet Inc"
       ],
-      "strategy": "나스닥 전반의 단순 분산 투자를 지양하고, 하드웨어(엔비디아)부터 클라우드 인프라(마이크로소프트, 알파벳), 플랫폼 생태계(애플)로 이어지는 AI 사이클의 최종 승자 기업에 포트폴리오를 집중해 지수 대비 초과 수익을 확정 짓는 전략입니다."
+      "strategy": "나스닥 전반의 광범위한 노출을 지양하고, 독점적 해자와 압도적인 현금창출력으로 생성형 AI 생태계를 실질적으로 장악한 최상위 빅테크 4사에 펀더멘털 가중치를 극대화하는 메가캡 집중 전략입니다."
     },
     {
       "name": "TIME K컬처",
@@ -53,14 +366,336 @@
       "topHoldings": [
         "CJ ENM",
         "스튜디오드래곤",
-        "펄어비스",
-        "SAMG엔터"
+        "SAMG엔터",
+        "펄어비스"
       ],
-      "strategy": "단기 이슈에 민감한 엔터 기획사 의존도를 탈피하여, 구조적 턴어라운드가 기대되는 글로벌 미디어·콘텐츠 제작사와 자체 IP 파워를 갖춘 키즈 캐릭터 및 신작 모멘텀 게임주를 선별해 K-콘텐츠의 체질 개선 국면을 공략하는 전략입니다."
+      "strategy": "기존 K-POP 기획사 위주의 편향을 벗어나, 글로벌 OTT향 메가 IP를 보유한 미디어·콘텐츠 제작사와 글로벌 타깃의 키즈 IP 및 신작 모멘텀을 보유한 게임주에 집중해 밸류에이션 리레이팅을 선점하는 전략입니다."
     }
   ],
-  "allChanges": [],
+  "allChanges": [
+    {
+      "stock": "SK스퀘어",
+      "type": "증가",
+      "weightChange": "+0.45%p",
+      "impactScore": 14.850000000000001,
+      "subdetail": "+8주 매수",
+      "qtyChange": 8,
+      "etfName": "TIME 코스피",
+      "consecutiveDays": 1,
+      "aiReason": "주요 자회사인 SK하이닉스의 호실적과 적극적인 자사주 매입·소각에 따른 순자산가치 재평가를 기대하며 추가 매수했습니다.",
+      "sector": "지주",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "KB금융",
+      "type": "축소",
+      "weightChange": "-0.66%p",
+      "impactScore": 21.779999999999994,
+      "subdetail": "80주 매도",
+      "qtyChange": 80,
+      "etfName": "TIME 코스피",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "금융",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "삼성전기",
+      "type": "축소",
+      "weightChange": "-0.26%p",
+      "impactScore": 8.580000000000005,
+      "subdetail": "4주 매도",
+      "qtyChange": 4,
+      "etfName": "TIME 코스피",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "전자부품",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "현대모비스",
+      "type": "신규",
+      "weightChange": "+1.05%p",
+      "impactScore": 34.65,
+      "subdetail": "초기 물량 편입",
+      "qtyChange": 65,
+      "etfName": "TIME 코스피",
+      "consecutiveDays": 1,
+      "aiReason": "주주환원 정책 강화와 전동화 부품 수익성 개선에 따른 밸류에이션 매력으로 신규 매수했습니다.",
+      "sector": "자동차",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "SK텔레콤",
+      "type": "축소",
+      "weightChange": "-0.02%p",
+      "impactScore": 0.6600000000000017,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 코스피",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "통신",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "삼성E&A",
+      "type": "축소",
+      "weightChange": "-",
+      "impactScore": 0,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 코스피",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "건설",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "기아",
+      "type": "전량매도",
+      "weightChange": "-0.67%p",
+      "impactScore": 22.110000000000003,
+      "subdetail": "🚨 포트폴리오 제외",
+      "qtyChange": 150,
+      "etfName": "TIME 코스피",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "자동차",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "NVIDIA Corp",
+      "type": "축소",
+      "weightChange": "+0.13%p",
+      "impactScore": 4.28999999999994,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 미국나스닥",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "반도체",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "Alphabet Inc",
+      "type": "축소",
+      "weightChange": "+0.18%p",
+      "impactScore": 5.939999999999987,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 미국나스닥",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "인터넷",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "Amazon.com Inc",
+      "type": "축소",
+      "weightChange": "+0.17%p",
+      "impactScore": 5.61,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 미국나스닥",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "소비재",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "Micron Technology Inc",
+      "type": "축소",
+      "weightChange": "-0.11%p",
+      "impactScore": 3.6300000000000123,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 미국나스닥",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "반도체",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "Advanced Micro Devices Inc",
+      "type": "증가",
+      "weightChange": "+0.34%p",
+      "impactScore": 11.219999999999978,
+      "subdetail": "+6주 매수",
+      "qtyChange": 6,
+      "etfName": "TIME 미국나스닥",
+      "consecutiveDays": 1,
+      "aiReason": "차세대 AI 가속기 시장 내 점유율 확대와 데이터센터 부문 고성장 기대감으로 추가 매수했습니다.",
+      "sector": "반도체",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "Bloom Energy Corp",
+      "type": "축소",
+      "weightChange": "-0.13%p",
+      "impactScore": 4.289999999999986,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 미국나스닥",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "에너지",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "Texas Instruments Inc",
+      "type": "축소",
+      "weightChange": "-",
+      "impactScore": 0,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 미국나스닥",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "반도체",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "Intel Corp",
+      "type": "축소",
+      "weightChange": "-1.35%p",
+      "impactScore": 44.55,
+      "subdetail": "46주 매도",
+      "qtyChange": 46,
+      "etfName": "TIME 미국나스닥",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "반도체",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "SK hynix Inc",
+      "type": "축소",
+      "weightChange": "-0.07%p",
+      "impactScore": 2.310000000000009,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 미국나스닥",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "반도체",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "Nebius Group NV",
+      "type": "축소",
+      "weightChange": "-0.08%p",
+      "impactScore": 2.6400000000000015,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 미국나스닥",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "인터넷",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "CoreWeave Inc",
+      "type": "축소",
+      "weightChange": "-0.05%p",
+      "impactScore": 1.6500000000000015,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 미국나스닥",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "인터넷",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "KLA Corp",
+      "type": "축소",
+      "weightChange": "-0.02%p",
+      "impactScore": 0.6600000000000017,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 미국나스닥",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "반도체",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "Robinhood Markets Inc",
+      "type": "축소",
+      "weightChange": "-0.02%p",
+      "impactScore": 0.659999999999996,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
+      "etfName": "TIME 미국나스닥",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "금융",
+      "etfCount": 1,
+      "isHousePick": false
+    }
+  ],
   "reportType": "일일",
-  "sectorFlow": {},
-  "dailyReportHtml": "<div class=\"report-section-title\" style=\"color:var(--accent-blue); font-weight:800;\">📊 일일 핵심 시황 리포트</div><div class=\"report-house-view\" style=\"margin-top:10px;\">오늘 포트폴리오 내 유의미한 수급 이동이나 편입/편출 내역이 관찰되지 않았습니다.</div>"
+  "sectorFlow": {
+    "자동차": {
+      "in": 34.65,
+      "out": 22.110000000000003
+    },
+    "금융": {
+      "in": 0,
+      "out": 22.43999999999999
+    },
+    "지주": {
+      "in": 14.850000000000001,
+      "out": 0
+    },
+    "전자부품": {
+      "in": 0,
+      "out": 8.580000000000005
+    },
+    "통신": {
+      "in": 0,
+      "out": 0.6600000000000017
+    },
+    "건설": {
+      "in": 0,
+      "out": 10
+    },
+    "반도체": {
+      "in": 11.219999999999978,
+      "out": 65.43999999999997
+    },
+    "인터넷": {
+      "in": 0,
+      "out": 10.22999999999999
+    },
+    "소비재": {
+      "in": 0,
+      "out": 5.61
+    },
+    "에너지": {
+      "in": 0,
+      "out": 4.289999999999986
+    }
+  },
+  "dailyReportHtml": "<div class=\"report-section-title\" style=\"color:var(--accent-blue); font-weight:800;\">📊 일일 핵심 시황 리포트</div><div class=\"report-house-view\" style=\"margin-top:10px;\">타임폴리오자산운용 수석 매니저입니다.\n\n당사는 최근 단기 변동성 장세 속에서 이익 가시성이 확실한 **글로벌 AI 반도체 밸류체인(AMD, SK스퀘어)**으로 테크 섹터 내 주도주 압축을 진행하고 있습니다. \n\n동시에 정부의 밸류업 프로그램 수혜와 주주환원 확대 가능성이 높으면서도, 미래 전장·자율주행으로의 리레이팅 매력이 부각되는 **저평가 모빌리티 및 지주사 섹터(현대모비스, SK스퀘어)**로 유동성을 적극 재배치하고 있습니다. \n\n결과적으로 당사의 하우스 뷰는 단순 모멘텀 추종을 지양하고, 강력한 펀더멘털을 바탕으로 한 **'차세대 AI 테크 하드웨어'**와 **'퀄리티 밸류업'**이라는 투트랙의 바벨(Barbell) 섹터로 비중을 확대하는 전략입니다.</div>"
 }
