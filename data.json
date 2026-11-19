@@ -1,55 +1,54 @@
 {
-  "updateTime": "2026-11-18 19:58:13",
-  "houseView": "당사는 정부의 밸류업 프로그램에 발맞춰 실질적인 주주환원 확대가 기대되는 **저PBR 금융지주 및 저평가 지주사 섹터**로 안정적인 캐시카우 수급을 집중하고 있습니다. \n\n이와 동시에 글로벌 승인 모멘텀이 입증된 **대형 제약·바이오**와 실적 가시성이 뚜렷한 **플랜트·인프라 섹터**를 적극 편입하며 포트폴리오의 성장 탄력을 극대화하고 있습니다. \n\n결과적으로 변동성 장세에 대응해 단순 테마주를 배제하고, 확실한 정책 수혜주와 개별 펀더멘털 모멘텀을 결합한 **'고배당 가치주와 실적 성장주의 바벨(Barbell) 전략'**으로 수급의 무게추를 이동시키고 있습니다.",
+  "updateTime": "2026-11-19 19:58:25",
+  "houseView": "최근 단기 변동성이 확대된 기존 주도 섹터에서 수급을 덜어내고, 글로벌 확장성과 실적 턴어라운드가 명확한 **‘K-소비재(엔터·뷰티)’**와 바닥을 통과 중인 **‘IT 하드웨어’** 영역으로 자금을 전략적으로 재배치하고 있습니다. \n\n하이브, 에스엠, JYP, 그리고 코스맥스는 과도한 주가 조정 이후 서구권 중심의 글로벌 침투율 확대와 탄탄한 펀더멘털이 숫자로 증명되는 대표적인 실적주로서 최적의 밸류에이션 매력 구간에 진입했다고 판단합니다. \n\n여기에 차세대 온디바이스 AI 및 기판 업황 회복의 강력한 레버리지를 누릴 코리아써키트를 편입해, **‘글로벌 수출형 K-컬처’**와 **‘턴어라운드 테크’**의 투트랙 포트폴리오로 시장 대비 압도적인 알파(초과 수익)를 창출해 나갈 계획입니다.",
   "topStocks": [
     {
-      "stock": "한국금융지주",
-      "count": 2,
-      "etfs": [
-        "TIME 코스피",
-        "TIME 코리아배당"
-      ],
-      "maxImpact": 30.359999999999975,
-      "type": "신규",
-      "isHousePick": true
-    },
-    {
-      "stock": "원익홀딩스",
+      "stock": "에스엠",
       "count": 1,
       "etfs": [
-        "TIME 코스닥"
+        "TIME K컬처"
       ],
-      "maxImpact": 90.42000000000002,
+      "maxImpact": 89.43,
       "type": "증가",
       "isHousePick": false
     },
     {
-      "stock": "KB금융",
+      "stock": "JYP Ent.",
       "count": 1,
       "etfs": [
-        "TIME 코리아배당"
+        "TIME K컬처"
       ],
-      "maxImpact": 63.03,
+      "maxImpact": 39.600000000000016,
       "type": "증가",
       "isHousePick": false
     },
     {
-      "stock": "삼성E&A",
-      "count": 1,
-      "etfs": [
-        "TIME 코리아배당"
-      ],
-      "maxImpact": 26.06999999999998,
-      "type": "증가",
-      "isHousePick": true
-    },
-    {
-      "stock": "유한양행",
+      "stock": "하이브",
       "count": 1,
       "etfs": [
         "TIME 코스피"
       ],
-      "maxImpact": 15.84,
+      "maxImpact": 35.64,
+      "type": "신규",
+      "isHousePick": true
+    },
+    {
+      "stock": "코스맥스",
+      "count": 1,
+      "etfs": [
+        "TIME K컬처"
+      ],
+      "maxImpact": 30.689999999999987,
+      "type": "증가",
+      "isHousePick": true
+    },
+    {
+      "stock": "코리아써키트",
+      "count": 1,
+      "etfs": [
+        "TIME 코스피"
+      ],
+      "maxImpact": 19.8,
       "type": "신규",
       "isHousePick": false
     }
@@ -59,366 +58,337 @@
       "name": "TIME 코스피",
       "changes": [
         {
-          "stock": "한국금융지주",
+          "stock": "삼성SDI",
+          "type": "축소",
+          "weightChange": "-1.29%p",
+          "impactScore": 42.569999999999986,
+          "subdetail": "47주 매도",
+          "qtyChange": 47,
+          "etfName": "TIME 코스피",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "차전지",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "하이브",
           "type": "신규",
-          "weightChange": "+0.68%p",
-          "impactScore": 22.44,
+          "weightChange": "+1.08%p",
+          "impactScore": 35.64,
           "subdetail": "초기 물량 편입",
-          "qtyChange": 100,
+          "qtyChange": 120,
           "etfName": "TIME 코스피",
           "consecutiveDays": 1,
-          "aiReason": "주주환원 확대 기대감과 부동산 PF 리스크 완화에 따른 이익 정상화를 겨냥해 신규 편입했습니다.",
-          "sector": "금융",
+          "aiReason": "내부 분쟁 리스크가 완화되는 국면에서 주요 아티스트의 글로벌 음원 흥행과 저평가 매력이 부각되어 신규 편입했습니다.",
+          "sector": "엔터테인먼트",
           "etfCount": 2,
           "isHousePick": true
         },
         {
-          "stock": "한국전력",
+          "stock": "한화에어로스페이스",
           "type": "전량매도",
-          "weightChange": "-0.61%p",
-          "impactScore": 20.13,
+          "weightChange": "-0.96%p",
+          "impactScore": 31.68,
           "subdetail": "🚨 포트폴리오 제외",
-          "qtyChange": 423,
+          "qtyChange": 28,
           "etfName": "TIME 코스피",
           "consecutiveDays": 0,
           "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-          "sector": "유틸리티",
+          "sector": "방산",
           "etfCount": 1,
           "isHousePick": false
         },
         {
-          "stock": "유한양행",
+          "stock": "코리아써키트",
           "type": "신규",
-          "weightChange": "+0.48%p",
-          "impactScore": 15.84,
+          "weightChange": "+0.60%p",
+          "impactScore": 19.8,
           "subdetail": "초기 물량 편입",
-          "qtyChange": 106,
+          "qtyChange": 120,
           "etfName": "TIME 코스피",
           "consecutiveDays": 1,
-          "aiReason": "폐암 치료제 렉라자의 글로벌 상업화 본격화와 마일스톤 유입에 따른 실적 턴어라운드를 기대하며 신규 매수했습니다.",
-          "sector": "헬스케어",
-          "etfCount": 1,
-          "isHousePick": false
-        },
-        {
-          "stock": "NAVER",
-          "type": "축소",
-          "weightChange": "-0.13%p",
-          "impactScore": 4.2899999999999965,
-          "subdetail": "15주 매도",
-          "qtyChange": 15,
-          "etfName": "TIME 코스피",
-          "consecutiveDays": 0,
-          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-          "sector": "IT",
+          "aiReason": "차세대 AI 메모리 기판(CXL) 수요 확대 및 기판 업황 턴어라운드에 따른 수혜가 기대되어 신규 매수했습니다.",
+          "sector": "반도체",
           "etfCount": 1,
           "isHousePick": false
         },
         {
           "stock": "삼성E&A",
           "type": "축소",
-          "weightChange": "+0.03%p",
-          "impactScore": 0.9900000000000054,
+          "weightChange": "-0.14%p",
+          "impactScore": 4.620000000000006,
           "subdetail": "1주 매도",
           "qtyChange": 1,
           "etfName": "TIME 코스피",
           "consecutiveDays": 0,
           "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
           "sector": "건설",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "유한양행",
+          "type": "축소",
+          "weightChange": "-0.03%p",
+          "impactScore": 0.9899999999999969,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 코스피",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "헬스케어",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "코스맥스",
+          "type": "축소",
+          "weightChange": "-0.02%p",
+          "impactScore": 0.6600000000000017,
+          "subdetail": "1주 매도",
+          "qtyChange": 1,
+          "etfName": "TIME 코스피",
+          "consecutiveDays": 0,
+          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+          "sector": "화장품",
           "etfCount": 2,
           "isHousePick": false
         },
         {
           "stock": "이수페타시스",
           "type": "증가",
-          "weightChange": "+0.02%p",
+          "weightChange": "-0.02%p",
           "impactScore": 0.6599999999999989,
           "subdetail": "+1주 매수",
           "qtyChange": 1,
           "etfName": "TIME 코스피",
-          "consecutiveDays": 1,
-          "aiReason": "AI 가속기 및 고성능 서버용 고다층 기판(MLB) 수요 급증에 따른 구조적 성장을 전망하며 비중을 늘렸습니다.",
+          "consecutiveDays": 2,
+          "aiReason": "글로벌 빅테크의 AI 서버 투자 확대로 고다층인쇄회로기판(MLB)의 구조적 성장이 가속화되고 있어 비중을 늘렸습니다.",
           "sector": "반도체",
           "etfCount": 1,
-          "isHousePick": false
-        },
-        {
-          "stock": "SK텔레콤",
-          "type": "축소",
-          "weightChange": "+0.01%p",
-          "impactScore": 0.329999999999998,
-          "subdetail": "2주 매도",
-          "qtyChange": 2,
-          "etfName": "TIME 코스피",
-          "consecutiveDays": 0,
-          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-          "sector": "통신",
-          "etfCount": 2,
           "isHousePick": false
         }
       ],
       "topHoldings": [
         "삼성전자",
         "SK하이닉스",
-        "삼성SDI",
-        "삼성전자우"
+        "삼성전자우",
+        "삼성SDI"
       ],
-      "strategy": "AI 반도체 업턴(Upturn)의 수혜가 집중된 메가캡(삼성전자·SK하이닉스) 비중을 극대화해 시장 주도력을 확보하고, 저평가 2차전지(삼성SDI)를 선별 압축하여 지수 대비 강력한 상방 베타와 모멘텀 알파를 동시에 추구하는 대형주 압축 전략입니다."
+      "strategy": "AI 반도체 슈퍼사이클의 최대 수혜주인 삼성전자·SK하이닉스에 비중을 대폭 집중하고 밸류에이션 바닥 구간의 2차전지(삼성SDI)를 선별 편입하여, 대형 기술주 주도 장세에서 지수 대비 압도적인 탄력을 노리는 압축 포트폴리오 전략입니다."
     },
     {
       "name": "TIME 코리아배당",
+      "changes": [],
+      "topHoldings": [
+        "SK하이닉스",
+        "삼성전자우",
+        "DB손해보험",
+        "우리금융지주"
+      ],
+      "strategy": "저평가 해소와 주주환원 확대가 가시적인 금융 밸류업 종목(DB손보, 우리금융)으로 하방 경직성을 확보하는 동시에 실적 턴어라운드 기반의 테크 대형주(SK하이닉스, 삼성전자우)를 결합하여, 순수 배당수익을 넘어선 강력한 자본차익(Capital Gain)을 추구하는 액티브 배당성장 전략입니다."
+    },
+    {
+      "name": "TIME 코스닥",
+      "changes": [],
+      "topHoldings": [
+        "원익홀딩스",
+        "심텍",
+        "인텍플러스",
+        "에코프로"
+      ],
+      "strategy": "지수 단순 추종을 벗어나 차세대 HBM 및 어드밴스드 패키징 수혜가 집중되는 핵심 반도체 소부장(심텍, 인텍플러스, 원익홀딩스)의 턴어라운드에 베팅하고, 대표 주도주(에코프로)를 유연하게 활용해 코스닥 특유의 고베타 알파를 극대화하는 전략입니다."
+    },
+    {
+      "name": "TIME 미국나스닥",
+      "changes": [],
+      "topHoldings": [
+        "Apple Inc",
+        "Microsoft Corp",
+        "Amazon.com Inc",
+        "Advanced Micro Devices Inc"
+      ],
+      "strategy": "나스닥 지수 내에서도 생성형 AI 클라우드와 플랫폼 인프라를 장악한 메가캡(MS, 아마존, 애플)을 코어로 삼고, 엔비디아의 대안으로 부각되는 고성장 AI 가속기 밸류체인(AMD)에 공격적으로 비중을 실어 AI 실질 수혜 모멘텀을 극대화하는 전략입니다."
+    },
+    {
+      "name": "TIME K컬처",
       "changes": [
         {
-          "stock": "KB금융",
+          "stock": "에스엠",
           "type": "증가",
-          "weightChange": "+1.91%p",
-          "impactScore": 63.03,
-          "subdetail": "+55주 매수",
-          "qtyChange": 55,
-          "etfName": "TIME 코리아배당",
+          "weightChange": "+2.71%p",
+          "impactScore": 89.43,
+          "subdetail": "+205주 매수",
+          "qtyChange": 205,
+          "etfName": "TIME K컬처",
           "consecutiveDays": 1,
-          "aiReason": "업종 내 최고 수준의 자본력을 바탕으로 적극적인 자사주 매입·소각 등 주주환원 확대가 기대되어 비중을 늘렸습니다.",
-          "sector": "금융",
+          "aiReason": "신인 아티스트의 빠른 팬덤 성장과 견조한 음원 매출을 기반으로 실적 개선이 기대되어 비중을 확대했습니다.",
+          "sector": "엔터테인먼트",
           "etfCount": 1,
           "isHousePick": false
         },
         {
-          "stock": "DB손해보험",
+          "stock": "SAMG엔터",
           "type": "축소",
-          "weightChange": "-1.68%p",
-          "impactScore": 55.440000000000005,
-          "subdetail": "39주 매도",
-          "qtyChange": 39,
-          "etfName": "TIME 코리아배당",
+          "weightChange": "-1.98%p",
+          "impactScore": 65.34,
+          "subdetail": "1148주 매도",
+          "qtyChange": 1148,
+          "etfName": "TIME K컬처",
           "consecutiveDays": 0,
           "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-          "sector": "금융",
+          "sector": "콘텐츠",
+          "etfCount": 1,
+          "isHousePick": false
+        },
+        {
+          "stock": "JYP Ent.",
+          "type": "증가",
+          "weightChange": "+1.20%p",
+          "impactScore": 39.600000000000016,
+          "subdetail": "+181주 매수",
+          "qtyChange": 181,
+          "etfName": "TIME K컬처",
+          "consecutiveDays": 1,
+          "aiReason": "주요 아티스트의 하반기 컴백 및 월드투어 재개로 실적 반등 가능성이 높고 낙폭 과대 매력이 부각되어 비중을 확대했습니다.",
+          "sector": "엔터테인먼트",
           "etfCount": 1,
           "isHousePick": false
         },
         {
           "stock": "삼양식품",
           "type": "축소",
-          "weightChange": "-1.09%p",
-          "impactScore": 35.970000000000006,
-          "subdetail": "4주 매도",
-          "qtyChange": 4,
-          "etfName": "TIME 코리아배당",
+          "weightChange": "-1.07%p",
+          "impactScore": 35.31,
+          "subdetail": "6주 매도",
+          "qtyChange": 6,
+          "etfName": "TIME K컬처",
           "consecutiveDays": 0,
           "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-          "sector": "소비재",
+          "sector": "음식료",
           "etfCount": 1,
           "isHousePick": false
         },
         {
-          "stock": "메리츠금융지주",
-          "type": "축소",
-          "weightChange": "-0.98%p",
-          "impactScore": 32.33999999999999,
-          "subdetail": "40주 매도",
-          "qtyChange": 40,
-          "etfName": "TIME 코리아배당",
-          "consecutiveDays": 0,
-          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-          "sector": "금융",
-          "etfCount": 1,
-          "isHousePick": false
-        },
-        {
-          "stock": "한국금융지주",
+          "stock": "코스맥스",
           "type": "증가",
-          "weightChange": "+0.92%p",
-          "impactScore": 30.359999999999975,
-          "subdetail": "+31주 매수",
-          "qtyChange": 31,
-          "etfName": "TIME 코리아배당",
+          "weightChange": "+0.93%p",
+          "impactScore": 30.689999999999987,
+          "subdetail": "+27주 매수",
+          "qtyChange": 27,
+          "etfName": "TIME K컬처",
           "consecutiveDays": 1,
-          "aiReason": "주주환원 확대 기대감과 부동산 PF 리스크 완화에 따른 이익 정상화를 겨냥해 신규 편입했습니다.",
-          "sector": "금융",
+          "aiReason": "중국 소비 경기 회복 지연에 따른 현지 법인 실적 부진 우려를 반영해 비중을 축소했습니다.",
+          "sector": "화장품",
           "etfCount": 2,
           "isHousePick": true
         },
         {
-          "stock": "삼성E&A",
-          "type": "증가",
-          "weightChange": "+0.79%p",
-          "impactScore": 26.06999999999998,
-          "subdetail": "+50주 매수",
-          "qtyChange": 50,
-          "etfName": "TIME 코리아배당",
-          "consecutiveDays": 2,
-          "aiReason": "해외 대형 프로젝트 수주 공백 우려와 단기 모멘텀 둔화에 대응해 비중을 축소했습니다.",
-          "sector": "건설",
-          "etfCount": 2,
-          "isHousePick": true
-        },
-        {
-          "stock": "삼성생명",
+          "stock": "하이브",
           "type": "축소",
-          "weightChange": "-0.62%p",
-          "impactScore": 20.45999999999998,
-          "subdetail": "10주 매도",
-          "qtyChange": 10,
-          "etfName": "TIME 코리아배당",
+          "weightChange": "-0.86%p",
+          "impactScore": 28.38000000000001,
+          "subdetail": "51주 매도",
+          "qtyChange": 51,
+          "etfName": "TIME K컬처",
           "consecutiveDays": 0,
           "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-          "sector": "금융",
-          "etfCount": 1,
-          "isHousePick": false
-        },
-        {
-          "stock": "SK텔레콤",
-          "type": "증가",
-          "weightChange": "+0.21%p",
-          "impactScore": 6.930000000000004,
-          "subdetail": "+10주 매수",
-          "qtyChange": 10,
-          "etfName": "TIME 코리아배당",
-          "consecutiveDays": 2,
-          "aiReason": "통신 본업의 성장성 정체와 포트폴리오 리밸런싱을 목적으로 일부 비중을 축소했습니다.",
-          "sector": "통신",
+          "sector": "엔터테인먼트",
           "etfCount": 2,
-          "isHousePick": true
-        }
-      ],
-      "topHoldings": [
-        "SK하이닉스",
-        "DB손해보험",
-        "삼성전자우",
-        "우리금융지주"
-      ],
-      "strategy": "정부의 밸류업 프로그램 수혜가 직결된 고배당 금융주(DB손보·우리금융)로 배당 방어력을 구축하는 한편, 실적 턴어라운드 국면의 SK하이닉스를 공격적으로 편입해 단순 배당 수익을 넘어선 '배당성장+자본차익(Total Return)' 알파를 창출하는 하이브리드 전략입니다."
-    },
-    {
-      "name": "TIME 코스닥",
-      "changes": [
-        {
-          "stock": "원익홀딩스",
-          "type": "증가",
-          "weightChange": "+2.74%p",
-          "impactScore": 90.42000000000002,
-          "subdetail": "+197주 매수",
-          "qtyChange": 197,
-          "etfName": "TIME 코스닥",
-          "consecutiveDays": 1,
-          "aiReason": "주요 자회사들의 실적 턴어라운드 및 반도체 업황 회복에 따른 지분가치 재평가를 기대하며 비중을 늘렸습니다.",
-          "sector": "반도체",
-          "etfCount": 1,
-          "isHousePick": false
-        },
-        {
-          "stock": "로보티즈",
-          "type": "축소",
-          "weightChange": "-2.29%p",
-          "impactScore": 75.57,
-          "subdetail": "24주 매도",
-          "qtyChange": 24,
-          "etfName": "TIME 코스닥",
-          "consecutiveDays": 0,
-          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-          "sector": "로봇",
-          "etfCount": 1,
           "isHousePick": false
         }
       ],
-      "topHoldings": [
-        "원익홀딩스",
-        "심텍",
-        "인텍플러스",
-        "알테오젠"
-      ],
-      "strategy": "지수 내 2차전지 하향 변동성을 방어하고, HBM 및 어드밴스드 패키징 수혜가 집중되는 핵심 소부장(심텍·인텍플러스)과 독보적 기술 수출 모멘텀을 보유한 바이오 대장주(알테오젠)를 집중 편입하여 지수 대비 확실한 섹터 초과 수익을 확보하는 주도주 압축 전략입니다."
-    },
-    {
-      "name": "TIME 미국나스닥",
-      "changes": [],
-      "topHoldings": [
-        "Microsoft Corp",
-        "Apple Inc",
-        "Amazon.com Inc",
-        "Advanced Micro Devices Inc"
-      ],
-      "strategy": "생성형 AI 인프라 칩(AMD)부터 독점적 클라우드 및 플랫폼(MS·아마존), 온디바이스 생태계(애플)에 이르는 AI 풀스택 핵심 빅테크에 비중을 초집중함으로써, 단순 지수 추종의 비효율을 걷어내고 빅테크의 독점적 이익 성장을 극대화하는 집중 투자 전략입니다."
-    },
-    {
-      "name": "TIME K컬처",
-      "changes": [],
       "topHoldings": [
         "스튜디오드래곤",
+        "에스엠",
         "CJ ENM",
-        "파마리서치",
-        "와이지엔터테인먼트"
+        "파마리서치"
       ],
-      "strategy": "바닥을 통과 중인 미디어·콘텐츠 및 엔터의 턴어라운드(스튜디오드래곤·CJ ENM·YG)에 베팅함과 동시에, 글로벌 수출 확대로 폭발적인 실적을 증명하고 있는 K-의료미용(파마리서치)을 주력으로 편입하여 엔터와 뷰티를 아우르는 고마진 구조적 성장주 공략 전략입니다."
+      "strategy": "기존 K-콘텐츠 및 엔터(스튜디오드래곤, 에스엠, CJ ENM)의 글로벌 제작/음원 실적 정상화에 베팅하는 한편, 폭발적인 수출 성장세를 보이는 K-에스테틱 대장주(파마리서치)를 과감히 편입해 'K-라이프스타일 글로벌 확장'이라는 고마진 신성장 테마를 선취매하는 전략입니다."
     }
   ],
   "allChanges": [
     {
+      "stock": "삼성SDI",
+      "type": "축소",
+      "weightChange": "-1.29%p",
+      "impactScore": 42.569999999999986,
+      "subdetail": "47주 매도",
+      "qtyChange": 47,
+      "etfName": "TIME 코스피",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
+      "sector": "차전지",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
       "stock": "삼성E&A",
       "type": "축소",
-      "weightChange": "+0.03%p",
-      "impactScore": 0.9900000000000054,
+      "weightChange": "-0.14%p",
+      "impactScore": 4.620000000000006,
       "subdetail": "1주 매도",
       "qtyChange": 1,
       "etfName": "TIME 코스피",
       "consecutiveDays": 0,
       "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
       "sector": "건설",
-      "etfCount": 2,
+      "etfCount": 1,
       "isHousePick": false
     },
     {
-      "stock": "SK텔레콤",
-      "type": "축소",
-      "weightChange": "+0.01%p",
-      "impactScore": 0.329999999999998,
-      "subdetail": "2주 매도",
-      "qtyChange": 2,
-      "etfName": "TIME 코스피",
-      "consecutiveDays": 0,
-      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-      "sector": "통신",
-      "etfCount": 2,
-      "isHousePick": false
-    },
-    {
-      "stock": "한국금융지주",
+      "stock": "하이브",
       "type": "신규",
-      "weightChange": "+0.68%p",
-      "impactScore": 22.44,
+      "weightChange": "+1.08%p",
+      "impactScore": 35.64,
       "subdetail": "초기 물량 편입",
-      "qtyChange": 100,
+      "qtyChange": 120,
       "etfName": "TIME 코스피",
       "consecutiveDays": 1,
-      "aiReason": "주주환원 확대 기대감과 부동산 PF 리스크 완화에 따른 이익 정상화를 겨냥해 신규 편입했습니다.",
-      "sector": "금융",
+      "aiReason": "내부 분쟁 리스크가 완화되는 국면에서 주요 아티스트의 글로벌 음원 흥행과 저평가 매력이 부각되어 신규 편입했습니다.",
+      "sector": "엔터테인먼트",
       "etfCount": 2,
       "isHousePick": true
     },
     {
-      "stock": "NAVER",
+      "stock": "코스맥스",
       "type": "축소",
-      "weightChange": "-0.13%p",
-      "impactScore": 4.2899999999999965,
-      "subdetail": "15주 매도",
-      "qtyChange": 15,
+      "weightChange": "-0.02%p",
+      "impactScore": 0.6600000000000017,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
       "etfName": "TIME 코스피",
       "consecutiveDays": 0,
       "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-      "sector": "IT",
+      "sector": "화장품",
+      "etfCount": 2,
+      "isHousePick": false
+    },
+    {
+      "stock": "코리아써키트",
+      "type": "신규",
+      "weightChange": "+0.60%p",
+      "impactScore": 19.8,
+      "subdetail": "초기 물량 편입",
+      "qtyChange": 120,
+      "etfName": "TIME 코스피",
+      "consecutiveDays": 1,
+      "aiReason": "차세대 AI 메모리 기판(CXL) 수요 확대 및 기판 업황 턴어라운드에 따른 수혜가 기대되어 신규 매수했습니다.",
+      "sector": "반도체",
       "etfCount": 1,
       "isHousePick": false
     },
     {
       "stock": "유한양행",
-      "type": "신규",
-      "weightChange": "+0.48%p",
-      "impactScore": 15.84,
-      "subdetail": "초기 물량 편입",
-      "qtyChange": 106,
+      "type": "축소",
+      "weightChange": "-0.03%p",
+      "impactScore": 0.9899999999999969,
+      "subdetail": "1주 매도",
+      "qtyChange": 1,
       "etfName": "TIME 코스피",
-      "consecutiveDays": 1,
-      "aiReason": "폐암 치료제 렉라자의 글로벌 상업화 본격화와 마일스톤 유입에 따른 실적 턴어라운드를 기대하며 신규 매수했습니다.",
+      "consecutiveDays": 0,
+      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
       "sector": "헬스케어",
       "etfCount": 1,
       "isHousePick": false
@@ -426,210 +396,154 @@
     {
       "stock": "이수페타시스",
       "type": "증가",
-      "weightChange": "+0.02%p",
+      "weightChange": "-0.02%p",
       "impactScore": 0.6599999999999989,
       "subdetail": "+1주 매수",
       "qtyChange": 1,
       "etfName": "TIME 코스피",
-      "consecutiveDays": 1,
-      "aiReason": "AI 가속기 및 고성능 서버용 고다층 기판(MLB) 수요 급증에 따른 구조적 성장을 전망하며 비중을 늘렸습니다.",
+      "consecutiveDays": 2,
+      "aiReason": "글로벌 빅테크의 AI 서버 투자 확대로 고다층인쇄회로기판(MLB)의 구조적 성장이 가속화되고 있어 비중을 늘렸습니다.",
       "sector": "반도체",
       "etfCount": 1,
       "isHousePick": false
     },
     {
-      "stock": "한국전력",
+      "stock": "한화에어로스페이스",
       "type": "전량매도",
-      "weightChange": "-0.61%p",
-      "impactScore": 20.13,
+      "weightChange": "-0.96%p",
+      "impactScore": 31.68,
       "subdetail": "🚨 포트폴리오 제외",
-      "qtyChange": 423,
+      "qtyChange": 28,
       "etfName": "TIME 코스피",
       "consecutiveDays": 0,
       "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-      "sector": "유틸리티",
+      "sector": "방산",
       "etfCount": 1,
       "isHousePick": false
     },
     {
-      "stock": "DB손해보험",
+      "stock": "에스엠",
+      "type": "증가",
+      "weightChange": "+2.71%p",
+      "impactScore": 89.43,
+      "subdetail": "+205주 매수",
+      "qtyChange": 205,
+      "etfName": "TIME K컬처",
+      "consecutiveDays": 1,
+      "aiReason": "신인 아티스트의 빠른 팬덤 성장과 견조한 음원 매출을 기반으로 실적 개선이 기대되어 비중을 확대했습니다.",
+      "sector": "엔터테인먼트",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "JYP Ent.",
+      "type": "증가",
+      "weightChange": "+1.20%p",
+      "impactScore": 39.600000000000016,
+      "subdetail": "+181주 매수",
+      "qtyChange": 181,
+      "etfName": "TIME K컬처",
+      "consecutiveDays": 1,
+      "aiReason": "주요 아티스트의 하반기 컴백 및 월드투어 재개로 실적 반등 가능성이 높고 낙폭 과대 매력이 부각되어 비중을 확대했습니다.",
+      "sector": "엔터테인먼트",
+      "etfCount": 1,
+      "isHousePick": false
+    },
+    {
+      "stock": "하이브",
       "type": "축소",
-      "weightChange": "-1.68%p",
-      "impactScore": 55.440000000000005,
-      "subdetail": "39주 매도",
-      "qtyChange": 39,
-      "etfName": "TIME 코리아배당",
+      "weightChange": "-0.86%p",
+      "impactScore": 28.38000000000001,
+      "subdetail": "51주 매도",
+      "qtyChange": 51,
+      "etfName": "TIME K컬처",
       "consecutiveDays": 0,
       "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-      "sector": "금융",
-      "etfCount": 1,
+      "sector": "엔터테인먼트",
+      "etfCount": 2,
       "isHousePick": false
     },
     {
-      "stock": "메리츠금융지주",
-      "type": "축소",
-      "weightChange": "-0.98%p",
-      "impactScore": 32.33999999999999,
-      "subdetail": "40주 매도",
-      "qtyChange": 40,
-      "etfName": "TIME 코리아배당",
-      "consecutiveDays": 0,
-      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-      "sector": "금융",
-      "etfCount": 1,
-      "isHousePick": false
-    },
-    {
-      "stock": "KB금융",
+      "stock": "코스맥스",
       "type": "증가",
-      "weightChange": "+1.91%p",
-      "impactScore": 63.03,
-      "subdetail": "+55주 매수",
-      "qtyChange": 55,
-      "etfName": "TIME 코리아배당",
+      "weightChange": "+0.93%p",
+      "impactScore": 30.689999999999987,
+      "subdetail": "+27주 매수",
+      "qtyChange": 27,
+      "etfName": "TIME K컬처",
       "consecutiveDays": 1,
-      "aiReason": "업종 내 최고 수준의 자본력을 바탕으로 적극적인 자사주 매입·소각 등 주주환원 확대가 기대되어 비중을 늘렸습니다.",
-      "sector": "금융",
-      "etfCount": 1,
-      "isHousePick": false
-    },
-    {
-      "stock": "한국금융지주",
-      "type": "증가",
-      "weightChange": "+0.92%p",
-      "impactScore": 30.359999999999975,
-      "subdetail": "+31주 매수",
-      "qtyChange": 31,
-      "etfName": "TIME 코리아배당",
-      "consecutiveDays": 1,
-      "aiReason": "주주환원 확대 기대감과 부동산 PF 리스크 완화에 따른 이익 정상화를 겨냥해 신규 편입했습니다.",
-      "sector": "금융",
+      "aiReason": "중국 소비 경기 회복 지연에 따른 현지 법인 실적 부진 우려를 반영해 비중을 축소했습니다.",
+      "sector": "화장품",
       "etfCount": 2,
       "isHousePick": true
     },
     {
       "stock": "삼양식품",
       "type": "축소",
-      "weightChange": "-1.09%p",
-      "impactScore": 35.970000000000006,
-      "subdetail": "4주 매도",
-      "qtyChange": 4,
-      "etfName": "TIME 코리아배당",
+      "weightChange": "-1.07%p",
+      "impactScore": 35.31,
+      "subdetail": "6주 매도",
+      "qtyChange": 6,
+      "etfName": "TIME K컬처",
       "consecutiveDays": 0,
       "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-      "sector": "소비재",
+      "sector": "음식료",
       "etfCount": 1,
       "isHousePick": false
     },
     {
-      "stock": "삼성E&A",
-      "type": "증가",
-      "weightChange": "+0.79%p",
-      "impactScore": 26.06999999999998,
-      "subdetail": "+50주 매수",
-      "qtyChange": 50,
-      "etfName": "TIME 코리아배당",
-      "consecutiveDays": 2,
-      "aiReason": "해외 대형 프로젝트 수주 공백 우려와 단기 모멘텀 둔화에 대응해 비중을 축소했습니다.",
-      "sector": "건설",
-      "etfCount": 2,
-      "isHousePick": true
-    },
-    {
-      "stock": "삼성생명",
+      "stock": "SAMG엔터",
       "type": "축소",
-      "weightChange": "-0.62%p",
-      "impactScore": 20.45999999999998,
-      "subdetail": "10주 매도",
-      "qtyChange": 10,
-      "etfName": "TIME 코리아배당",
+      "weightChange": "-1.98%p",
+      "impactScore": 65.34,
+      "subdetail": "1148주 매도",
+      "qtyChange": 1148,
+      "etfName": "TIME K컬처",
       "consecutiveDays": 0,
       "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-      "sector": "금융",
-      "etfCount": 1,
-      "isHousePick": false
-    },
-    {
-      "stock": "SK텔레콤",
-      "type": "증가",
-      "weightChange": "+0.21%p",
-      "impactScore": 6.930000000000004,
-      "subdetail": "+10주 매수",
-      "qtyChange": 10,
-      "etfName": "TIME 코리아배당",
-      "consecutiveDays": 2,
-      "aiReason": "통신 본업의 성장성 정체와 포트폴리오 리밸런싱을 목적으로 일부 비중을 축소했습니다.",
-      "sector": "통신",
-      "etfCount": 2,
-      "isHousePick": true
-    },
-    {
-      "stock": "원익홀딩스",
-      "type": "증가",
-      "weightChange": "+2.74%p",
-      "impactScore": 90.42000000000002,
-      "subdetail": "+197주 매수",
-      "qtyChange": 197,
-      "etfName": "TIME 코스닥",
-      "consecutiveDays": 1,
-      "aiReason": "주요 자회사들의 실적 턴어라운드 및 반도체 업황 회복에 따른 지분가치 재평가를 기대하며 비중을 늘렸습니다.",
-      "sector": "반도체",
-      "etfCount": 1,
-      "isHousePick": false
-    },
-    {
-      "stock": "로보티즈",
-      "type": "축소",
-      "weightChange": "-2.29%p",
-      "impactScore": 75.57,
-      "subdetail": "24주 매도",
-      "qtyChange": 24,
-      "etfName": "TIME 코스닥",
-      "consecutiveDays": 0,
-      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-      "sector": "로봇",
+      "sector": "콘텐츠",
       "etfCount": 1,
       "isHousePick": false
     }
   ],
   "reportType": "일일",
   "sectorFlow": {
-    "금융": {
-      "in": 115.82999999999997,
-      "out": 108.23999999999998
-    },
-    "유틸리티": {
+    "차전지": {
       "in": 0,
-      "out": 20.13
+      "out": 42.569999999999986
     },
-    "헬스케어": {
-      "in": 15.84,
-      "out": 0
+    "엔터테인먼트": {
+      "in": 164.67000000000002,
+      "out": 28.38000000000001
     },
-    "IT": {
+    "방산": {
       "in": 0,
-      "out": 4.2899999999999965
-    },
-    "건설": {
-      "in": 26.06999999999998,
-      "out": 0.9900000000000054
+      "out": 31.68
     },
     "반도체": {
-      "in": 91.08000000000001,
+      "in": 20.46,
       "out": 0
     },
-    "통신": {
-      "in": 6.930000000000004,
-      "out": 0.329999999999998
-    },
-    "소비재": {
+    "건설": {
       "in": 0,
-      "out": 35.970000000000006
+      "out": 4.620000000000006
     },
-    "로봇": {
+    "헬스케어": {
       "in": 0,
-      "out": 75.57
+      "out": 0.9899999999999969
+    },
+    "화장품": {
+      "in": 30.689999999999987,
+      "out": 0.6600000000000017
+    },
+    "콘텐츠": {
+      "in": 0,
+      "out": 65.34
+    },
+    "음식료": {
+      "in": 0,
+      "out": 35.31
     }
   },
-  "dailyReportHtml": "<div class=\"report-section-title\" style=\"color:var(--accent-blue); font-weight:800;\">📊 일일 핵심 시황 리포트</div><div class=\"report-house-view\" style=\"margin-top:10px;\">당사는 정부의 밸류업 프로그램에 발맞춰 실질적인 주주환원 확대가 기대되는 **저PBR 금융지주 및 저평가 지주사 섹터**로 안정적인 캐시카우 수급을 집중하고 있습니다. \n\n이와 동시에 글로벌 승인 모멘텀이 입증된 **대형 제약·바이오**와 실적 가시성이 뚜렷한 **플랜트·인프라 섹터**를 적극 편입하며 포트폴리오의 성장 탄력을 극대화하고 있습니다. \n\n결과적으로 변동성 장세에 대응해 단순 테마주를 배제하고, 확실한 정책 수혜주와 개별 펀더멘털 모멘텀을 결합한 **'고배당 가치주와 실적 성장주의 바벨(Barbell) 전략'**으로 수급의 무게추를 이동시키고 있습니다.</div>"
+  "dailyReportHtml": "<div class=\"report-section-title\" style=\"color:var(--accent-blue); font-weight:800;\">📊 일일 핵심 시황 리포트</div><div class=\"report-house-view\" style=\"margin-top:10px;\">최근 단기 변동성이 확대된 기존 주도 섹터에서 수급을 덜어내고, 글로벌 확장성과 실적 턴어라운드가 명확한 **‘K-소비재(엔터·뷰티)’**와 바닥을 통과 중인 **‘IT 하드웨어’** 영역으로 자금을 전략적으로 재배치하고 있습니다. \n\n하이브, 에스엠, JYP, 그리고 코스맥스는 과도한 주가 조정 이후 서구권 중심의 글로벌 침투율 확대와 탄탄한 펀더멘털이 숫자로 증명되는 대표적인 실적주로서 최적의 밸류에이션 매력 구간에 진입했다고 판단합니다. \n\n여기에 차세대 온디바이스 AI 및 기판 업황 회복의 강력한 레버리지를 누릴 코리아써키트를 편입해, **‘글로벌 수출형 K-컬처’**와 **‘턴어라운드 테크’**의 투트랙 포트폴리오로 시장 대비 압도적인 알파(초과 수익)를 창출해 나갈 계획입니다.</div>"
 }
