@@ -1,168 +1,18 @@
 {
-  "updateTime": "2026-11-27 19:58:11",
-  "houseView": "최근 매크로 불확실성과 지수 변동성 확대에 대응해 KT&G와 기업은행 등 주주환원 매력이 높고 하방 경직성이 확보된 **고배당·밸류업 방어 섹터로 기초 수급을 이동**시키고 있습니다. \n\n동시에 기존 대형 기술주 중심의 쏠림에서 탈피하여, 금리 인하 수혜가 기대되는 제약·바이오(한미약품)와 AI 보안(안랩), 정밀 제어 신성장 테마(삼현)처럼 **실적 및 개별 모멘텀이 뚜렷한 압축 성장주로 선제적 베팅**을 진행 중입니다. \n\n결론적으로 당사는 시장의 변동성을 방어하는 '고배당 가치주'와 초과 수익(Alpha)을 겨냥한 '특화 성장주'를 양 날개로 삼는 **철저한 바벨(Barbell) 전략으로 수급의 축을 재편**하고 있습니다.",
-  "topStocks": [
-    {
-      "stock": "안랩",
-      "count": 1,
-      "etfs": [
-        "TIME 코스닥"
-      ],
-      "maxImpact": 77.54999999999997,
-      "type": "증가",
-      "isHousePick": false
-    },
-    {
-      "stock": "한미약품",
-      "count": 1,
-      "etfs": [
-        "TIME 코스피"
-      ],
-      "maxImpact": 22.44,
-      "type": "신규",
-      "isHousePick": false
-    },
-    {
-      "stock": "기업은행",
-      "count": 1,
-      "etfs": [
-        "TIME 코스피"
-      ],
-      "maxImpact": 17.82,
-      "type": "신규",
-      "isHousePick": false
-    },
-    {
-      "stock": "KT&G",
-      "count": 1,
-      "etfs": [
-        "TIME 코스피"
-      ],
-      "maxImpact": 15.509999999999998,
-      "type": "증가",
-      "isHousePick": false
-    },
-    {
-      "stock": "삼현",
-      "count": 1,
-      "etfs": [
-        "TIME 코스닥"
-      ],
-      "maxImpact": 1.6500000000000015,
-      "type": "증가",
-      "isHousePick": false
-    }
-  ],
+  "updateTime": "2026-11-28 19:57:38",
+  "houseView": "이번 주 포트폴리오 내 유의미한 수급 이동이 관찰되지 않았습니다. 기존 핵심 포지션을 유지하며 다음 주 변동성을 대비합니다.",
+  "topStocks": [],
   "etfs": [
     {
       "name": "TIME 코스피",
-      "changes": [
-        {
-          "stock": "삼성E&A",
-          "type": "축소",
-          "weightChange": "-1.07%p",
-          "impactScore": 35.309999999999995,
-          "subdetail": "298주 매도",
-          "qtyChange": 298,
-          "etfName": "TIME 코스피",
-          "consecutiveDays": 0,
-          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-          "sector": "건설",
-          "etfCount": 1,
-          "isHousePick": false
-        },
-        {
-          "stock": "코리아써키트",
-          "type": "전량매도",
-          "weightChange": "-0.98%p",
-          "impactScore": 32.339999999999996,
-          "subdetail": "🚨 포트폴리오 제외",
-          "qtyChange": 216,
-          "etfName": "TIME 코스피",
-          "consecutiveDays": 0,
-          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-          "sector": "반도체",
-          "etfCount": 1,
-          "isHousePick": false
-        },
-        {
-          "stock": "한미약품",
-          "type": "신규",
-          "weightChange": "+0.68%p",
-          "impactScore": 22.44,
-          "subdetail": "초기 물량 편입",
-          "qtyChange": 25,
-          "etfName": "TIME 코스피",
-          "consecutiveDays": 1,
-          "aiReason": "비만·대사 질환 신약 파이프라인의 가치 부각과 견조한 본업 실적 성장을 기대하며 신규 매수했습니다.",
-          "sector": "헬스케어",
-          "etfCount": 1,
-          "isHousePick": false
-        },
-        {
-          "stock": "기업은행",
-          "type": "신규",
-          "weightChange": "+0.54%p",
-          "impactScore": 17.82,
-          "subdetail": "초기 물량 편입",
-          "qtyChange": 500,
-          "etfName": "TIME 코스피",
-          "consecutiveDays": 1,
-          "aiReason": "정부 밸류업 프로그램 수혜와 안정적인 이익 기반의 높은 배당 매력에 따라 신규 편입했습니다.",
-          "sector": "금융",
-          "etfCount": 1,
-          "isHousePick": false
-        },
-        {
-          "stock": "KT&G",
-          "type": "증가",
-          "weightChange": "+0.47%p",
-          "impactScore": 15.509999999999998,
-          "subdetail": "+50주 매수",
-          "qtyChange": 50,
-          "etfName": "TIME 코스피",
-          "consecutiveDays": 1,
-          "aiReason": "글로벌 전자담배(NGP) 부문의 외형 성장과 자사주 소각 등 적극적인 주주환원 확대를 보고 비중을 늘렸습니다.",
-          "sector": "소비재",
-          "etfCount": 1,
-          "isHousePick": false
-        },
-        {
-          "stock": "포스코인터내셔널",
-          "type": "증가",
-          "weightChange": "-",
-          "impactScore": 0,
-          "subdetail": "+1주 매수",
-          "qtyChange": 1,
-          "etfName": "TIME 코스피",
-          "consecutiveDays": 2,
-          "aiReason": "에너지 사업 밸류체인 확장 및 동해 심해 가스전 프로젝트 모멘텀 기대감에 추가 매수했습니다.",
-          "sector": "상사",
-          "etfCount": 1,
-          "isHousePick": false
-        },
-        {
-          "stock": "NH투자증권",
-          "type": "증가",
-          "weightChange": "-",
-          "impactScore": 0,
-          "subdetail": "+1주 매수",
-          "qtyChange": 1,
-          "etfName": "TIME 코스피",
-          "consecutiveDays": 2,
-          "aiReason": "증시 거래대금 증가에 따른 브로커리지 수익 개선과 주주환원 기대감으로 비중을 확대했습니다.",
-          "sector": "금융",
-          "etfCount": 1,
-          "isHousePick": false
-        }
-      ],
+      "changes": [],
       "topHoldings": [
         "삼성전자",
         "SK하이닉스",
         "삼성SDI",
         "셀트리온"
       ],
-      "strategy": "AI 인프라 확장의 최대 수혜인 메모리 반도체 투톱을 핵심 축으로 삼고, 턴어라운드 잠재력이 큰 2차전지 및 바이오 대표주를 압축 편입하여 지수 리바운드 국면에서 폭발적인 베타와 알파를 동시에 확보하는 전략입니다."
+      "strategy": "AI 반도체 수요 강세에 따른 대형 메모리 반도체의 하방 경직성을 확보하는 동시에, 2차전지 및 바이오 등 낙폭과대 턴어라운드 대형주로의 순환매 수급에 기민하게 대응하여 벤치마크 대비 초과 수익을 추구했습니다."
     },
     {
       "name": "TIME 코리아배당",
@@ -173,61 +23,18 @@
         "삼성전자우",
         "메리츠금융지주"
       ],
-      "strategy": "단순 고배당주에 머물지 않고 자사주 소각 등 강력한 주주환원을 실행하는 메리츠·DB손보 등 금융 대장주와, 실적 턴어라운드로 배당 여력이 급증한 테크 성장주를 결합해 '배당 수익'과 '자본 차익'을 모두 극대화하는 배당성장 전략입니다."
+      "strategy": "정부 밸류업 프로그램 모멘텀 속에서 강력한 자본력과 주주환원 정책을 발표한 손해보험·금융지주를 중심으로 비중을 확대하고, 실적 턴어라운드 기반의 고배당 대형 IT주를 결합해 방어와 알파를 동시에 확보하는 전략을 구사했습니다."
     },
     {
       "name": "TIME 코스닥",
-      "changes": [
-        {
-          "stock": "안랩",
-          "type": "증가",
-          "weightChange": "+2.35%p",
-          "impactScore": 77.54999999999997,
-          "subdetail": "+36주 매수",
-          "qtyChange": 36,
-          "etfName": "TIME 코스닥",
-          "consecutiveDays": 1,
-          "aiReason": "글로벌 사이버 보안 위협 증가에 따른 솔루션 수요 확대와 견조한 실적을 바탕으로 매수했습니다.",
-          "sector": "소프트웨어",
-          "etfCount": 1,
-          "isHousePick": false
-        },
-        {
-          "stock": "원익홀딩스",
-          "type": "축소",
-          "weightChange": "-2.22%p",
-          "impactScore": 73.25999999999999,
-          "subdetail": "197주 매도",
-          "qtyChange": 197,
-          "etfName": "TIME 코스닥",
-          "consecutiveDays": 0,
-          "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-          "sector": "반도체",
-          "etfCount": 1,
-          "isHousePick": false
-        },
-        {
-          "stock": "삼현",
-          "type": "증가",
-          "weightChange": "-0.05%p",
-          "impactScore": 1.6500000000000015,
-          "subdetail": "+1주 매수",
-          "qtyChange": 1,
-          "etfName": "TIME 코스닥",
-          "consecutiveDays": 2,
-          "aiReason": "전기차, 로봇, 방산 등 다양한 전방 산업 내 3-in-1 모터 드라이브 액추에이터 수주 확대를 기대하며 매수했습니다.",
-          "sector": "자동차",
-          "etfCount": 1,
-          "isHousePick": false
-        }
-      ],
+      "changes": [],
       "topHoldings": [
         "레인보우로보틱스",
         "로보티즈",
         "심텍",
         "알테오젠"
       ],
-      "strategy": "기존 지수 기여도가 높던 업종을 덜어내고, 삼성전자의 로봇 밸류체인과 글로벌 빅파마 피하주사(SC) 플랫폼 독점력을 쥔 알테오젠 등 차세대 메가 트렌드 주도주에 과감히 베팅하여 코스닥 지수를 압도하는 공격적 모멘텀 전략입니다."
+      "strategy": "피지컬 AI 및 대기업 제조 라인 자동화 투자 확대에 따른 로봇 섹터의 수급 쏠림을 적극 공략하고, 독보적 플랫폼 기술력을 보유한 바이오 및 패키징 기판 회복 수혜주로 포트폴리오를 압축해 시장 주도 모멘텀을 극대화했습니다."
     },
     {
       "name": "TIME 미국나스닥",
@@ -238,7 +45,7 @@
         "Amazon.com Inc",
         "Alphabet Inc"
       ],
-      "strategy": "나스닥 지수 내에서도 압도적인 현금창출력과 독점적 클라우드 인프라를 바탕으로 생성형 AI의 실질적 수익화를 이끌고 있는 '매그니피센트 4' 빅테크 기업에 비중을 압축해 시장 변동성을 이겨내는 퀄리티 성장 전략입니다."
+      "strategy": "AI 인프라 투자(CAPEX) 확대 국면에서 실제 클라우드 및 엔드유저 AI 수익화 역량을 증명하고 있는 메가캡 빅테크로 수급이 집중됨에 따라, 현금 창출력이 검증된 최상위 AI 소프트웨어·플랫폼 기업 중심의 롱(Long) 포지션을 확고히 유지했습니다."
     },
     {
       "name": "TIME K컬처",
@@ -249,185 +56,11 @@
         "와이지엔터테인먼트",
         "에스엠"
       ],
-      "strategy": "단기 실적 부진을 지나 글로벌 플랫폼 다변화와 음원·콘서트 IP 파워로 리레이팅 구간에 진입한 대형 엔터·미디어 콘텐츠주를 바텀업(Bottom-up)으로 선별해, 업황 턴어라운드에 선제 대응하는 가치 회복 전략입니다."
+      "strategy": "주요 소속 아티스트의 월드투어 재개 및 신인 IP 흥행에 따른 엔터 섹터의 실적 바닥 통과 시그널을 포착하고, 글로벌 OTT향 대작 편성 확대로 수익성 개선이 가시화된 미디어·콘텐츠 제작사를 선제적으로 편입하는 턴어라운드 베팅에 집중했습니다."
     }
   ],
-  "allChanges": [
-    {
-      "stock": "KT&G",
-      "type": "증가",
-      "weightChange": "+0.47%p",
-      "impactScore": 15.509999999999998,
-      "subdetail": "+50주 매수",
-      "qtyChange": 50,
-      "etfName": "TIME 코스피",
-      "consecutiveDays": 1,
-      "aiReason": "글로벌 전자담배(NGP) 부문의 외형 성장과 자사주 소각 등 적극적인 주주환원 확대를 보고 비중을 늘렸습니다.",
-      "sector": "소비재",
-      "etfCount": 1,
-      "isHousePick": false
-    },
-    {
-      "stock": "포스코인터내셔널",
-      "type": "증가",
-      "weightChange": "-",
-      "impactScore": 0,
-      "subdetail": "+1주 매수",
-      "qtyChange": 1,
-      "etfName": "TIME 코스피",
-      "consecutiveDays": 2,
-      "aiReason": "에너지 사업 밸류체인 확장 및 동해 심해 가스전 프로젝트 모멘텀 기대감에 추가 매수했습니다.",
-      "sector": "상사",
-      "etfCount": 1,
-      "isHousePick": false
-    },
-    {
-      "stock": "NH투자증권",
-      "type": "증가",
-      "weightChange": "-",
-      "impactScore": 0,
-      "subdetail": "+1주 매수",
-      "qtyChange": 1,
-      "etfName": "TIME 코스피",
-      "consecutiveDays": 2,
-      "aiReason": "증시 거래대금 증가에 따른 브로커리지 수익 개선과 주주환원 기대감으로 비중을 확대했습니다.",
-      "sector": "금융",
-      "etfCount": 1,
-      "isHousePick": false
-    },
-    {
-      "stock": "한미약품",
-      "type": "신규",
-      "weightChange": "+0.68%p",
-      "impactScore": 22.44,
-      "subdetail": "초기 물량 편입",
-      "qtyChange": 25,
-      "etfName": "TIME 코스피",
-      "consecutiveDays": 1,
-      "aiReason": "비만·대사 질환 신약 파이프라인의 가치 부각과 견조한 본업 실적 성장을 기대하며 신규 매수했습니다.",
-      "sector": "헬스케어",
-      "etfCount": 1,
-      "isHousePick": false
-    },
-    {
-      "stock": "삼성E&A",
-      "type": "축소",
-      "weightChange": "-1.07%p",
-      "impactScore": 35.309999999999995,
-      "subdetail": "298주 매도",
-      "qtyChange": 298,
-      "etfName": "TIME 코스피",
-      "consecutiveDays": 0,
-      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-      "sector": "건설",
-      "etfCount": 1,
-      "isHousePick": false
-    },
-    {
-      "stock": "기업은행",
-      "type": "신규",
-      "weightChange": "+0.54%p",
-      "impactScore": 17.82,
-      "subdetail": "초기 물량 편입",
-      "qtyChange": 500,
-      "etfName": "TIME 코스피",
-      "consecutiveDays": 1,
-      "aiReason": "정부 밸류업 프로그램 수혜와 안정적인 이익 기반의 높은 배당 매력에 따라 신규 편입했습니다.",
-      "sector": "금융",
-      "etfCount": 1,
-      "isHousePick": false
-    },
-    {
-      "stock": "코리아써키트",
-      "type": "전량매도",
-      "weightChange": "-0.98%p",
-      "impactScore": 32.339999999999996,
-      "subdetail": "🚨 포트폴리오 제외",
-      "qtyChange": 216,
-      "etfName": "TIME 코스피",
-      "consecutiveDays": 0,
-      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-      "sector": "반도체",
-      "etfCount": 1,
-      "isHousePick": false
-    },
-    {
-      "stock": "안랩",
-      "type": "증가",
-      "weightChange": "+2.35%p",
-      "impactScore": 77.54999999999997,
-      "subdetail": "+36주 매수",
-      "qtyChange": 36,
-      "etfName": "TIME 코스닥",
-      "consecutiveDays": 1,
-      "aiReason": "글로벌 사이버 보안 위협 증가에 따른 솔루션 수요 확대와 견조한 실적을 바탕으로 매수했습니다.",
-      "sector": "소프트웨어",
-      "etfCount": 1,
-      "isHousePick": false
-    },
-    {
-      "stock": "삼현",
-      "type": "증가",
-      "weightChange": "-0.05%p",
-      "impactScore": 1.6500000000000015,
-      "subdetail": "+1주 매수",
-      "qtyChange": 1,
-      "etfName": "TIME 코스닥",
-      "consecutiveDays": 2,
-      "aiReason": "전기차, 로봇, 방산 등 다양한 전방 산업 내 3-in-1 모터 드라이브 액추에이터 수주 확대를 기대하며 매수했습니다.",
-      "sector": "자동차",
-      "etfCount": 1,
-      "isHousePick": false
-    },
-    {
-      "stock": "원익홀딩스",
-      "type": "축소",
-      "weightChange": "-2.22%p",
-      "impactScore": 73.25999999999999,
-      "subdetail": "197주 매도",
-      "qtyChange": 197,
-      "etfName": "TIME 코스닥",
-      "consecutiveDays": 0,
-      "aiReason": "단기 급등에 따른 차익 실현 및 비중 조절",
-      "sector": "반도체",
-      "etfCount": 1,
-      "isHousePick": false
-    }
-  ],
-  "reportType": "일일",
-  "sectorFlow": {
-    "건설": {
-      "in": 0,
-      "out": 35.309999999999995
-    },
-    "반도체": {
-      "in": 0,
-      "out": 105.6
-    },
-    "헬스케어": {
-      "in": 22.44,
-      "out": 0
-    },
-    "금융": {
-      "in": 27.82,
-      "out": 0
-    },
-    "소비재": {
-      "in": 15.509999999999998,
-      "out": 0
-    },
-    "상사": {
-      "in": 10,
-      "out": 0
-    },
-    "소프트웨어": {
-      "in": 77.54999999999997,
-      "out": 0
-    },
-    "자동차": {
-      "in": 1.6500000000000015,
-      "out": 0
-    }
-  },
-  "dailyReportHtml": "<div class=\"report-section-title\" style=\"color:var(--accent-blue); font-weight:800;\">📊 일일 핵심 시황 리포트</div><div class=\"report-house-view\" style=\"margin-top:10px;\">최근 매크로 불확실성과 지수 변동성 확대에 대응해 KT&G와 기업은행 등 주주환원 매력이 높고 하방 경직성이 확보된 **고배당·밸류업 방어 섹터로 기초 수급을 이동**시키고 있습니다. \n\n동시에 기존 대형 기술주 중심의 쏠림에서 탈피하여, 금리 인하 수혜가 기대되는 제약·바이오(한미약품)와 AI 보안(안랩), 정밀 제어 신성장 테마(삼현)처럼 **실적 및 개별 모멘텀이 뚜렷한 압축 성장주로 선제적 베팅**을 진행 중입니다. \n\n결론적으로 당사는 시장의 변동성을 방어하는 '고배당 가치주'와 초과 수익(Alpha)을 겨냥한 '특화 성장주'를 양 날개로 삼는 **철저한 바벨(Barbell) 전략으로 수급의 축을 재편**하고 있습니다.</div>"
+  "allChanges": [],
+  "reportType": "주간",
+  "sectorFlow": {},
+  "dailyReportHtml": "<div class=\"report-section-title\" style=\"color:var(--accent-blue); font-weight:800;\">📅 주간 종합 시황 리포트</div><div class=\"report-house-view\" style=\"margin-top:10px;\">이번 주 포트폴리오 내 유의미한 수급 이동이 관찰되지 않았습니다. 기존 핵심 포지션을 유지하며 다음 주 변동성을 대비합니다.</div>"
 }
